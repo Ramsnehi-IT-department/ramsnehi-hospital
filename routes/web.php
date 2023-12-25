@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\LoginController;
+use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +19,33 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+
+// About page
+Route::get('/about', function () {
+    return view('frontends.about');
+});
+
+// Vision page
+Route::get('/visionMission', function () {
+    return view('frontends.visionMission');
+});
+
+// President page
+Route::get('/president', function () {
+    return view('frontends.president');
+});
+
+// Secretary page
+Route::get('/secretary', function () {
+    return view('frontends.secretary');
+});
+
+// Certificate page
+Route::get('/certificate', function () {
+    return view('frontends.certificate');
+});
+
+Auth::routes();
+
+Route::get('/admin', [HomeController::class, 'index'])->name('home');
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
