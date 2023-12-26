@@ -42,8 +42,8 @@
                         <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
                             <div class="d-flex justify-content-center py-4">
                                 <a href="#" class="logo d-flex align-items-center w-auto">
-                                    <img src="{{ asset('assets/img/logo.png') }}" alt="">
-                                    <span class="d-none d-lg-block">Swaraj Suitings</span>
+                                    <img src="admin-assets/img/logo.png" alt="">
+                                    <span class="d-none d-lg-block">Admin Panel</span>
                                 </a>
                             </div><!-- End Logo -->
 
@@ -108,10 +108,9 @@
                                     </form>
                                 </div>
                             </div>
-                            <div class="credits">
+                            {{-- <div class="credits">
                                 Developed by <a href="#" target="_blank">Pradeep Vijayvargiya</a>
-                            </div>
-
+                            </div> --}}
                         </div>
                     </div>
                 </div>

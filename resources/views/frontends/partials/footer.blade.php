@@ -2,14 +2,12 @@
  <footer class="footer section gray-bg">
      <div class="container">
          <div class="row">
-             <div class="col-lg-4 mr-auto col-sm-6">
+             <div class="col-lg-5 mr-auto col-sm-6">
                  <div class="widget mb-5 mb-lg-0">
                      <div class="logo mb-4">
                          <img src="images/logo.png" alt="" class="img-fluid">
                      </div>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci et minus voluptatum
-                         repellendus! Alias, recusandae cupiditate nulla ad suscipit quod a eveniet! Vero corporis eum
-                         enim ducimus cum dolores explicabo.</p>
+                     <p>Ramsnehi Hospital, which was inaugurated on 25 April 2000 by the present Peethadhishwar Jagadguru Anant Sri Vibhushit Acharya Swamiji Sri 1008 Sri Ram Dayal Ji Maharaj of the International Ramsnehi Sampradaya by his own staff. Recently, the hospital was awarded a certificate by the Sixth Certification Organization, which certifies for quality at the national level. There are only a few hospitals across India that meet the standards set by Shastam, so it is a matter of pride for Ramsnehi Hospital.</p>
 
                      {{-- Social media icons start --}}
                      <ul class="list-inline footer-socials mt-4">
@@ -80,8 +78,7 @@
              <div class="row align-items-center justify-content-between">
                  <div class="col-lg-8">
                      <div class="copyright">
-                         Copyright &copy; 2021, Designed &amp; Developed by <a href="#">Ramsnehi Chikitsalaya Evam
-                             Anusandhan Kendra</a>
+                         Copyright &copy; 2021, Designed &amp; Developed by <a href="/"><img src="/images/favicon.png" alt=""></a>
                      </div>
                  </div>
                  <div class="col-lg-4">

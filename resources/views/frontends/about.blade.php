@@ -1,8 +1,10 @@
 @extends('frontends.layouts')
+@section('title', 'AboutUs')
+
 @section('content')
 
 {{-- Gallery End --}}
-<section class="fetaure-page ">
+{{-- <section class="fetaure-page ">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-6">
@@ -35,7 +37,20 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
+<section class="page-title bg-1">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="block text-center">
+            <span class="text-white">About</span>
+            <h1 class="text-capitalize mb-5 text-lg">Ramsnehi Chikitsalay Evam Anusandhan Kendra</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 {{-- Gallery End --}}
 
 {{-- Content Start --}}

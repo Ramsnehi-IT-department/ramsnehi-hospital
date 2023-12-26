@@ -1,5 +1,5 @@
 @extends('frontends.layouts')
-@section('title', 'Secretary Message')
+@section('title', 'Contact')
 @section('content')
 
 {{-- Gallery End --}}
@@ -43,7 +43,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="block text-center">
-            <span class="text-white">Secretary's Message</span>
+            <span class="text-white">Contact</span>
             <h1 class="text-capitalize mb-5 text-lg">Ramsnehi Chikitsalay Evam Anusandhan Kendra</h1>
           </div>
         </div>

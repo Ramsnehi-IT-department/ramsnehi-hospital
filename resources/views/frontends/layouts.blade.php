@@ -7,7 +7,7 @@
   ================================================== -->
     <meta charset="utf-8">
     {{-- <title>Ramsnehi Chikitsalya &amp; Anusandhan Kendra</title> --}}
-    <title>रामस्नेही चिकित्सालय एवं अनुसन्धान केन्द्र</title>
+    <title>@yield('title'): रामस्नेही चिकित्सालय एवं अनुसन्धान केन्द्र</title>
 
     <!-- Mobile Specific Metas
   ================================================== -->

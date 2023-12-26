@@ -1,4 +1,5 @@
 @extends('frontends.layouts')
+@section('title', 'Home')
 @section('content')
 
 <!-- Slider Start -->
@@ -11,10 +12,9 @@
                     <span class="text-uppercase text-sm letter-spacing ">WELCOME TO RAMSNEHI HOSPITAL</span>
                     <h1 class="mb-3 mt-3">Your Health Is Our Priority</h1>
 
-                    <p class="mb-4 pr-5">A repudiandae ipsam labore ipsa voluptatum quidem quae laudantium quisquam
-                        aperiam maiores sunt fugit, deserunt rem suscipit placeat.</p>
+                    <p class="mb-4 pr-5">Ramsnehi Hospital is a Multi Specialty & General Hospital , Professionally managed fully equiped with modern equipments and surgical gadgets.</p>
                     <div class="btn-container ">
-                        <a href="appoinment.html" target="_blank" class="btn btn-main-2 btn-icon btn-round-full">Make
+                        <a href="#" target="_blank" class="btn btn-main-2 btn-icon btn-round-full">Make
                             appoinment <i class="icofont-simple-right ml-2  "></i></a>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
                         <h4 class="mb-3">Online Appoinment</h4>
                         <p class="mb-4">Get ALl time support for emergency.We have introduced the principle of
                             family medicine.</p>
-                        <a href="appoinment.html" class="btn btn-main btn-round-full">Make a appoinment</a>
+                        <a href="#" class="btn btn-main btn-round-full">Make a appoinment</a>
                     </div>
 
                     <div class="feature-item mb-5 mb-lg-0">
@@ -48,9 +48,8 @@
                         <span>Timing schedule</span>
                         <h4 class="mb-3">Working Hours</h4>
                         <ul class="w-hours list-unstyled">
-                            <li class="d-flex justify-content-between">Sun - Wed : <span>8:00 - 17:00</span></li>
-                            <li class="d-flex justify-content-between">Thu - Fri : <span>9:00 - 17:00</span></li>
-                            <li class="d-flex justify-content-between">Sat - sun : <span>10:00 - 17:00</span></li>
+                            <li class="d-flex justify-content-between">Morning : <span>8:00 AM - 01:00 PM</span></li>
+                            <li class="d-flex justify-content-between">Evening : <span>5:00 PM - 07:00 PM</span></li>
                         </ul>
                     </div>
 
@@ -430,8 +429,8 @@
 </section>
 <!--  Served patient end -->
 
-<!--  Parters Start -->
-<section class="section clients">
+<!--  Partners Start -->
+{{-- <section class="section clients">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-7">
@@ -499,6 +498,6 @@
             </div>
         </div>
     </div>
-</section>
-<!--  Parters end -->
+</section> --}}
+<!--  Partners end -->
 @endsection

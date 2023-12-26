@@ -16,6 +16,7 @@ use App\Http\Controllers\HomeController;
 |
 */
 
+// =========== Website Frontends ===========
 Route::get('/', function () {
     return view('index');
 });
@@ -45,6 +46,12 @@ Route::get('/certificate', function () {
     return view('frontends.certificate');
 });
 
+// Contact page
+Route::get('/contact', function () {
+    return view('frontends.contact');
+});
+
+// =========== Website Admin Panel ===========
 Auth::routes();
 
 Route::get('/admin', [HomeController::class, 'index'])->name('home');
