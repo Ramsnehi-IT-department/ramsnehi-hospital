@@ -12,17 +12,31 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <div class="text-lg-right top-right-bar mt-2 mt-lg-0">
-                        <a href="tel: 01482 234100">
+                        <a href="tel:01482234100">
                             <span>{{ __('homepage.header_call') }}</span>
                             <span class="h4">01482 234100</span>
                         </a>
                     </div>
                 </div>
+                <div class="col-lg-1">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle current"
+                            href="{{ url()->current() . '?_locale=en' }}">Eng <i
+                                class="icon icofont-simple-down"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown02">
+                            <li><a class="dropdown-item"
+                                    href="{{ url()->current() . '?_locale=hi' }}">हिन्दी</a>
+                            </li>
+                            <!-- Add more language options here -->
+                        </ul>
+                    </li>
+                </div>
             </div>
         </div>
     </div>
+
     {{-- header-top-bar end --}}
 
     {{-- header nav bar start --}}
@@ -68,10 +82,11 @@
                     </li>
                     {{-- AboutUs end --}}
 
-                    {{-- Hospital Start --}}
+                    {{-- Patient Care --}}
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Hospital <i class="icofont-thin-down"></i></a>
+                            aria-haspopup="true" aria-expanded="false">Patient Care <i
+                                class="icofont-thin-down"></i></a>
                         <ul class="dropdown-menu" aria-labelledby="dropdown02">
                             <li><a class="dropdown-item" href="/">OPD Timing</a></li>
                             <li><a class="dropdown-item" href="/">Health Check up plan</a>
@@ -85,86 +100,27 @@
                             </li>
                         </ul>
                     </li>
-                    {{-- Hospital end --}}
+                    {{-- Patient Care --}}
 
-                    {{-- Care Center Start --}}
-                    {{-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false">{{ __('homepage.careCenter_menu') }} <i
-                        class="icofont-thin-down"></i></a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdown02">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-12">
-                                <li><a class="dropdown-item"
-                                        href="#">{{ __('homepage.careCenter_menu') }}</a></li>
-                                <li><a class="dropdown-item"
-                                        href="#">{{ __('homepage.careCenter_menu') }}</a></li>
-                                <li><a class="dropdown-item"
-                                        href="#">{{ __('homepage.careCenter_menu') }}</a></li>
-                            </div>
-                            <div class="col-lg-6 col-md-12">
-                                <li><a class="dropdown-item"
-                                        href="#">{{ __('homepage.careCenter_menu') }}</a></li>
-                                <li><a class="dropdown-item"
-                                        href="#">{{ __('homepage.careCenter_menu') }}</a></li>
-                                <li><a class="dropdown-item"
-                                        href="#">{{ __('homepage.careCenter_menu') }}</a></li>
-                            </div>
-                        </div>
-                    </ul>
-                    </li> --}}
-                    {{-- Care Center end --}}
-
-                    {{-- Visitor Services Start --}}
-                    {{-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false">{{ __('homepage.visitorServices_menu') }} <i
-                        class="icofont-thin-down"></i></a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdown02">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-12">
-                                <li><a class="dropdown-item"
-                                        href="#">{{ __('homepage.visitorServices_menu') }}</a>
-                                </li>
-                                <li><a class="dropdown-item"
-                                        href="#">{{ __('homepage.visitorServices_menu') }}</a>
-                                </li>
-                                <li><a class="dropdown-item"
-                                        href="#">{{ __('homepage.visitorServices_menu') }}</a>
-                                </li>
-                            </div>
-                            <div class="col-lg-6 col-md-12">
-                                <li><a class="dropdown-item"
-                                        href="#">{{ __('homepage.visitorServices_menu') }}</a>
-                                </li>
-                                <li><a class="dropdown-item"
-                                        href="#">{{ __('homepage.visitorServices_menu') }}</a>
-                                </li>
-                                <li><a class="dropdown-item"
-                                        href="#">{{ __('homepage.visitorServices_menu') }}</a>
-                                </li>
-                            </div>
-                        </div>
-                    </ul>
-                    </li> --}}
-                    {{-- Visitor Services end --}}
-
-                    {{-- Proffessional Start --}}
+                    {{-- Patient Care --}}
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false">{{ __('homepage.professional_menu') }} <i
+                            aria-haspopup="true" aria-expanded="false">Departments <i
                                 class="icofont-thin-down"></i></a>
                         <ul class="dropdown-menu" aria-labelledby="dropdown02">
-                            <li><a class="dropdown-item"
-                                    href="#">{{ __('homepage.professional_menu') }}</a></li>
-                            <li><a class="dropdown-item"
-                                    href="#">{{ __('homepage.professional_menu') }}</a></li>
+                            <li><a class="dropdown-item" href="/">OPD Timing</a></li>
+                            <li><a class="dropdown-item" href="/">Health Check up plan</a>
+                            </li>
+                            <li><a class="dropdown-item" href="/">Government Schemes</a></li>
+                            <li><a class="dropdown-item" href="/">TPA Empanelment</a></li>
+                            <li><a class="dropdown-item" href="/">Patient Testimonial</a></li>
+                            <li><a class="dropdown-item" href="/">Patient success stories</a>
+                            </li>
+                            <li><a class="dropdown-item" href="/">Photo Gallery</a>
+                            </li>
                         </ul>
                     </li>
-                    {{-- Proffessional end --}}
+                    {{-- Patient Care --}}
 
                     {{-- Events Start --}}
                     <li class="nav-item dropdown">
@@ -211,22 +167,8 @@
                     <li class="nav-item"><a class="nav-link"
                             href="/contact">{{ __('homepage.contact_menu') }}</a></li>
                     {{-- Contact end --}}
-
-                    {{-- Language start --}}
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle current"
-                            href="{{ url()->current() . '?_locale=en' }}">Eng <i
-                                class="icon icofont-simple-down"></i></a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown02">
-                            <li><a class="dropdown-item"
-                                    href="{{ url()->current() . '?_locale=hi' }}">हिन्दी</a>
-                            </li>
-                        </ul>
-                    </li>
-                    {{-- Language start --}}
+                </ul>
             </div>
-            </ul>
-        </div>
         </div>
     </nav>
     {{-- header nav bar end --}}
