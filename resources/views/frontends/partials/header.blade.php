@@ -1,41 +1,33 @@
 <header>
-    {{-- header-top-bar start --}}
     <div class="header-top-bar">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-8">
+                <div class="col-sm-1 col-md-6 col-lg-7">
                     <ul class="top-bar-info list-inline-item pl-0 mb-0">
                         <li class="list-inline-item"><a href="mailto:ramsnehi11@gmail.com"><i
                                     class="icofont-support-faq mr-2"></i>ramsnehi11@gmail.com</a></li>
-                        <li class="list-inline-item"><i
-                                class="icofont-location-pin mr-2"></i>{{ __('homepage.header_address') }}
-                        </li>
+                        <li class="list-inline-item"><i class="icofont-location-pin mr-2"></i>{{ __('homepage.header_address') }}</li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
-                    <div class="text-lg-right top-right-bar mt-2 mt-lg-0">
-                        <a href="tel:01482234100">
-                            <span>{{ __('homepage.header_call') }}</span>
-                            <span class="h4">01482 234100</span>
-                        </a>
-                    </div>
+                <div class="col-sm-1 col-md-6 col-lg-4 text-lg-right top-right-bar mt-2 mt-lg-0">
+                    <a href="tel:01482234100">
+                        <span>{{ __('homepage.header_call') }}</span>
+                        <span class="h4 d-block d-lg-inline-block">01482 234100</span>
+                    </a>
                 </div>
-                <div class="col-lg-1">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle current"
-                            href="{{ url()->current() . '?_locale=en' }}">Eng <i
-                                class="icon icofont-simple-down"></i></a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown02">
-                            <li><a class="dropdown-item"
-                                    href="{{ url()->current() . '?_locale=hi' }}">हिन्दी</a>
-                            </li>
-                            <!-- Add more language options here -->
-                        </ul>
-                    </li>
+                <div class="col-sm-1 col-md-6 col-lg-1 text-center mt-2 mt-lg-0">
+                    @php
+                        $currentLocale = app()->getLocale();
+                        $toggleLocale = ($currentLocale === 'en') ? 'hi' : 'en';
+                        $toggleText = ($currentLocale === 'en') ? 'हिन्दी' : 'Eng';
+                    @endphp
+                    <a class="nav-link"
+                        href="{{ url()->current() . '?_locale=' . $toggleLocale }}">{{ $toggleText }}</a>
                 </div>
             </div>
         </div>
     </div>
+    
 
     {{-- header-top-bar end --}}
 
@@ -105,8 +97,7 @@
                     {{-- Patient Care --}}
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Departments <i
-                                class="icofont-thin-down"></i></a>
+                            aria-haspopup="true" aria-expanded="false">Departments <i class="icofont-thin-down"></i></a>
                         <ul class="dropdown-menu" aria-labelledby="dropdown02">
                             <li><a class="dropdown-item" href="/">OPD Timing</a></li>
                             <li><a class="dropdown-item" href="/">Health Check up plan</a>
