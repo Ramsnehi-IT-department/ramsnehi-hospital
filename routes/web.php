@@ -46,6 +46,11 @@ Route::get('/certificate', function () {
     return view('frontends.certificate');
 });
 
+// Departments page
+Route::get('/departments', function () {
+    return view('frontends.departments');
+});
+
 // Contact page
 Route::get('/contact', function () {
     return view('frontends.contact');
