@@ -1,5 +1,5 @@
 @extends('frontends.layouts')
-@section('title', 'Vission and Mission')
+@section('title', 'All Departments')
 @section('content')
 
 <section class="page-title bg-1">
@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="block text-center">
-                    <h1 class="text-capitalize mb-5 text-lg">Vission & Mission</h1>
+                    <h1 class="text-capitalize mb-5 text-lg">All Departments</h1>
                 </div>
             </div>
         </div>

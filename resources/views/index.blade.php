@@ -9,10 +9,12 @@
             <div class="col-lg-6 col-md-12 col-xl-7">
                 <div class="block">
                     <div class="divider mb-3"></div>
-                    <span class="text-uppercase text-sm letter-spacing ">WELCOME TO RAMSNEHI HOSPITAL</span>
-                    <h1 class="mb-3 mt-3">Your Health Is Our Priority</h1>
+                    <span class="text-uppercase text-sm letter-spacing" style="color: red;">WELCOME TO RAMSNEHI
+                        HOSPITAL</span>
+                    <h1 class="mb-3 mt-3" style="color: red;">Your Health Is Our Priority</h1>
 
-                    <p class="mb-4 pr-5">Ramsnehi Hospital is a Multi Specialty & General Hospital , Professionally
+                    <p class="mb-4 pr-5" style="color: red;">Ramsnehi Hospital is a Multi Specialty & General Hospital ,
+                        Professionally
                         managed fully equiped with modern equipments and surgical gadgets.</p>
                     {{-- <div class="btn-container ">
                         <a href="#" target="_blank" class="btn btn-main-2 btn-icon btn-round-full">Make
@@ -25,49 +27,6 @@
 </section>
 <!-- Slider End -->
 
-<!-- Appointment, Working hours & Emergency cases Start -->
-{{-- <section class="features">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="feature-block d-lg-flex">
-                    <div class="feature-item mb-5 mb-lg-0">
-                        <div class="feature-icon mb-4">
-                            <i class="icofont-surgeon-alt"></i>
-                        </div>
-                        <span>24 Hours Service</span>
-                        <h4 class="mb-3">Online Appoinment</h4>
-                        <p class="mb-4">Get ALl time support for emergency.We have introduced the principle of
-                            family medicine.</p>
-                        <a href="#" class="btn btn-main btn-round-full">Make a appoinment</a>
-                    </div>
-                    <div class="feature-item mb-5 mb-lg-0">
-                        <div class="feature-icon mb-4">
-                            <i class="icofont-ui-clock"></i>
-                        </div>
-                        <span>Timing schedule</span>
-                        <h4 class="mb-3">Working Hours</h4>
-                        <ul class="w-hours list-unstyled">
-                            <li class="d-flex justify-content-between">Morning : <span>8:00 AM - 01:00 PM</span></li>
-                            <li class="d-flex justify-content-between">Evening : <span>5:00 PM - 07:00 PM</span></li>
-                        </ul>
-                    </div>
-                    <div class="feature-item mb-5 mb-lg-0">
-                        <div class="feature-icon mb-4">
-                            <i class="icofont-support"></i>
-                        </div>
-                        <span>Emegency Cases</span>
-                        <h4 class="mb-3">1-800-700-6200</h4>
-                        <p>Get ALl time support for emergency.We have introduced the principle of family
-                            medicine.Get Conneted with us for any urgency .</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> --}}
-<!-- Appointment, Working hours & Emergency cases End -->
-
 <!--  About Start -->
 <section class="section service gray-bg">
     <div class="container">
@@ -76,10 +35,20 @@
                 <div class="col-lg-12 text-center">
                     <div class="section-title">
                         <h2>ABOUT US</h2>
-                        <div class="divider mx-auto my-4"></div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, atque. Dolores, illo maxime.
-                            Vitae sequi porro odio maxime perferendis sint, nihil quas magnam rerum quia, sunt dolores
-                            reiciendis, ut veniam.</p>
+                        <div class="divider mx-auto my-3"></div>
+                        <p>In the past years due to the blind race to become professional, although there has been an
+                            unprecedented increase in medical facilities in Bhilwara, standard medical treatment for the
+                            common man has remained a daydream. In the same way, the Ramasnehi Hospital, which was
+                            inaugurated by the present Peetadhishwar Jagadguru Anant Sri Vibhushit Acharya Swamiji Shri
+                            1008 Shri Ram Dayal Ji Maharaj of the International Ramsnehi Community, on 25 April 2000 by
+                            his own staff, resolved to provide the best treatment to the proletariat at very reasonable
+                            rates. It was embodied, still remains the only support for the poor and helpless patients
+                            Is. The hospital has received several awards and honors from the state government for its
+                            continuous participation in the family welfare program for 5 years and continued its active
+                            participation at the state level. Recently, the hospital was awarded a certificate by the
+                            Sixth Certification Organization, which certifies for quality at the national level. There
+                            are few such hospitals all over India, which meet the standards set by the Sixth Sixth, so
+                            it is a matter of pride for the Ramasnehi Hospital.</p>
                     </div>
                 </div>
             </div>
@@ -100,7 +69,6 @@
         <div class="row justify-content-center">
             <a href="/about" class="btn btn-primary mt-3">View More</a>
         </div>
-
     </div>
 </section>
 <!--  About End -->
@@ -126,14 +94,14 @@
                 <div class="row">
                     <div class="col-6">
                         <div class="counter-stat">
-                            <i class="icofont-doctor"></i>
+                            {{-- <i class="icofont-doctor"></i> --}}
                             <span class="h3 counter" data-count="58">0</span>k
                             <p>Happy People</p>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="counter-stat">
-                            <i class="icofont-flag"></i>
+                            {{-- <i class="icofont-flag"></i> --}}
                             <span class="h3 counter" data-count="700">0</span>+
                             <p>Surgery Comepleted</p>
                         </div>
@@ -142,24 +110,24 @@
                 <div class="row">
                     <div class="col-6">
                         <div class="counter-stat">
-                            <i class="icofont-badge"></i>
+                            {{-- <i class="icofont-badge"></i> --}}
                             <span class="h3 counter" data-count="40">0</span>+
                             <p>Staffs</p>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="counter-stat">
-                            <i class="icofont-globe"></i>
+                            {{-- <i class="icofont-globe"></i> --}}
                             <span class="h3 counter" data-count="20">0</span>
                             <p>Awards</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4" style="background: crimson">
-                <h1>Working Hours</h1>
+            <div class="col-lg-4" style="background: red">
+                <h1 class="mt-3 text-center">Working Hours</h1>
                 <hr>
-                <ul>
+                <ul class="mb-3">
                     <li>
                         <h3>Our Activities 24/7</h3>
                     </li>
@@ -188,7 +156,6 @@
                         <h3>Emergency 24/7 Open</h3>
                     </li>
                 </ul>
-
             </div>
         </div>
     </div>
@@ -243,7 +210,6 @@
         <div class="row justify-content-center">
             <a href="/departments" class="btn btn-primary mt-3">View More</a>
         </div>
-
     </div>
 </section>
 <!--  Patient Care End -->
@@ -352,101 +318,107 @@
 
 <!--  Testimonial Start -->
 <section class="section testimonial-2 gray-bg">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-lg-7">
-				<div class="section-title text-center">
-					<h2>Patient's Feedbacks</h2>
-					<div class="divider mx-auto my-4"></div>
-					<p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt molestias nostrum laudantium. Maiores porro cumque quaerat.</p>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+                <div class="section-title text-center">
+                    <h2>Patient's Review</h2>
+                    <div class="divider mx-auto my-4"></div>
+                    <p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt
+                        molestias nostrum laudantium. Maiores porro cumque quaerat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-lg-12 testimonial-wrap-2">
-				<div class="testimonial-block style-2  gray-bg">
-					<i class="icofont-quote-right"></i>
+    <div class="container">
+        <div class="row align-items-center">
+            <h1>Review</h1>
+            <div class="col-lg-12 testimonial-wrap-2">
+                <div class="testimonial-block style-2  gray-bg">
+                    <i class="icofont-quote-right"></i>
+                    <div class="client-info ">
+                        <h4>Amazing service!</h4>
+                        <span>John Partho</span>
+                        <p>
+                            They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium,
+                            iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonial-block style-2  gray-bg">
+                    <i class="icofont-quote-right"></i>
+                    <div class="client-info ">
+                        <h4>Amazing service!</h4>
+                        <span>John Partho</span>
+                        <p>
+                            They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium,
+                            iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonial-block style-2  gray-bg">
+                    <i class="icofont-quote-right"></i>
+                    <div class="client-info ">
+                        <h4>Amazing service!</h4>
+                        <span>John Partho</span>
+                        <p>
+                            They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium,
+                            iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonial-block style-2  gray-bg">
+                    <i class="icofont-quote-right"></i>
+                    <div class="client-info ">
+                        <h4>Amazing service!</h4>
+                        <span>John Partho</span>
+                        <p>
+                            They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium,
+                            iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <a class="btn btn-sm btn-primary mt-3">View More</a>
+            </div>
+        </div>
 
-					<div class="testimonial-thumb">
-						<img src="images/team/test-thumb1.jpg" alt="" class="img-fluid">
-					</div>
+        <div class="row align-items-center">
+            <h1>Video</h1>
+            <div class="col-lg-12">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            </div>
+        </div>
 
-					<div class="client-info ">
-						<h4>Amazing service!</h4>
-						<span>John Partho</span>
-						<p>
-							They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-						</p>
-					</div>
-				</div>
-
-				<div class="testimonial-block style-2  gray-bg">
-					<div class="testimonial-thumb">
-						<img src="images/team/test-thumb2.jpg" alt="" class="img-fluid">
-					</div>
-
-					<div class="client-info">
-						<h4>Expert doctors!</h4>
-						<span>Mullar Sarth</span>
-						<p>
-							They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-						</p>
-					</div>
-					
-					<i class="icofont-quote-right"></i>
-				</div>
-
-				<div class="testimonial-block style-2  gray-bg">
-					<div class="testimonial-thumb">
-						<img src="images/team/test-thumb3.jpg" alt="" class="img-fluid">
-					</div>
-
-					<div class="client-info">
-						<h4>Good Support!</h4>
-						<span>Kolis Mullar</span>
-						<p>
-							They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-						</p>
-					</div>
-					
-					<i class="icofont-quote-right"></i>
-				</div>
-
-				<div class="testimonial-block style-2  gray-bg">
-					<div class="testimonial-thumb">
-						<img src="images/team/test-thumb4.jpg" alt="" class="img-fluid">
-					</div>
-
-					<div class="client-info">
-						<h4>Nice Environment!</h4>
-						<span>Partho Sarothi</span>
-						<p class="mt-4">
-							They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-						</p>
-					</div>
-					<i class="icofont-quote-right"></i>
-				</div>
-
-				<div class="testimonial-block style-2  gray-bg">
-					<div class="testimonial-thumb">
-						<img src="images/team/test-thumb1.jpg" alt="" class="img-fluid">
-					</div>
-
-					<div class="client-info">
-						<h4>Modern Service!</h4>
-						<span>Kolis Mullar</span>
-						<p>
-							They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-						</p>
-					</div>
-					<i class="icofont-quote-right"></i>
-				</div>
-			</div>
-		</div>
-	</div>
+    </div>
 </section>
 <!--  Testimonial end -->
 
