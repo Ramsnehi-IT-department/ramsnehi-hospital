@@ -34,7 +34,7 @@
             aria-haspopup="true" aria-expanded="false">Patient Care <i
                 class="icofont-thin-down"></i></a>
         <ul class="dropdown-menu" aria-labelledby="dropdown02">
-            <li><a class="dropdown-item" href="/">OPD Timing</a></li>
+            <li><a class="dropdown-item" href="/patientCare">Patient Care</a></li>
             <li><a class="dropdown-item" href="/">Health Check up plan</a>
             </li>
             <li><a class="dropdown-item" href="/">Government Schemes</a></li>
@@ -53,17 +53,18 @@
         <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">Departments <i class="icofont-thin-down"></i></a>
         <ul class="dropdown-menu" aria-labelledby="dropdown02">
-            <li><a class="dropdown-item" href="/departments/allDept">All Departments</a></li>
-            <li><a class="dropdown-item" href="/departments/neuroSurgery">Neuro Surgery</a></li>
-            <li><a class="dropdown-item" href="/departments/cardiologyDepartment">Cardiology Department</a></li>
-            <li><a class="dropdown-item" href="/departments/gynecology">Gynecology &amp; Obstetrics&#160;Department&#160</a></li>
-            <li><a class="dropdown-item" href="/departments/orthopedic">Orthopedic Surgery</a></li>
-            <li><a class="dropdown-item" href="/departments/Pediatric">Pediatric &amp; Neonatology</a></li>
-            <li><a class="dropdown-item" href="/departments/ophthalmology">Ophthalmology</a></li>
-            <li><a class="dropdown-item" href="/departments/ent">Ear Nose Throat</a></li>
-            <li><a class="dropdown-item" href="/departments/generalSurgery">General &amp; Laparoscopy Surgery</a></li>
-            <li><a class="dropdown-item" href="/departments/dental">Dental</a></li>
-            <li><a class="dropdown-item" href="/departments/jointReplacementSurgery">Joint replacement surgery</a></li>
+            <li><a class="dropdown-item" href="/allDept">All Departments</a></li>
+            <li><a class="dropdown-item" href="/neuroSurgery">Neuro Surgery</a></li>
+            <li><a class="dropdown-item" href="/cardiologyDepartment">Cardiology Department</a></li>
+            <li><a class="dropdown-item" href="/gynecology">Gynecology &amp; Obstetrics&#160;Department&#160</a></li>
+            <li><a class="dropdown-item" href="/orthopedic">Orthopedic Surgery</a></li>
+            <li><a class="dropdown-item" href="/Pediatric">Pediatric &amp; Neonatology</a></li>
+            <li><a class="dropdown-item" href="/ophthalmology">Ophthalmology</a></li>
+            <li><a class="dropdown-item" href="/ent">Ear Nose Throat</a></li>
+            <li><a class="dropdown-item" href="/generalMedicine">General Medicine</a></li>
+            <li><a class="dropdown-item" href="/generalSurgery">General &amp; Laparoscopy Surgery</a></li>
+            <li><a class="dropdown-item" href="/dental">Dental</a></li>
+            <li><a class="dropdown-item" href="/jointReplacementSurgery">Joint replacement surgery</a></li>
         </ul>
     </li>
     {{-- Departments End --}}

@@ -183,15 +183,16 @@
                         <div class="feature-icon mb-4">
                             <i class="icofont-surgeon-alt"></i>
                         </div>
-                        <h4 class="mb-3">OPD's CONSULTATION </h4>
-                        <p class="mb-2">MORNING: 09:00 AM - 01:00 PM</p>
-                        <p class="mb-2">EVENING: 05:00 PM - 07:00 PM</p>
+                        <h4 class="mb-3">HEALTH CHECKUP PLAN</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo minima inventore magnam tempora
+                            atque animi sit qui veritatis omnis! A sed est aliquid architecto. Odit excepturi cum sed?
+                            Quia, odio?</p>
                     </div>
                     <div class="feature-item mb-5 mb-lg-0">
                         <div class="feature-icon mb-4">
                             <i class="icofont-ui-clock"></i>
                         </div>
-                        <h4 class="mb-3">HEALTH CHECKUP PLAN</h4>
+                        <h4 class="mb-3">TPA Empanement</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo minima inventore magnam tempora
                             atque animi sit qui veritatis omnis! A sed est aliquid architecto. Odit excepturi cum sed?
                             Quia, odio?</p>
@@ -208,11 +209,56 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <a href="/departments" class="btn btn-primary mt-3">View More</a>
+            <a href="#" class="btn btn-primary mt-3">View More</a>
         </div>
     </div>
 </section>
 <!--  Patient Care End -->
+
+<!--  Departments Start -->
+<section class="section service gray-bg">
+    <div class="container">
+        <div class="row">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 text-center">
+                    <div class="section-title">
+                        <h2>Departments</h2>
+                        <div class="divider mx-auto my-4"></div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, atque. Dolores, illo maxime.
+                            Vitae sequi porro odio maxime perferendis sint, nihil quas magnam rerum quia, sunt dolores
+                            reiciendis, ut veniam.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="feature-block d-lg-flex">
+                    <div class="feature-item mb-5 mb-lg-0">
+                        <div class="feature-icon mb-4">
+                            <i class="icofont-surgeon-alt"></i>
+                        </div>
+                        <h4 class="mb-3">General Medicine </h4>
+                    </div>
+                    <div class="feature-item mb-5 mb-lg-0">
+                        <div class="feature-icon mb-4">
+                            <i class="icofont-ui-clock"></i>
+                        </div>
+                        <h4 class="mb-3">Ortho</h4>
+                    </div>
+                    <div class="feature-item mb-5 mb-lg-0">
+                        <div class="feature-icon mb-4">
+                            <i class="icofont-support"></i>
+                        </div>
+                        <h4 class="mb-3">Eye</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <a href="/departments" class="btn btn-primary mt-3">View More</a>
+        </div>
+    </div>
+</section>
+<!--  Departments End -->
 
 <!--  Events Start -->
 <section class="section service gray-bg">
@@ -333,7 +379,9 @@
 
     <div class="container">
         <div class="row align-items-center">
-            <h1>Review</h1>
+            <div class="col-lg-12 text-center">
+                <h1>Review</h1>
+            </div>
             <div class="col-lg-12 testimonial-wrap-2">
                 <div class="testimonial-block style-2  gray-bg">
                     <i class="icofont-quote-right"></i>
@@ -380,44 +428,53 @@
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center">
+            <div class="col-lg-12 text-center">
                 <a class="btn btn-sm btn-primary mt-3">View More</a>
             </div>
         </div>
 
         <div class="row align-items-center">
-            <h1>Video</h1>
-            <div class="col-lg-12">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
+            <div class="col-lg-12 mt-3 text-center">
+                <h1>Video</h1>
+            </div>
+            <div class="col-lg-12 testimonial-wrap-2">
+                <div class="testimonial-block style-2  gray-bg">
+                    <div class="carousel-item active">
                         <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
+                            <iframe class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/f1BvyKbEY3k"></iframe>
                         </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
-                        </div>
-                      </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
+                </div>
+                <div class="testimonial-block style-2  gray-bg">
+                    <div class="carousel-item active">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/3uRXNSLrixg"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-block style-2  gray-bg">
+                    <div class="carousel-item active">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/CY_K0fDLEAY"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-block style-2  gray-bg">
+                    <div class="carousel-item active">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/1zHT8t4wE9o"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 text-center">
+                <a class="btn btn-sm btn-primary mt-3">View More</a>
             </div>
         </div>
-
     </div>
 </section>
 <!--  Testimonial end -->

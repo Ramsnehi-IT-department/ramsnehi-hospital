@@ -21,6 +21,14 @@ Route::get('/', function () {
     return view('index');
 });
 
+// =========== Patient Care ===========
+// Patient Care page
+Route::get('/patientCare', function () {
+    return view('frontends.patientCare');
+});
+
+
+
 // About page
 Route::get('/about', function () {
     return view('frontends.about');
@@ -58,58 +66,63 @@ Route::get('/contact', function () {
 
 // =========== Departments ===========
 // All Departments page
-Route::get('/departments/allDept', function () {
-    return view('frontends.departments.allDept');
+Route::get('/allDept', function () {
+    return view('frontends.allDept');
 });
 
 // Neuro Surgery page
-Route::get('/departments/neuroSurgery', function () {
-    return view('frontends.departments.neuroSurgery');
+Route::get('/neuroSurgery', function () {
+    return view('frontends.neuroSurgery');
 });
 
 // Cardiology Department page
-Route::get('/departments/cardiologyDepartment', function () {
-    return view('frontends.departments.cardiologyDepartment');
+Route::get('/cardiologyDepartment', function () {
+    return view('frontends.cardiologyDepartment');
 });
 
 // Gynecology page
-Route::get('/departments/gynecology', function () {
-    return view('frontends.departments.gynecology');
+Route::get('/gynecology', function () {
+    return view('frontends.gynecology');
 });
 
 // Orthopedic Surgery page
-Route::get('/departments/orthopedic', function () {
-    return view('frontends.departments.orthopedic');
+Route::get('/orthopedic', function () {
+    return view('frontends.orthopedic');
 });
 
 // Pediatric page
-Route::get('/departments/Pediatric', function () {
-    return view('frontends.departments.Pediatric');
+Route::get('/Pediatric', function () {
+    return view('frontends.Pediatric');
 });
 
 // Ophthalmology page
-Route::get('/departments/ophthalmology', function () {
-    return view('frontends.departments.ophthalmology');
+Route::get('/ophthalmology', function () {
+    return view('frontends.ophthalmology');
 });
 
 // Ear Nose Throat page
-Route::get('/departments/ent', function () {
-    return view('frontends.departments.ent');
+Route::get('/ent', function () {
+    return view('frontends.ent');
+});
+
+// General Medicine page
+Route::get('/generalMedicine', function () {
+    return view('frontends.generalMedicine');
 });
 
 // General Surgery page
-Route::get('/departments/generalSurgery', function () {
-    return view('frontends.departments.generalSurgery');
+Route::get('/generalSurgery', function () {
+    return view('frontends.generalSurgery');
 });
 
 // Dental page
-Route::get('/departments/dental', function () {
-    return view('frontends.departments.dental');
+Route::get('/dental', function () {
+    return view('frontends.dental');
 });
 
 // Joint replacement surgery page
-Route::get('/departments/jointReplacementSurgery', function () {
-    return view('frontends.departments.jointReplacementSurgery');
+Route::get('/jointReplacementSurgery', function () {
+    return view('frontends.jointReplacementSurgery');
 });
 
 // =========== Website Admin Panel ===========
