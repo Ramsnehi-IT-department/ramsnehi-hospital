@@ -16,7 +16,8 @@
                             HOSPITAL</span>
                         <h1 class="mb-3 mt-3" style="color: black;">Your Health Is Our Priority</h1>
                         <p class="mb-4 pr-5" style="color: black;">Ramsnehi Hospital is a Multi Specialty & General
-                            Hospital, Professionally managed fully equipped with modern equipment and surgical gadgets.</p>
+                            Hospital, Professionally managed fully equipped with modern equipment and surgical gadgets.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -106,140 +107,131 @@
 <!--  About End -->
 
 <!--  achievements starts -->
-<section class="section service gray-bg">
+<section class="contents count-bar wow  fadeInUp  animated">
     <div class="container">
         <div class="row">
-            <div class="row justify-content-center">
-                <div class="col-lg-12 text-center">
-                    <div class="section-title">
-                        <h2>ACHIEVEMENTS AND FACILITIES</h2>
-                        <div class="divider mx-auto my-4"></div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, atque. Dolores, illo maxime.
-                            Vitae sequi porro odio maxime perferendis sint, nihil quas magnam rerum quia, sunt dolores
-                            reiciendis, ut veniam.</p>
+            <div class="col-lg-7">
+                <div class="row con-col">
+                    <div class="col-sm-6 col-xs-6">
+                        <div class=" count-col count-col-bdr">
+                            <p class="icon"><i class="fa fa-smile-o fa-2x"></i></p>
+                            <div class='numscroller numscroller-big-bottom main-text'>1000000 +</div>
+                            <p class="common-text">Happy patients</p>
+                        </div>
                     </div>
+                    <div class="col-sm-6 col-xs-6">
+                        <div class=" count-col">
+                            <p class="icon"><i class="fa fa-user-md fa-2x"></i></p>
+                            <div class='numscroller numscroller-big-bottom main-text'>30 +</div>
+                            <p class="common-text">Doctors </p>
+                        </div>
+                    </div>
+                    <div class="clearfix visible-xs"></div>
+                    <div class="col-sm-6  col-xs-6">
+                        <div class=" count-col">
+                            <p class="icon"><i class="fa fa-group fa-2x"></i></p>
+                            <div class='numscroller numscroller-big-bottom main-text'>300 +</div>
+                            <p class="common-text">Staffs</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6  col-xs-6">
+                        <div class=" count-col">
+                            <p class="icon"><i class="fa fa-trophy fa-2x"></i></p>
+                            <div class='numscroller numscroller-big-bottom main-text'>50 +</div>
+                            <p class="common-text">Awards</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-8 cta-section cta position-relative">
-                <div class="row">
-                    <div class="col-6">
-                        <div class="counter-stat">
-                            {{-- <i class="icofont-doctor"></i> --}}
-                            <span class="h3 counter" data-count="250000">0</span>
-                            <p>Happy People</p>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="counter-stat">
-                            {{-- <i class="icofont-flag"></i> --}}
-                            <span class="h3 counter" data-count="150000">0</span>
-                            <p>Surgery Comepleted</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6">
-                        <div class="counter-stat">
-                            {{-- <i class="icofont-badge"></i> --}}
-                            <span class="h3 counter" data-count="40">0</span>+
-                            <p>Doctors</p>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="counter-stat">
-                            {{-- <i class="icofont-globe"></i> --}}
-                            <span class="h3 counter" data-count="20">0</span>
-                            <p>Awards</p>
-                        </div>
-                    </div>
+            <div class="col-lg-5">
+                <div class="working-hours">
+                    <h4>Working hours</h4>
+                    <ul>
+                        <li><p>Our activities <span>24/7 Open</span></p></li>
+                        <li><p>OPD's Consultation <span>09:00 AM - 01:00 PM<br /> 05:00 PM - 07:00 PM</span></p></li>
+                        <li><p>Pharmacy <span>24/7 Open</span></p></li>
+                        <li><p>Ambulance <span>24/7 Open</span></p></li>
+                        <li><p>Treatment <span>24/7 Open</span></p></li>
+                        <li><p>Security team <span>24/7</span></p></li>
+                        <li><p>Emergency <span>24/7</span></p></li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-lg-4" style="background: rgb(237, 112, 112)">
-                <h1 class="mt-3 text-center">Working Hours</h1>
-                <ul class="mb-3" style="list-style-type: disc; padding-left: 20px;">
-                    <li>
-                        <h4>Our Activities: 24/7</h4>
-                    </li>
-                    <li>
-                        <h4>OPD's Consultation</h4>
-                        <ul style="list-style-type: disc; padding-left: 20px;">
-                            <li class="mx-5" style="color: black">09:00 AM - 01:00 PM</li>
-                            <li class="mx-5" style="color: black">05:00 PM - 07:00 PM</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h4>Pharmacy: 24/7 Open</h4>
-                    </li>
-                    <li>
-                        <h4>Ambulance: 24/7 Open</h4>
-                    </li>
-                    <li>
-                        <h4>Treatment: 24/7 Open</h4>
-                    </li>
-                    <li>
-                        <h4>Security: 24/7 Open</h4>
-                    </li>
-                    <li>
-                        <h4>Emergency: 24/7 Open</h4>
-                    </li>
-                </ul>
-            </div>
-            
         </div>
     </div>
 </section>
 <!--  achievements end -->
 
 <!--  Patient Care Start -->
-<section class="section service gray-bg">
+<section class="section service-2">
     <div class="container">
-        <div class="row">
-            <div class="row justify-content-center">
-                <div class="col-lg-12 text-center">
-                    <div class="section-title">
-                        <h2>PATIENT CARE</h2>
-                        <div class="divider mx-auto my-4"></div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, atque. Dolores, illo maxime.
-                            Vitae sequi porro odio maxime perferendis sint, nihil quas magnam rerum quia, sunt dolores
-                            reiciendis, ut veniam.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-12">
-                <div class="feature-block d-lg-flex">
-                    <div class="feature-item mb-5 mb-lg-0">
-                        <div class="feature-icon mb-4">
-                            <i class="icofont-surgeon-alt"></i>
-                        </div>
-                        <h4 class="mb-3">HEALTH CHECKUP PLAN</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo minima inventore magnam tempora
-                            atque animi sit qui veritatis omnis! A sed est aliquid architecto. Odit excepturi cum sed?
-                            Quia, odio?</p>
-                    </div>
-                    <div class="feature-item mb-5 mb-lg-0">
-                        <div class="feature-icon mb-4">
-                            <i class="icofont-ui-clock"></i>
-                        </div>
-                        <h4 class="mb-3">TPA Empanement</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo minima inventore magnam tempora
-                            atque animi sit qui veritatis omnis! A sed est aliquid architecto. Odit excepturi cum sed?
-                            Quia, odio?</p>
-                    </div>
-                    <div class="feature-item mb-5 mb-lg-0">
-                        <div class="feature-icon mb-4">
-                            <i class="icofont-support"></i>
-                        </div>
-                        <h4 class="mb-3">GOVERNMENT SCHEMES</h4>
-                        <p>Get ALl time support for emergency.We have introduced the principle of family
-                            medicine.Get Conneted with us for any urgency .</p>
-                    </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-7 text-center">
+                <div class="section-title">
+                    <h2>PATIENT CARE</h2>
+                    <div class="divider mx-auto my-4"></div>
+                    <p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt
+                        molestias nostrum laudantium. Maiores porro cumque quaerat.</p>
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center">
-            <a href="#" class="btn btn-primary mt-3">View More</a>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 ">
+                <div class="department-block mb-5">
+                    <img src="images/service/service-1.jpg" alt="" class="img-fluid w-100">
+                    <div class="content">
+                        <h4 class="mt-4 mb-2 title-color">HEALTH CHECKUP PLAN</h4>
+                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+                        <a href="/clinicalServices" class="read-more">View More <i
+                                class="icofont-simple-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="department-block mb-5">
+                    <img src="images/service/service-2.jpg" alt="" class="img-fluid w-100">
+                    <div class="content">
+                        <h4 class="mt-4 mb-2  title-color">TPA Empanement</h4>
+                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+                        <a href="/diagnosticServices" class="read-more">View More <i
+                                class="icofont-simple-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="department-block mb-5">
+                    <img src="images/service/service-3.jpg" alt="" class="img-fluid w-100">
+                    <div class="content">
+                        <h4 class="mt-4 mb-2 title-color">GOVERNMENT SCHEMES</h4>
+                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+                        <a href="/laboratoryServices" class="read-more">View More <i
+                                class="icofont-simple-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="department-block mb-5">
+                    <img src="images/service/service-3.jpg" alt="" class="img-fluid w-100">
+                    <div class="content">
+                        <h4 class="mt-4 mb-2 title-color">PATIENT TESTIMONIAL</h4>
+                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+                        <a href="/laboratoryServices" class="read-more">View More <i
+                                class="icofont-simple-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="department-block mb-5">
+                    <img src="images/service/service-3.jpg" alt="" class="img-fluid w-100">
+                    <div class="content">
+                        <h4 class="mt-4 mb-2 title-color">PATIENT SUCCESS STORIES</h4>
+                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+                        <a href="/laboratoryServices" class="read-more">View More <i
+                                class="icofont-simple-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -287,7 +279,8 @@
                     <div class="content">
                         <h4 class="mt-4 mb-2 title-color">Laboratory Services</h4>
                         <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/laboratoryServices" class="read-more">View More <i class="icofont-simple-right ml-2"></i></a>
+                        <a href="/laboratoryServices" class="read-more">View More <i
+                                class="icofont-simple-right ml-2"></i></a>
                     </div>
                 </div>
             </div>
@@ -297,8 +290,7 @@
                     <div class="content">
                         <h4 class="mt-4 mb-2 title-color">Pharmacy</h4>
                         <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/pharmacy" class="read-more">View More <i
-                                class="icofont-simple-right ml-2"></i></a>
+                        <a href="/pharmacy" class="read-more">View More <i class="icofont-simple-right ml-2"></i></a>
                     </div>
                 </div>
             </div>
