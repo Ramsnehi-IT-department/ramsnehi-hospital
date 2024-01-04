@@ -1,25 +1,22 @@
 <ul class="navbar-nav ml-auto">
     {{-- Home start --}}
-    <li class="nav-item active"><a class="nav-link"
-            href="/">{{ __('homepage.home_menu') }}</a></li>
+    <li class="nav-item active"><a class="nav-link" href="/">{{ __('homepage.home_menu') }}</a></li>
     {{-- Home end --}}
 
     {{-- AboutUs Start --}}
     <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown"
-            aria-haspopup="true"
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">{{ __('homepage.aboutUs_menu') }} <i
                 class="icofont-thin-down"></i></a>
         <ul class="dropdown-menu" aria-labelledby="dropdown02">
-            <li><a class="dropdown-item"
-                    href="/about">{{ __('homepage.AboutUs_ramsnehi') }}</a></li>
+            <li><a class="dropdown-item" href="/about">{{ __('homepage.AboutUs_ramsnehi') }}</a></li>
             <li><a class="dropdown-item"
                     href="/visionMission">{{ __('homepage.AboutUs_mission') }}</a>
             </li>
-            <li><a class="dropdown-item"
-                    href="/president">{{ __('homepage.AboutUs_president') }}</a></li>
-            <li><a class="dropdown-item"
-                    href="/secretary">{{ __('homepage.AboutUs_secretory') }}</a></li>
+            <li><a class="dropdown-item" href="/president">{{ __('homepage.AboutUs_president') }}</a>
+            </li>
+            <li><a class="dropdown-item" href="/secretary">{{ __('homepage.AboutUs_secretory') }}</a>
+            </li>
             <li><a class="dropdown-item" href="/">Mangement Team</a></li>
             <li><a class="dropdown-item"
                     href="/certificate">{{ __('homepage.AboutUs_certificates') }}</a>
@@ -30,9 +27,8 @@
 
     {{-- Patient Care --}}
     <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">Patient Care <i
-                class="icofont-thin-down"></i></a>
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Patient Care <i class="icofont-thin-down"></i></a>
         <ul class="dropdown-menu" aria-labelledby="dropdown02">
             <li><a class="dropdown-item" href="/patientCare">Patient Care</a></li>
             <li><a class="dropdown-item" href="/">Health Check up plan</a>
@@ -50,29 +46,102 @@
 
     {{-- Departments Start --}}
     <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">Departments <i class="icofont-thin-down"></i></a>
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Departments <i class="icofont-thin-down"></i></a>
         <ul class="dropdown-menu" aria-labelledby="dropdown02">
-            <li><a class="dropdown-item" href="/allDept">All Departments</a></li>
-            <li><a class="dropdown-item" href="/neuroSurgery">Neuro Surgery</a></li>
-            <li><a class="dropdown-item" href="/cardiologyDepartment">Cardiology Department</a></li>
-            <li><a class="dropdown-item" href="/gynecology">Gynecology &amp; Obstetrics&#160;Department&#160</a></li>
-            <li><a class="dropdown-item" href="/orthopedic">Orthopedic Surgery</a></li>
-            <li><a class="dropdown-item" href="/Pediatric">Pediatric &amp; Neonatology</a></li>
-            <li><a class="dropdown-item" href="/ophthalmology">Ophthalmology</a></li>
-            <li><a class="dropdown-item" href="/ent">Ear Nose Throat</a></li>
-            <li><a class="dropdown-item" href="/generalMedicine">General Medicine</a></li>
-            <li><a class="dropdown-item" href="/generalSurgery">General &amp; Laparoscopy Surgery</a></li>
-            <li><a class="dropdown-item" href="/dental">Dental</a></li>
-            <li><a class="dropdown-item" href="/jointReplacementSurgery">Joint replacement surgery</a></li>
+            
+            {{-- Clinical start --}}
+            <li class="dropdown dropdown-submenu dropright">
+                <a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0301" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Clinical Services</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown0301">
+                    <li><a class="dropdown-item" href="/clinicalServices">All Clinical Services</a></li>
+                    <li><a class="dropdown-item" href="/anaesthesiology">Anaesthesiology</a></li>
+                    <li><a class="dropdown-item" href="/cardiologyDepartment">Cardiology</a></li>
+                    <li><a class="dropdown-item" href="/dental">Dentistry</a></li>
+                    <li><a class="dropdown-item" href="/generalMedicine">General Medicine</a></li>
+                    <li><a class="dropdown-item" href="/generalSurgery">General Surgery</a></li>
+                    <li><a class="dropdown-item" href="/neuroSurgery">Neuro Surgery</a></li>
+                    <li><a class="dropdown-item" href="/gynecology">Obstetrics & Gynaecology</a></li>
+                    <li><a class="dropdown-item" href="/ophthalmology">Opthalmology</a></li>
+                    <li><a class="dropdown-item" href="/orthopedic">Orthopaedic Surgery</a></li>
+                    <li><a class="dropdown-item" href="/otorhinolaryngology">Otorhinolaryngology</a></li>
+                    <li><a class="dropdown-item" href="/Pediatric">Paediatrics</a></li>
+                    <li><a class="dropdown-item" href="/ent">Ear Nose Throat</a></li>
+                </ul>
+            </li>
+            {{-- Clinical end --}}
+
+            {{-- Diagnostic Services start --}}
+            <li class="dropdown dropdown-submenu dropright">
+                <a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0301" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Diagnostic Services</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown0301">
+                    <li><a class="dropdown-item" href="/diagnosticServices">All Diagnostic Services</a></li>
+                    <li><a class="dropdown-item" href="/2DEcho">2D Echo</a></li>
+                    <li><a class="dropdown-item" href="/DSALab">DSA Lab</a></li>
+                    <li><a class="dropdown-item" href="/ECG">ECG</a></li>
+                    <li><a class="dropdown-item" href="/MRI">MRI</a></li>
+                    <li><a class="dropdown-item" href="/treadMillTesting">Tread Mill Testing</a></li>
+                    <li><a class="dropdown-item" href="/ultrasound">Ultrasound</a></li>
+                    <li><a class="dropdown-item" href="/X-Ray">X-Ray</a></li>
+                </ul>
+            </li>
+            {{-- Diagnostic Services end --}}
+
+            {{-- Laboratory Services start --}}
+            <li class="dropdown dropdown-submenu dropright">
+                <a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0301" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Laboratory Services</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown0301">
+                    <li><a class="dropdown-item" href="/laboratoryServices">All Laboratory Services</a></li>
+                    <li><a class="dropdown-item" href="/clinicalBio-Chemistry">Clinical Bio-Chemistry</a></li>
+                    <li><a class="dropdown-item" href="/clinicalMicrobiologySerology">Clinical Microbiology and Serology</a></li>
+                    <li><a class="dropdown-item" href="/clinicalPathology">Clinical Pathology</a></li>
+                    <li><a class="dropdown-item" href="/cytopathology">Cytopathology</a></li>
+                    <li><a class="dropdown-item" href="/haematology">Haematology</a></li>
+                    <li><a class="dropdown-item" href="/histopathology">Histopathology</a></li>
+                </ul>
+            </li>
+            {{-- Laboratory Services end --}}
+
+            {{-- Pharmacy start --}}
+            <li><a class="dropdown-item" href="/pharmacy">Pharmacy</a></li>
+            {{-- Pharmacy end --}}
+
+            {{-- Transfusion Services start --}}
+            <li class="dropdown dropdown-submenu dropright">
+                <a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0301" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Transfusion Services</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown0301">
+                    <li><a class="dropdown-item" href="/transfusionServices">All Transfusion Services</a></li>
+                    <li><a class="dropdown-item" href="/bloodTransfusionsServices">Blood Transfusions Services</a></li>
+                    <li><a class="dropdown-item" href="/bloodBank">Blood Bank</a></li>
+                </ul>
+            </li>
+            {{-- Transfusion Services end --}}
+
+            {{-- Professions Allied to Medicine start --}}
+            <li class="dropdown dropdown-submenu dropright">
+                <a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0301" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Professions Allied to Medicine</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown0301">
+                    <li><a class="dropdown-item" href="/professionsAlliedToMedicine">All Professions Allied to Medicine</a></li>
+                    <li><a class="dropdown-item" href="/ambulance">Ambulance</a></li>
+                    <li><a class="dropdown-item" href="/dietetics">Dietetics</a></li>
+                    <li><a class="dropdown-item" href="/physiotherapy">Physiotherapy</a></li>
+                </ul>
+            </li>
+            {{-- Professions Allied to Medicine end --}}
+
         </ul>
     </li>
     {{-- Departments End --}}
 
     {{-- Events Start --}}
     <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">Events <i class="icofont-thin-down"></i></a>
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Events <i class="icofont-thin-down"></i></a>
         <ul class="dropdown-menu" aria-labelledby="dropdown02">
             <li><a class="dropdown-item" href="#">Hospital Events</a></li>
             <li><a class="dropdown-item" href="#">Health Camp</a></li>
@@ -81,27 +150,13 @@
     </li>
     {{-- Events end --}}
 
-    {{-- Health Information Start --}}
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">Health Information <i
-                class="icofont-thin-down"></i></a>
-        <ul class="dropdown-menu" aria-labelledby="dropdown02">
-            <li><a class="dropdown-item" href="#">Medi Update</a></li>
-            <li><a class="dropdown-item" href="#">Health Tips</a></li>
-            <li><a class="dropdown-item" href="#">Blogs</a></li>
-        </ul>
-    </li>
-    {{-- Health Information end --}}
-
     {{-- Media Coverage Start --}}
     <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">Media Coverage <i
-                class="icofont-thin-down"></i></a>
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Media Coverage <i class="icofont-thin-down"></i></a>
         <ul class="dropdown-menu" aria-labelledby="dropdown02">
-            <li><a class="dropdown-item" href="#">Print Media</a></li>
-            <li><a class="dropdown-item" href="#">Press Release</a></li>
+            <li><a class="dropdown-item" href="#">Doctor's Desk</a></li>
+            <li><a class="dropdown-item" href="#">Media Coverage</a></li>
         </ul>
     </li>
     {{-- Media Coverage end --}}
@@ -111,7 +166,7 @@
     {{-- Career with Us end --}}
 
     {{-- Contact start --}}
-    <li class="nav-item"><a class="nav-link"
-            href="/contact">{{ __('homepage.contact_menu') }}</a></li>
+    <li class="nav-item"><a class="nav-link" href="/contact">{{ __('homepage.contact_menu') }}</a>
+    </li>
     {{-- Contact end --}}
 </ul>

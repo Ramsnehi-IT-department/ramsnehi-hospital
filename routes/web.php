@@ -27,8 +27,6 @@ Route::get('/patientCare', function () {
     return view('frontends.patientCare');
 });
 
-
-
 // About page
 Route::get('/about', function () {
     return view('frontends.about');
@@ -65,14 +63,17 @@ Route::get('/contact', function () {
 });
 
 // =========== Departments ===========
+
+// =========== Clinical start =========== 
+
 // All Departments page
-Route::get('/allDept', function () {
-    return view('frontends.allDept');
+Route::get('/clinicalServices', function () {
+    return view('frontends.clinicalServices');
 });
 
-// Neuro Surgery page
-Route::get('/neuroSurgery', function () {
-    return view('frontends.neuroSurgery');
+// Anaesthesiology page
+Route::get('/anaesthesiology', function () {
+    return view('frontends.anaesthesiology');
 });
 
 // Cardiology Department page
@@ -80,29 +81,9 @@ Route::get('/cardiologyDepartment', function () {
     return view('frontends.cardiologyDepartment');
 });
 
-// Gynecology page
-Route::get('/gynecology', function () {
-    return view('frontends.gynecology');
-});
-
-// Orthopedic Surgery page
-Route::get('/orthopedic', function () {
-    return view('frontends.orthopedic');
-});
-
-// Pediatric page
-Route::get('/Pediatric', function () {
-    return view('frontends.Pediatric');
-});
-
-// Ophthalmology page
-Route::get('/ophthalmology', function () {
-    return view('frontends.ophthalmology');
-});
-
-// Ear Nose Throat page
-Route::get('/ent', function () {
-    return view('frontends.ent');
+// Dental page
+Route::get('/dental', function () {
+    return view('frontends.dental');
 });
 
 // General Medicine page
@@ -115,15 +96,168 @@ Route::get('/generalSurgery', function () {
     return view('frontends.generalSurgery');
 });
 
-// Dental page
-Route::get('/dental', function () {
-    return view('frontends.dental');
+// Neuro Surgery page
+Route::get('/neuroSurgery', function () {
+    return view('frontends.neuroSurgery');
 });
 
-// Joint replacement surgery page
-Route::get('/jointReplacementSurgery', function () {
-    return view('frontends.jointReplacementSurgery');
+// Gynecology page
+Route::get('/gynecology', function () {
+    return view('frontends.gynecology');
 });
+
+// Ophthalmology page
+Route::get('/ophthalmology', function () {
+    return view('frontends.ophthalmology');
+});
+
+// Orthopedic Surgery page
+Route::get('/orthopedic', function () {
+    return view('frontends.orthopedic');
+});
+
+// Pediatric page
+Route::get('/Pediatric', function () {
+    return view('frontends.Pediatric');
+});
+
+// otorhinolaryngology (Ear Nose Throat) page
+Route::get('/otorhinolaryngology', function () {
+    return view('frontends.otorhinolaryngology');
+});
+// =========== Clinical end =========== 
+
+// =========== Diagnostic Services start ===========
+
+// All Diagnostic
+Route::get('/diagnosticServices', function () {
+    return view('frontends.diagnosticServices');
+});
+
+// 2D Echo page
+Route::get('/2DEcho', function () {
+    return view('frontends.2DEcho');
+});
+
+// DSA Lab page
+Route::get('/DSALab', function () {
+    return view('frontends.DSALab');
+});
+
+// ECG page
+Route::get('/ECG', function () {
+    return view('frontends.ECG');
+});
+
+// MRI page
+Route::get('/MRI', function () {
+    return view('frontends.MRI');
+});
+
+// Tread Mill Testing page
+Route::get('/treadMillTesting', function () {
+    return view('frontends.treadMillTesting');
+});
+
+// Ultrasound page
+Route::get('/ultrasound', function () {
+    return view('frontends.ultrasound');
+});
+
+// X-Ray page
+Route::get('/X-Ray', function () {
+    return view('frontends.X-Ray');
+});
+
+// =========== Diagnostic Services end =========== 
+
+// =========== Laboratory Services start ===========
+
+// All Laboratory
+Route::get('/laboratoryServices', function () {
+    return view('frontends.laboratoryServices');
+});
+
+// Clinical Bio-Chemistry page
+Route::get('/clinicalBio-Chemistry', function () {
+    return view('frontends.clinicalBio-Chemistry');
+});
+
+// Clinical Microbiology and Serology page
+Route::get('/clinicalMicrobiologySerology', function () {
+    return view('frontends.clinicalMicrobiologySerology');
+});
+
+// Clinical Pathology page
+Route::get('/clinicalPathology', function () {
+    return view('frontends.clinicalPathology');
+});
+
+// Cytopathology page
+Route::get('/cytopathology', function () {
+    return view('frontends.cytopathology');
+});
+
+// Haematology page
+Route::get('/haematology', function () {
+    return view('frontends.haematology');
+});
+
+// Histopathology page
+Route::get('/histopathology', function () {
+    return view('frontends.histopathology');
+});
+
+// =========== Laboratory Services end =========== 
+
+// =========== Pharmacy start ===========
+// Pharmacy page
+Route::get('/pharmacy', function () {
+    return view('frontends.pharmacy');
+});
+// =========== Pharmacy end =========== 
+
+// =========== Transfusion Services start ===========
+
+// All Transfusion Services
+Route::get('/transfusionServices', function () {
+    return view('frontends.transfusionServices');
+});
+
+// Blood Transfusions Services page
+Route::get('/bloodTransfusionsServices', function () {
+    return view('frontends.bloodTransfusionsServices');
+});
+
+// Blood Bank page
+Route::get('/bloodBank', function () {
+    return view('frontends.bloodBank');
+});
+// =========== Transfusion Services end =========== 
+
+// =========== Professions Allied to Medicine start ===========
+
+// All Professions Services
+Route::get('/professionsAlliedToMedicine', function () {
+    return view('frontends.professionsAlliedToMedicine');
+});
+
+// Ambulance page
+Route::get('/ambulance', function () {
+    return view('frontends.ambulance');
+});
+
+// Dietetics page
+Route::get('/dietetics', function () {
+    return view('frontends.dietetics');
+});
+
+// Physiotherapy page
+Route::get('/physiotherapy', function () {
+    return view('frontends.physiotherapy');
+});
+// =========== Professions Allied to Medicine end =========== 
+
 
 // =========== Website Admin Panel ===========
 Auth::routes();

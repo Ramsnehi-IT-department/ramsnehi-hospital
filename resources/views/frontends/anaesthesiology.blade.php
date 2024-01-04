@@ -1,5 +1,5 @@
 @extends('frontends.layouts')
-@section('title', 'Cardiology Department')
+@section('title', 'Anaesthesiology Department')
 @section('content')
 
 <section class="page-title bg-1">
@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="block">
-                    <h1 class="text-capitalize mb-5 text-lg">Cardiology Department</h1>
+                    <h1 class="text-capitalize mb-5 text-lg">Anaesthesiology Department</h1>
                 </div>
             </div>
         </div>

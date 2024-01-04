@@ -3,28 +3,60 @@
 @section('content')
 
 <!-- Slider Start -->
-<section class="banner">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-12 col-xl-7">
-                <div class="block">
-                    <div class="divider mb-3"></div>
-                    <span class="text-uppercase text-sm letter-spacing" style="color: red;">WELCOME TO RAMSNEHI
-                        HOSPITAL</span>
-                    <h1 class="mb-3 mt-3" style="color: red;">Your Health Is Our Priority</h1>
-
-                    <p class="mb-4 pr-5" style="color: red;">Ramsnehi Hospital is a Multi Specialty & General Hospital ,
-                        Professionally
-                        managed fully equiped with modern equipments and surgical gadgets.</p>
-                    {{-- <div class="btn-container ">
-                        <a href="#" target="_blank" class="btn btn-main-2 btn-icon btn-round-full">Make
-                            appoinment <i class="icofont-simple-right ml-2  "></i></a>
-                    </div> --}}
+<section>
+    <div id="imageSlider" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <!-- Image 1 -->
+                <img src="images/bg/bg-4.jpg" class="d-block w-100 h-50" alt="Image 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- Your content for Image 1 -->
+                    <div class="block">
+                        <span class="text-uppercase text-sm letter-spacing" style="color: black;">WELCOME TO RAMSNEHI
+                            HOSPITAL</span>
+                        <h1 class="mb-3 mt-3" style="color: black;">Your Health Is Our Priority</h1>
+                        <p class="mb-4 pr-5" style="color: black;">Ramsnehi Hospital is a Multi Specialty & General
+                            Hospital, Professionally managed fully equipped with modern equipment and surgical gadgets.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!-- Image 2 -->
+                <img src="images/bg/bg-4.jpg" class="d-block w-100" alt="Image 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- Your content for Image 2 -->
+                    <div class="block">
+                        <span class="text-uppercase text-sm letter-spacing" style="color: black;">ANOTHER SLIDE</span>
+                        <h1 class="mb-3 mt-3" style="color: black;">Slide Title</h1>
+                        <p class="mb-4 pr-5" style="color: black;">Your content for the second slide.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!-- Image 2 -->
+                <img src="images/bg/22.jpg" class="d-block w-100" alt="Image 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- Your content for Image 2 -->
+                    <div class="block">
+                        <span class="text-uppercase text-sm letter-spacing" style="color: black;">ANOTHER SLIDE</span>
+                        <h1 class="mb-3 mt-3" style="color: black;">Slide Title</h1>
+                        <p class="mb-4 pr-5" style="color: black;">Your content for the second slide.</p>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- Add navigation controls if desired -->
+        <a class="carousel-control-prev" href="#imageSlider" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#imageSlider" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
 </section>
+
 <!-- Slider End -->
 
 <!--  About Start -->
@@ -95,14 +127,14 @@
                     <div class="col-6">
                         <div class="counter-stat">
                             {{-- <i class="icofont-doctor"></i> --}}
-                            <span class="h3 counter" data-count="58">0</span>k
+                            <span class="h3 counter" data-count="250000">0</span>
                             <p>Happy People</p>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="counter-stat">
                             {{-- <i class="icofont-flag"></i> --}}
-                            <span class="h3 counter" data-count="700">0</span>+
+                            <span class="h3 counter" data-count="150000">0</span>
                             <p>Surgery Comepleted</p>
                         </div>
                     </div>
@@ -112,7 +144,7 @@
                         <div class="counter-stat">
                             {{-- <i class="icofont-badge"></i> --}}
                             <span class="h3 counter" data-count="40">0</span>+
-                            <p>Staffs</p>
+                            <p>Doctors</p>
                         </div>
                     </div>
                     <div class="col-6">
@@ -124,39 +156,37 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4" style="background: red">
+            <div class="col-lg-4" style="background: rgb(237, 112, 112)">
                 <h1 class="mt-3 text-center">Working Hours</h1>
-                <hr>
-                <ul class="mb-3">
+                <ul class="mb-3" style="list-style-type: disc; padding-left: 20px;">
                     <li>
-                        <h3>Our Activities 24/7</h3>
+                        <h4>Our Activities: 24/7</h4>
                     </li>
-                    <hr>
                     <li>
-                        <h3>OPD's Consultation 09:00 AM - 01:00 PM 05:00 PM - 07:00 PM</h3>
+                        <h4>OPD's Consultation</h4>
+                        <ul style="list-style-type: disc; padding-left: 20px;">
+                            <li class="mx-5" style="color: black">09:00 AM - 01:00 PM</li>
+                            <li class="mx-5" style="color: black">05:00 PM - 07:00 PM</li>
+                        </ul>
                     </li>
-                    <hr>
                     <li>
-                        <h3>Pharmacy 24/7 Open</h3>
+                        <h4>Pharmacy: 24/7 Open</h4>
                     </li>
-                    <hr>
                     <li>
-                        <h3>Ambulance 24/7 Open</h3>
+                        <h4>Ambulance: 24/7 Open</h4>
                     </li>
-                    <hr>
                     <li>
-                        <h3>Treatment 24/7 Open</h3>
+                        <h4>Treatment: 24/7 Open</h4>
                     </li>
-                    <hr>
                     <li>
-                        <h3>Security 24/7 Open</h3>
+                        <h4>Security: 24/7 Open</h4>
                     </li>
-                    <hr>
                     <li>
-                        <h3>Emergency 24/7 Open</h3>
+                        <h4>Emergency: 24/7 Open</h4>
                     </li>
                 </ul>
             </div>
+            
         </div>
     </div>
 </section>
@@ -216,45 +246,84 @@
 <!--  Patient Care End -->
 
 <!--  Departments Start -->
-<section class="section service gray-bg">
+<section class="section service-2">
     <div class="container">
-        <div class="row">
-            <div class="row justify-content-center">
-                <div class="col-lg-12 text-center">
-                    <div class="section-title">
-                        <h2>Departments</h2>
-                        <div class="divider mx-auto my-4"></div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, atque. Dolores, illo maxime.
-                            Vitae sequi porro odio maxime perferendis sint, nihil quas magnam rerum quia, sunt dolores
-                            reiciendis, ut veniam.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-12">
-                <div class="feature-block d-lg-flex">
-                    <div class="feature-item mb-5 mb-lg-0">
-                        <div class="feature-icon mb-4">
-                            <i class="icofont-surgeon-alt"></i>
-                        </div>
-                        <h4 class="mb-3">General Medicine </h4>
-                    </div>
-                    <div class="feature-item mb-5 mb-lg-0">
-                        <div class="feature-icon mb-4">
-                            <i class="icofont-ui-clock"></i>
-                        </div>
-                        <h4 class="mb-3">Ortho</h4>
-                    </div>
-                    <div class="feature-item mb-5 mb-lg-0">
-                        <div class="feature-icon mb-4">
-                            <i class="icofont-support"></i>
-                        </div>
-                        <h4 class="mb-3">Eye</h4>
-                    </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-7 text-center">
+                <div class="section-title">
+                    <h2>Departments</h2>
+                    <div class="divider mx-auto my-4"></div>
+                    <p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt
+                        molestias nostrum laudantium. Maiores porro cumque quaerat.</p>
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center">
-            <a href="/departments" class="btn btn-primary mt-3">View More</a>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 ">
+                <div class="department-block mb-5">
+                    <img src="images/service/service-1.jpg" alt="" class="img-fluid w-100">
+                    <div class="content">
+                        <h4 class="mt-4 mb-2 title-color">Clinical Services</h4>
+                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+                        <a href="/clinicalServices" class="read-more">View More <i
+                                class="icofont-simple-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="department-block mb-5">
+                    <img src="images/service/service-2.jpg" alt="" class="img-fluid w-100">
+                    <div class="content">
+                        <h4 class="mt-4 mb-2  title-color">Diagnostic Services</h4>
+                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+                        <a href="/diagnosticServices" class="read-more">View More <i
+                                class="icofont-simple-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="department-block mb-5">
+                    <img src="images/service/service-3.jpg" alt="" class="img-fluid w-100">
+                    <div class="content">
+                        <h4 class="mt-4 mb-2 title-color">Laboratory Services</h4>
+                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+                        <a href="/laboratoryServices" class="read-more">View More <i class="icofont-simple-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="department-block mb-5 mb-lg-0">
+                    <img src="images/service/service-8.jpg" alt="" class="img-fluid w-100">
+                    <div class="content">
+                        <h4 class="mt-4 mb-2 title-color">Pharmacy</h4>
+                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+                        <a href="/pharmacy" class="read-more">View More <i
+                                class="icofont-simple-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="department-block mb-5 mb-lg-0">
+                    <img src="images/service/service-6.jpg" alt="" class="img-fluid w-100">
+                    <div class="content">
+                        <h4 class="mt-4 mb-2 title-color">Transfusion Services</h4>
+                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+                        <a href="/transfusionServices" class="read-more">View More <i
+                                class="icofont-simple-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="department-block mb-5 mb-lg-0">
+                    <img src="images/service/service-8.jpg" alt="" class="img-fluid w-100">
+                    <div class="content">
+                        <h4 class="mt-4 mb-2 title-color">Professions Allied to Medicine</h4>
+                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+                        <a href="/professionsAlliedToMedicine" class="read-more">View More <i
+                                class="icofont-simple-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

@@ -1,5 +1,5 @@
 @extends('frontends.layouts')
-@section('title', 'ENT')
+@section('title', 'Otorhinolaryngology')
 @section('content')
 
 <section class="page-title bg-1">
@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="block">
-                    <h1 class="text-capitalize mb-5 text-lg">EAR NOSE THROAT</h1>
+                    <h1 class="text-capitalize mb-5 text-lg">Otorhinolaryngology (EAR NOSE THROAT)</h1>
                 </div>
             </div>
         </div>
@@ -21,7 +21,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h3 class="title-color">EAR NOSE THROAT</h3>
+                <h3 class="title-color">Otorhinolaryngology (EAR NOSE THROAT)</h3>
                 <p>All the resources of nose, ear, throat, etc. are available in the hospital. The former doctor of the
                     hospital is offering its services here regularly. In which patients suffering from nose, ear throat
                     disease and cancer are being treated. So far, successful operation of more than 150 patients has
