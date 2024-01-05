@@ -9,7 +9,8 @@
             aria-expanded="false">{{ __('homepage.aboutUs_menu') }} <i
                 class="icofont-thin-down"></i></a>
         <ul class="dropdown-menu" aria-labelledby="dropdown02">
-            <li><a class="dropdown-item" href="/about">{{ __('homepage.AboutUs_ramsnehi') }}</a></li>
+            <li><a class="dropdown-item" href="/ramsnehi">Ramsnehi</a></li>
+            <li><a class="dropdown-item" href="/about">Overview</a></li>
             <li><a class="dropdown-item"
                     href="/visionMission">{{ __('homepage.AboutUs_mission') }}</a>
             </li>
@@ -17,10 +18,10 @@
             </li>
             <li><a class="dropdown-item" href="/secretary">{{ __('homepage.AboutUs_secretory') }}</a>
             </li>
-            <li><a class="dropdown-item" href="/">Mangement Team</a></li>
+            {{-- <li><a class="dropdown-item" href="/">Mangement Team</a></li>
             <li><a class="dropdown-item"
                     href="/certificate">{{ __('homepage.AboutUs_certificates') }}</a>
-            </li>
+            </li> --}}
         </ul>
     </li>
     {{-- AboutUs end --}}
@@ -28,17 +29,17 @@
     {{-- Patient Care --}}
     <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">Patient Care <i class="icofont-thin-down"></i></a>
+            aria-expanded="false">Hospital <i class="icofont-thin-down"></i></a>
         <ul class="dropdown-menu" aria-labelledby="dropdown02">
-            <li><a class="dropdown-item" href="/patientCare">Patient Care</a></li>
-            <li><a class="dropdown-item" href="/">Health Check up plan</a>
+            <li><a class="dropdown-item" href="/patientCare">Patient Care & Facilities</a></li>
+            <li><a class="dropdown-item" href="/healthCheckUpPlan">Health Check up plan</a>
             </li>
-            <li><a class="dropdown-item" href="/">Government Schemes</a></li>
-            <li><a class="dropdown-item" href="/">TPA Empanelment</a></li>
-            <li><a class="dropdown-item" href="/">Patient Testimonial</a></li>
-            <li><a class="dropdown-item" href="/">Patient success stories</a>
+            <li><a class="dropdown-item" href="/governmentSchemes">Government Schemes</a></li>
+            <li><a class="dropdown-item" href="/TPAEmpanelment">TPA Empanelment</a></li>
+            <li><a class="dropdown-item" href="/patientTestimonial">Patient Testimonial</a></li>
+            <li><a class="dropdown-item" href="/patientSuccessStories">Patient Success Stories</a>
             </li>
-            <li><a class="dropdown-item" href="/">Photo Gallery</a>
+            <li><a class="dropdown-item" href="/awardsAchievements">Awards & Achievements</a>
             </li>
         </ul>
     </li>
@@ -66,8 +67,7 @@
                     <li><a class="dropdown-item" href="/ophthalmology">Opthalmology</a></li>
                     <li><a class="dropdown-item" href="/orthopedic">Orthopaedic Surgery</a></li>
                     <li><a class="dropdown-item" href="/otorhinolaryngology">Otorhinolaryngology</a></li>
-                    <li><a class="dropdown-item" href="/Pediatric">Paediatrics</a></li>
-                    <li><a class="dropdown-item" href="/ent">Ear Nose Throat</a></li>
+                    <li><a class="dropdown-item" href="/Paediatric">Paediatrics</a></li>
                 </ul>
             </li>
             {{-- Clinical end --}}
@@ -84,7 +84,7 @@
                     <li><a class="dropdown-item" href="/MRI">MRI</a></li>
                     <li><a class="dropdown-item" href="/treadMillTesting">Tread Mill Testing</a></li>
                     <li><a class="dropdown-item" href="/ultrasound">Ultrasound</a></li>
-                    <li><a class="dropdown-item" href="/X-Ray">X-Ray</a></li>
+                    <li><a class="dropdown-item" href="/XRay">X-Ray</a></li>
                 </ul>
             </li>
             {{-- Diagnostic Services end --}}
@@ -95,7 +95,7 @@
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Laboratory Services</a>
                 <ul class="dropdown-menu" aria-labelledby="dropdown0301">
                     <li><a class="dropdown-item" href="/laboratoryServices">All Laboratory Services</a></li>
-                    <li><a class="dropdown-item" href="/clinicalBio-Chemistry">Clinical Bio-Chemistry</a></li>
+                    <li><a class="dropdown-item" href="/clinicalBioChemistry">Clinical Bio-Chemistry</a></li>
                     <li><a class="dropdown-item" href="/clinicalMicrobiologySerology">Clinical Microbiology and Serology</a></li>
                     <li><a class="dropdown-item" href="/clinicalPathology">Clinical Pathology</a></li>
                     <li><a class="dropdown-item" href="/cytopathology">Cytopathology</a></li>
@@ -143,9 +143,10 @@
         <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">Events <i class="icofont-thin-down"></i></a>
         <ul class="dropdown-menu" aria-labelledby="dropdown02">
-            <li><a class="dropdown-item" href="#">Hospital Events</a></li>
-            <li><a class="dropdown-item" href="#">Health Camp</a></li>
-            <li><a class="dropdown-item" href="#">Health Talks</a></li>
+            <li><a class="dropdown-item" href="/allEvents">All Events</a></li>
+            <li><a class="dropdown-item" href="/hospitalEvents">Hospital Events</a></li>
+            <li><a class="dropdown-item" href="/healthCamp">Health Camp</a></li>
+            <li><a class="dropdown-item" href="/healthTalks">Health Talks</a></li>
         </ul>
     </li>
     {{-- Events end --}}
@@ -155,8 +156,10 @@
         <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">Media Coverage <i class="icofont-thin-down"></i></a>
         <ul class="dropdown-menu" aria-labelledby="dropdown02">
-            <li><a class="dropdown-item" href="#">Doctor's Desk</a></li>
-            <li><a class="dropdown-item" href="#">Media Coverage</a></li>
+            <li><a class="dropdown-item" href="/allMediaCoverage">All Media's Coverage</a></li>
+            <li><a class="dropdown-item" href="/doctorsDesk">Doctor's Desk</a></li>
+            <li><a class="dropdown-item" href="/printMedia">Print Media</a></li>
+            <li><a class="dropdown-item" href="/digitalMedia">Digital Media</a></li>
         </ul>
     </li>
     {{-- Media Coverage end --}}

@@ -1,5 +1,5 @@
 @extends('frontends.layouts')
-@section('title', 'ORTHOPEDIC DEPARTMENT')
+@section('title', 'ORTHOPAEDIC DEPARTMENT')
 @section('content')
 
 <section class="page-title bg-1">
@@ -8,13 +8,19 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="block">
-                    <h1 class="text-capitalize mb-5 text-lg">ORTHOPEDIC DEPARTMENT</h1>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="/" class="text-white">Home</a></li>
+                        <li class="list-inline-item"><span class="text-white">/</span></li>
+                        <li class="list-inline-item"><a href="/clinicalServices" class="text-white-50">All Clinical Services</a></li>
+                        <li class="list-inline-item"><span class="text-white">/</span></li>
+                        <li class="list-inline-item"><a href="/orthopedic" class="text-white-50">Department Details</a></li>
+                    </ul>
+                    <h1 class="text-capitalize mb-5 text-lg">Orthopaedic Surgery (Including Joint Replacement)</h1>
                 </div>
             </div>
         </div>
     </div>
 </section>
-{{-- Gallery End --}}
 
 {{-- Vision Content Start --}}
 <section class="section about-page">
@@ -54,42 +60,6 @@
                         <li>5</li>
                     </ul>
 
-                    <h3 class="title-color">Department Information</h3>
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                    </ul>
-
-                    <h3 class="title-color">Department Success Stories</h3>
-                    <div class="row align-items-center">
-                        <div class="col-lg-12 mt-3 text-center">
-                            <h1>Video</h1>
-                        </div>
-                        <div class="col-lg-12 testimonial-wrap-2">
-                            <div class="testimonial-block style-2  gray-bg">
-                                <div class="carousel-item active">
-                                    <div class="embed-responsive embed-responsive-16by9">
-                                        <iframe class="embed-responsive-item"
-                                            src="https://www.youtube.com/embed/yMb59GVpTBI"></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="testimonial-block style-2  gray-bg">
-                                <div class="carousel-item active">
-                                    <div class="embed-responsive embed-responsive-16by9">
-                                        <iframe class="embed-responsive-item"
-                                            src="https://www.youtube.com/embed/yMb59GVpTBI"></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 text-center">
-                            <a class="btn btn-sm btn-primary mt-3">View More</a>
-                        </div>
-                    </div>
                     <h3 class="title-color">Patient Testimonial</h3>
                     <div class="row align-items-center">
                         <div class="col-lg-12 testimonial-wrap-2">

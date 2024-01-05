@@ -7,14 +7,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="block text-center">
-                    <span class="text-white">All Department</span>
-                    <h1 class="text-capitalize mb-5 text-lg">Professions Allied to Medicine</h1>
-                    <ul class="list-inline breadcumb-nav">
+                <div class="block">
+                    <ul class="list-inline">
                         <li class="list-inline-item"><a href="/" class="text-white">Home</a></li>
                         <li class="list-inline-item"><span class="text-white">/</span></li>
-                        <li class="list-inline-item"><a href="#" class="text-white-50">All Department</a></li>
+                        <li class="list-inline-item"><a href="/professionsAlliedToMedicine" class="text-white-50">Departments Detail</a></li>
                     </ul>
+                    <h1 class="text-capitalize mb-5 text-lg">Professions Allied to Medicine</h1>
                 </div>
             </div>
         </div>

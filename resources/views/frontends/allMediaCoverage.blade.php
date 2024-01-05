@@ -1,5 +1,5 @@
 @extends('frontends.layouts')
-@section('title', 'Laboratory Services')
+@section('title', 'All Media Coverage')
 @section('content')
 
 <section class="page-title bg-1">
@@ -11,9 +11,9 @@
                     <ul class="list-inline">
                         <li class="list-inline-item"><a href="/" class="text-white">Home</a></li>
                         <li class="list-inline-item"><span class="text-white">/</span></li>
-                        <li class="list-inline-item"><a href="/laboratoryServices" class="text-white-50">Departments Detail</a></li>
+                        <li class="list-inline-item"><a href="/allMediaCoverage" class="text-white-50">Media Coverage</a></li>
                     </ul>
-                    <h1 class="text-capitalize mb-5 text-lg">Laboratory Services</h1>
+                    <h1 class="text-capitalize mb-5 text-lg">All Media Coverage</h1>
                 </div>
             </div>
         </div>
@@ -32,68 +32,39 @@
                 </div>
             </div>
         </div>
-
         <div class="row">
-            <div class="col-lg-4 col-md-6 ">
-                <div class="department-block mb-5">
-                    <img src="images/service/service-1.jpg" alt="" class="img-fluid w-100">
-                    <div class="content">
-                        <h4 class="mt-4 mb-2 title-color">Clinical Bio-Chemistry</h4>
-                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/clinicalBio-Chemistry" class="read-more">View More <i
-                                class="icofont-simple-right ml-2"></i></a>
-                    </div>
-                </div>
-            </div>
-
             <div class="col-lg-4 col-md-6">
                 <div class="department-block mb-5">
                     <img src="images/service/service-2.jpg" alt="" class="img-fluid w-100">
                     <div class="content">
-                        <h4 class="mt-4 mb-2  title-color">Clinical Microbiology and Serology</h4>
+                        <h4 class="mt-4 mb-2  title-color">Doctor's Desk</h4>
                         <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/clinicalMicrobiologySerology" class="read-more">View More <i
+                        <a href="/doctorsDesk" class="read-more">View More <i
                                 class="icofont-simple-right ml-2"></i></a>
                     </div>
                 </div>
             </div>
-
             <div class="col-lg-4 col-md-6">
                 <div class="department-block mb-5">
                     <img src="images/service/service-3.jpg" alt="" class="img-fluid w-100">
                     <div class="content">
-                        <h4 class="mt-4 mb-2 title-color">Clinical Pathology</h4>
+                        <h4 class="mt-4 mb-2 title-color">Print Media</h4>
                         <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/clinicalPathology" class="read-more">View More <i
-                                class="icofont-simple-right ml-2"></i></a>
+                        <a href="/printMedia" class="read-more">View More <i class="icofont-simple-right ml-2"></i></a>
                     </div>
                 </div>
             </div>
-
-
-            <div class="col-lg-4 col-md-6 ">
-                <div class="department-block  mb-5 mb-lg-0">
-                    <img src="images/service/service-4.jpg" alt="" class="img-fluid w-100">
-                    <div class="content">
-                        <h4 class="mt-4 mb-2 title-color">Cytopathology</h4>
-                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/cytopathology" class="read-more">View More <i
-                                class="icofont-simple-right ml-2"></i></a>
-                    </div>
-                </div>
-            </div>
-
             <div class="col-lg-4 col-md-6">
                 <div class="department-block mb-5 mb-lg-0">
-                    <img src="images/service/service-6.jpg" alt="" class="img-fluid w-100">
+                    <img src="images/service/service-8.jpg" alt="" class="img-fluid w-100">
                     <div class="content">
-                        <h4 class="mt-4 mb-2 title-color">Haematology</h4>
+                        <h4 class="mt-4 mb-2 title-color">Digital Media</h4>
                         <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/haematology" class="read-more">View More <i class="icofont-simple-right ml-2"></i></a>
+                        <a href="/digitalMedia" class="read-more">View More <i
+                                class="icofont-simple-right ml-2"></i></a>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </section>

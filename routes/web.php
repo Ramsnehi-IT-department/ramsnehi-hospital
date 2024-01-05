@@ -21,10 +21,9 @@ Route::get('/', function () {
     return view('index');
 });
 
-// =========== Patient Care ===========
-// Patient Care page
-Route::get('/patientCare', function () {
-    return view('frontends.patientCare');
+// About page
+Route::get('/ramsnehi', function () {
+    return view('frontends.ramsnehi');
 });
 
 // About page
@@ -47,14 +46,40 @@ Route::get('/secretary', function () {
     return view('frontends.secretary');
 });
 
-// Certificate page
-Route::get('/certificate', function () {
-    return view('frontends.certificate');
+// =========== Hospital Start ===========
+// Patient Care page
+Route::get('/patientCare', function () {
+    return view('frontends.patientCare');
 });
 
-// Departments page
-Route::get('/departments', function () {
-    return view('frontends.departments');
+// Health Check up plan page
+Route::get('/healthCheckUpPlan', function () {
+    return view('frontends.healthCheckUpPlan');
+});
+
+// Government Schemes page
+Route::get('/governmentSchemes', function () {
+    return view('frontends.governmentSchemes');
+});
+
+// TPA Empanelment page
+Route::get('/TPAEmpanelment', function () {
+    return view('frontends.TPAEmpanelment');
+});
+
+// Patient Testimonial page
+Route::get('/patientTestimonial', function () {
+    return view('frontends.patientTestimonial');
+});
+
+// Patient Success Stories page
+Route::get('/patientSuccessStories', function () {
+    return view('frontends.patientSuccessStories');
+});
+
+// Awards & Achievements page
+Route::get('/awardsAchievements', function () {
+    return view('frontends.awardsAchievements');
 });
 
 // Contact page
@@ -62,7 +87,10 @@ Route::get('/contact', function () {
     return view('frontends.contact');
 });
 
-// =========== Departments ===========
+// =========== Hospital End ===========
+
+
+// =========== Departments Start ===========
 
 // =========== Clinical start =========== 
 
@@ -116,9 +144,9 @@ Route::get('/orthopedic', function () {
     return view('frontends.orthopedic');
 });
 
-// Pediatric page
-Route::get('/Pediatric', function () {
-    return view('frontends.Pediatric');
+// Paediatric page
+Route::get('/Paediatric', function () {
+    return view('frontends.Paediatric');
 });
 
 // otorhinolaryngology (Ear Nose Throat) page
@@ -165,8 +193,8 @@ Route::get('/ultrasound', function () {
 });
 
 // X-Ray page
-Route::get('/X-Ray', function () {
-    return view('frontends.X-Ray');
+Route::get('/XRay', function () {
+    return view('frontends.XRay');
 });
 
 // =========== Diagnostic Services end =========== 
@@ -179,8 +207,8 @@ Route::get('/laboratoryServices', function () {
 });
 
 // Clinical Bio-Chemistry page
-Route::get('/clinicalBio-Chemistry', function () {
-    return view('frontends.clinicalBio-Chemistry');
+Route::get('/clinicalBioChemistry', function () {
+    return view('frontends.clinicalBioChemistry');
 });
 
 // Clinical Microbiology and Serology page
@@ -257,7 +285,51 @@ Route::get('/physiotherapy', function () {
     return view('frontends.physiotherapy');
 });
 // =========== Professions Allied to Medicine end =========== 
+// =========== Departments End ===========
 
+// =========== Events Start ===========
+// All Events page
+Route::get('/allEvents', function () {
+    return view('frontends.allEvents');
+});
+
+// Hospital Events page
+Route::get('/hospitalEvents', function () {
+    return view('frontends.hospitalEvents');
+});
+
+// Health Camp page
+Route::get('/healthCamp', function () {
+    return view('frontends.healthCamp');
+});
+
+// Health Talks page
+Route::get('/healthTalks', function () {
+    return view('frontends.healthTalks');
+});
+// =========== Events End ===========
+
+// =========== Media Coverage Start ===========
+// All Media's Coverage page
+Route::get('/allMediaCoverage', function () {
+    return view('frontends.allMediaCoverage');
+});
+
+// Doctor's Desk page
+Route::get('/doctorsDesk', function () {
+    return view('frontends.doctorsDesk');
+});
+
+// Print Media page
+Route::get('/printMedia', function () {
+    return view('frontends.printMedia');
+});
+
+// Digital Media page
+Route::get('/digitalMedia', function () {
+    return view('frontends.digitalMedia');
+});
+// =========== Media Coverage End ===========
 
 // =========== Website Admin Panel ===========
 Auth::routes();

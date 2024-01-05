@@ -7,14 +7,20 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="block text-center">
-                    <h1 class="text-capitalize mb-5 text-lg">Vission & Mission</h1>
+                <div class="block">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="/" class="text-white">Home</a></li>
+                        <li class="list-inline-item"><span class="text-white">/</span></li>
+                        <li class="list-inline-item"><a href="/ramsnehi" class="text-white-50">Ramsnehi</a></li>
+                        <li class="list-inline-item"><span class="text-white">/</span></li>
+                        <li class="list-inline-item"><a href="/visionMission" class="text-white-50">Vission and Mission</a></li>
+                    </ul>
+                    <h1 class="text-capitalize mb-5 text-lg">Vission and Mission</h1>
                 </div>
             </div>
         </div>
     </div>
-</section>
-{{-- Gallery End --}}
+  </section>
 
 {{-- Vision Content Start --}}
 <section class="section about-page">

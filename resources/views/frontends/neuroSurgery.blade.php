@@ -3,87 +3,90 @@
 @section('content')
 
 <section class="page-title bg-1">
-    <div class="overlay"></div>
-    <div class="container">
+  <div class="overlay"></div>
+  <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <div class="block text-center">
-            <span class="text-white">Department Details</span>
-            <h1 class="text-capitalize mb-5 text-lg">NEURO SURGERY</h1>
-  
-            <ul class="list-inline breadcumb-nav">
-              <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
-              <li class="list-inline-item"><span class="text-white">/</span></li>
-              <li class="list-inline-item"><a href="#" class="text-white-50">Department Details</a></li>
-            </ul>
+          <div class="col-md-12">
+              <div class="block">
+                  <ul class="list-inline">
+                      <li class="list-inline-item"><a href="/" class="text-white">Home</a></li>
+                      <li class="list-inline-item"><span class="text-white">/</span></li>
+                      <li class="list-inline-item"><a href="/clinicalServices" class="text-white-50">All Clinical Services</a></li>
+                      <li class="list-inline-item"><span class="text-white">/</span></li>
+                      <li class="list-inline-item"><a href="/neuroSurgery" class="text-white-50">Department Details</a></li>
+                  </ul>
+                  <h1 class="text-capitalize mb-5 text-lg">Neurosurgery</h1>
+              </div>
           </div>
-        </div>
       </div>
-    </div>
-  </section>
+  </div>
+</section>
   
-  
-  <section class="section department-single">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-12">
-                  <div class="department-img">
-                      <img src="images/service/bg-1.jpg" alt="" class="img-fluid">
-                  </div>
-              </div>
-          </div>
-  
-          <div class="row">
-              <div class="col-lg-8">
-                  <div class="department-content mt-5">
-                      <h3 class="text-md">NEURO SURGERY</h3>
-                      <div class="divider my-4"></div>
-                      <p class="lead">Age forming covered you entered the examine. Blessing scarcely confined her contempt wondered shy. Dashwoods contented sportsmen at up no convinced cordially affection.</p>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum recusandae dolor autem laudantium, quaerat vel dignissimos. Magnam sint suscipit omnis eaque unde eos aliquam distinctio, quisquam iste, itaque possimus . Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet alias modi eaque, ratione recusandae cupiditate dolorum repellendus iure eius rerum hic minus ipsa at, corporis nesciunt tempore vero voluptas. Tempore.</p>
-  
-  
-                      <h3 class="mt-5 mb-4">Services features</h3>
-                      <div class="divider my-4"></div>
-                      <ul class="list-unstyled department-service">
-                          <li><i class="icofont-check mr-2"></i>International Drug Database</li>
-                          <li><i class="icofont-check mr-2"></i>Stretchers and Stretcher Accessories</li>
-                          <li><i class="icofont-check mr-2"></i>Cushions and Mattresses</li>
-                          <li><i class="icofont-check mr-2"></i>Cholesterol and lipid tests</li>
-                          <li><i class="icofont-check mr-2"></i>Critical Care Medicine Specialists</li>
-                          <li><i class="icofont-check mr-2"></i>Emergency Assistance</li>
-                      </ul>
-  
-                      <a href="appoinment.html" class="btn btn-main-2 btn-round-full">Make an Appoinment<i class="icofont-simple-right ml-2  "></i></a>
-                  </div>
-              </div>
-  
-              <div class="col-lg-4">
-                  <div class="sidebar-widget schedule-widget mt-5">
-                      <h5 class="mb-4">Time Schedule</h5>
-  
-                      <ul class="list-unstyled">
-                        <li class="d-flex justify-content-between align-items-center">
-                          <span>Monday - Friday</span>
-                          <span>9:00 - 17:00</span>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center">
-                          <span>Saturday</span>
-                          <span>9:00 - 16:00</span>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center">
-                          <span>Sunday</span>
-                          <span>Closed</span>
-                        </li>
-                      </ul>
-  
-                      <div class="sidebar-contatct-info mt-4">
-                          <p class="mb-0">Need Urgent Help?</p>
-                          <h3>+23-4565-65768</h3>
+{{-- Vision Content Start --}}
+<section class="section about-page">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+              <h3 class="title-color">Introduction</h3>
+              <p>Wipro GE Company's high-tech Kethleb and cardiac ICU for specialized services for heart disease in
+                  the hospital. Has been established. Through which angiography and angioplasty are being done here
+                  regularly, the work of applying pacemakers has also been done successfully here. Starting from 3
+                  December 2014, 1622 angiography and 381 angioplasty have also been done in this department as well
+                  as installation of pace maker.</p>
+
+                  <h3 class="title-color">Available Services</h3>
+                  <ul>
+                      <li>Services 1</li>
+                      <li>Services 2</li>
+                      <li>Services 3</li>
+                      <li>Services 4</li>
+                      <li>Services 5</li>
+                  </ul>
+
+                  <h3 class="title-color">Patient Testimonial</h3>
+                  <div class="row align-items-center">
+                      <div class="col-lg-12 testimonial-wrap-2">
+                          <div class="testimonial-block style-2  gray-bg">
+                              <div class="carousel-item active">
+                                  <div class="embed-responsive embed-responsive-16by9">
+                                      <iframe class="embed-responsive-item"
+                                          src="https://www.youtube.com/embed/f1BvyKbEY3k"></iframe>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="testimonial-block style-2  gray-bg">
+                              <div class="carousel-item active">
+                                  <div class="embed-responsive embed-responsive-16by9">
+                                      <iframe class="embed-responsive-item"
+                                          src="https://www.youtube.com/embed/3uRXNSLrixg"></iframe>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="testimonial-block style-2  gray-bg">
+                              <div class="carousel-item active">
+                                  <div class="embed-responsive embed-responsive-16by9">
+                                      <iframe class="embed-responsive-item"
+                                          src="https://www.youtube.com/embed/CY_K0fDLEAY"></iframe>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="testimonial-block style-2  gray-bg">
+                              <div class="carousel-item active">
+                                  <div class="embed-responsive embed-responsive-16by9">
+                                      <iframe class="embed-responsive-item"
+                                          src="https://www.youtube.com/embed/1zHT8t4wE9o"></iframe>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-12 text-center">
+                          <a class="btn btn-sm btn-primary mt-3">View More</a>
                       </div>
                   </div>
-              </div>
           </div>
       </div>
-  </section>
+  </div>
+</section>
+{{-- neuro End --}}
 
 @endsection
