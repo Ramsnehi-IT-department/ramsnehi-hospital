@@ -2,6 +2,13 @@
 @section('title', 'Home')
 @section('content')
 
+<style>
+    .card:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        /* Add any other styles you want for the hover effect */
+    }
+
+</style>
 <!-- Slider Start -->
 <section>
     <div id="imageSlider" class="carousel slide" data-ride="carousel">
@@ -58,7 +65,6 @@
     </div>
 </section>
 <!-- Slider End -->
-
 <!--  About Start -->
 <section class="section service gray-bg">
     <div class="container">
@@ -84,7 +90,7 @@
                             </div>
                         </div>
                         <div class="row justify-content-center">
-                            <a href="/ramsnehi" class="btn btn-primary" style="margin-top: 30px">Overview</a>
+                            <a href="/ramsnehi" class="btn btn-primary" style="margin-top: 10px">Overview</a>
                         </div>
                     </div>
                 </div>
@@ -94,129 +100,40 @@
 </section>
 <!--  About End -->
 
-<!--  achievements starts -->
-<section class="contents count-bar wow  fadeInUp  animated">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-7">
-                <div class="row con-col">
-                    <div class="col-sm-6 col-xs-6">
-                        <div class=" count-col count-col-bdr">
-                            <p class="icon"><i class="fa fa-smile-o fa-2x"></i></p>
-                            <div class='numscroller numscroller-big-bottom main-text'>1000000 +</div>
-                            <p class="common-text">Happy patients</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-xs-6">
-                        <div class=" count-col">
-                            <p class="icon"><i class="fa fa-user-md fa-2x"></i></p>
-                            <div class='numscroller numscroller-big-bottom main-text'>30 +</div>
-                            <p class="common-text">Doctors </p>
-                        </div>
-                    </div>
-                    <div class="clearfix visible-xs"></div>
-                    <div class="col-sm-6  col-xs-6">
-                        <div class=" count-col">
-                            <p class="icon"><i class="fa fa-group fa-2x"></i></p>
-                            <div class='numscroller numscroller-big-bottom main-text'>300 +</div>
-                            <p class="common-text">Staffs</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6  col-xs-6">
-                        <div class=" count-col">
-                            <p class="icon"><i class="fa fa-trophy fa-2x"></i></p>
-                            <div class='numscroller numscroller-big-bottom main-text'>50 +</div>
-                            <p class="common-text">Awards</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-lg-5">
-                <div class="working-hours">
-                    <h4>Working hours</h4>
-                    <ul>
-                        <li>
-                            <p>Our activities <span>24/7 Open</span></p>
-                        </li>
-                        <li>
-                            <p>OPD's Consultation <span>09:00 AM - 01:00 PM<br /> 05:00 PM - 07:00 PM</span></p>
-                        </li>
-                        <li>
-                            <p>Pharmacy <span>24/7 Open</span></p>
-                        </li>
-                        <li>
-                            <p>Ambulance <span>24/7 Open</span></p>
-                        </li>
-                        <li>
-                            <p>Treatment <span>24/7 Open</span></p>
-                        </li>
-                        <li>
-                            <p>Security team <span>24/7</span></p>
-                        </li>
-                        <li>
-                            <p>Emergency <span>24/7</span></p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--  achievements end -->
-
 <!--  Patient Care Start -->
 <section class="section service-2">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-7 text-center">
                 <div class="section-title">
-                    <h2>PATIENT CARE & FACILITIES</h2>
+                    <h3>Patient Care & Facilities</h3>
                     <div class="divider mx-auto my-4"></div>
                     <p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt
                         molestias nostrum laudantium. Maiores porro cumque quaerat.</p>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-6 ">
-                <div class="department-block mb-5">
-                    <img src="images/service/service-1.jpg" alt="" class="img-fluid w-100">
-                    <div class="content">
-                        <h4 class="mt-4 mb-2 title-color">HEALTH CHECKUP PLAN</h4>
-                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/healthCheckUpPlan" class="read-more">View More <i
-                                class="icofont-simple-right ml-2"></i></a>
+            <div class="card-group mx-2 p-3">
+                <a href="/healthCheckUpPlan" class="card mb-3">
+                    <img class="card-img-top" src="images/service/service-1.jpg" alt="Card image cap">
+                    <h5 class="card-title">HEALTH CHECKUP PLAN</h5>
+                </a>
+                <a href="/TPAEmpanelment" class="card mb-3">
+                    <img class="card-img-top" src="images/service/service-2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">TPA Empanelment</h5>
                     </div>
-                </div>
+                </a>
+                <a href="/governmentSchemes" class="card mb-3">
+                    <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">GOVERNMENT SCHEMES</h5>
+                    </div>
+                </a>
             </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="department-block mb-5">
-                    <img src="images/service/service-2.jpg" alt="" class="img-fluid w-100">
-                    <div class="content">
-                        <h4 class="mt-4 mb-2  title-color">TPA Empanelment</h4>
-                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/TPAEmpanelment" class="read-more">View More <i
-                                class="icofont-simple-right ml-2"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="department-block mb-5">
-                    <img src="images/service/service-3.jpg" alt="" class="img-fluid w-100">
-                    <div class="content">
-                        <h4 class="mt-4 mb-2 title-color">GOVERNMENT SCHEMES</h4>
-                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/governmentSchemes" class="read-more">View More <i
-                                class="icofont-simple-right ml-2"></i></a>
-                    </div>
-                </div>
+            <div class="row justify-content-center">
+                <a href="/patientCare" class="btn btn-primary mt-3">More Facilities</a>
             </div>
         </div>
-        <div class="row justify-content-center">
-            <a href="/patientCare" class="btn btn-primary" style="margin-top: 30px">More Facilities</a>
-        </div>
-    </div>
 </section>
 <!--  Patient Care End -->
 
@@ -226,7 +143,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-7 text-center">
                 <div class="section-title">
-                    <h2>Departments</h2>
+                    <h3>Departments</h3>
                     <div class="divider mx-auto my-4"></div>
                     <p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt
                         molestias nostrum laudantium. Maiores porro cumque quaerat.</p>
@@ -310,7 +227,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-7 text-center">
                 <div class="section-title">
-                    <h2>Events</h2>
+                    <h3>Events</h3>
                     <div class="divider mx-auto my-4"></div>
                     <p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt
                         molestias nostrum laudantium. Maiores porro cumque quaerat.</p>
@@ -335,8 +252,7 @@
                     <div class="content">
                         <h4 class="mt-4 mb-2  title-color">Health Camp</h4>
                         <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/healthCamp" class="read-more">View More <i
-                                class="icofont-simple-right ml-2"></i></a>
+                        <a href="/healthCamp" class="read-more">View More <i class="icofont-simple-right ml-2"></i></a>
                     </div>
                 </div>
             </div>
@@ -346,8 +262,7 @@
                     <div class="content">
                         <h4 class="mt-4 mb-2 title-color">Health Talks</h4>
                         <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/healthTalks" class="read-more">View More <i
-                                class="icofont-simple-right ml-2"></i></a>
+                        <a href="/healthTalks" class="read-more">View More <i class="icofont-simple-right ml-2"></i></a>
                     </div>
                 </div>
             </div>
@@ -356,13 +271,86 @@
 </section>
 <!--  Events End -->
 
+<!--  achievements starts -->
+<section class="contents count-bar wow  fadeInUp  animated">
+    <div class="container" style="background-color: red">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="row con-col">
+                    <div class="col-sm-6 col-xs-6">
+                        <div class=" count-col count-col-bdr">
+                            <p class="icon"><i class="fa fa-smile-o fa-2x"></i></p>
+                            <div class='numscroller numscroller-big-bottom main-text'>1000000 +</div>
+                            <p class="common-text">Happy patients</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-6">
+                        <div class=" count-col">
+                            <p class="icon"><i class="fa fa-user-md fa-2x"></i></p>
+                            <div class='numscroller numscroller-big-bottom main-text'>30 +</div>
+                            <p class="common-text">Doctors </p>
+                        </div>
+                    </div>
+                    <div class="clearfix visible-xs"></div>
+                    <div class="col-sm-6  col-xs-6">
+                        <div class=" count-col">
+                            <p class="icon"><i class="fa fa-group fa-2x"></i></p>
+                            <div class='numscroller numscroller-big-bottom main-text'>300 +</div>
+                            <p class="common-text">Staffs</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6  col-xs-6">
+                        <div class=" count-col">
+                            <p class="icon"><i class="fa fa-trophy fa-2x"></i></p>
+                            <div class='numscroller numscroller-big-bottom main-text'>50 +</div>
+                            <p class="common-text">Awards</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="working-hours">
+                    <h4>Working hours</h4>
+                    <ul>
+                        <li>
+                            <p>Our activities <span>24/7 Open</span></p>
+                        </li>
+                        <li>
+                            <p>OPD's Consultation <span>09:00 AM - 01:00 PM<br /> 05:00 PM - 07:00 PM</span></p>
+                        </li>
+                        <li>
+                            <p>Pharmacy <span>24/7 Open</span></p>
+                        </li>
+                        <li>
+                            <p>Ambulance <span>24/7 Open</span></p>
+                        </li>
+                        <li>
+                            <p>Treatment <span>24/7 Open</span></p>
+                        </li>
+                        <li>
+                            <p>Security team <span>24/7</span></p>
+                        </li>
+                        <li>
+                            <p>Emergency <span>24/7</span></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--  achievements end -->
+
+
+
 <!--  Media's Covergare Start -->
 <section class="section service-2">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-7 text-center">
                 <div class="section-title">
-                    <h2>Media's Coverage</h2>
+                    <h3>Media's Coverage</h3>
                     <div class="divider mx-auto my-4"></div>
                     <p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt
                         molestias nostrum laudantium. Maiores porro cumque quaerat.</p>
@@ -376,8 +364,7 @@
                     <div class="content">
                         <h4 class="mt-4 mb-2 title-color">Doctor's Desk</h4>
                         <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/doctorsDesk" class="read-more">View More <i
-                                class="icofont-simple-right ml-2"></i></a>
+                        <a href="/doctorsDesk" class="read-more">View More <i class="icofont-simple-right ml-2"></i></a>
                     </div>
                 </div>
             </div>
@@ -387,8 +374,7 @@
                     <div class="content">
                         <h4 class="mt-4 mb-2  title-color">Print Media</h4>
                         <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/printMedia" class="read-more">View More <i
-                                class="icofont-simple-right ml-2"></i></a>
+                        <a href="/printMedia" class="read-more">View More <i class="icofont-simple-right ml-2"></i></a>
                     </div>
                 </div>
             </div>
@@ -414,7 +400,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-7">
                 <div class="section-title text-center">
-                    <h2>Patient's Review</h2>
+                    <h3>Patient's Review</h3>
                     <div class="divider mx-auto my-4"></div>
                     <p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt
                         molestias nostrum laudantium. Maiores porro cumque quaerat.</p>

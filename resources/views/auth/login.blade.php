@@ -108,9 +108,6 @@
                                     </form>
                                 </div>
                             </div>
-                            {{-- <div class="credits">
-                                Developed by <a href="#" target="_blank">Pradeep Vijayvargiya</a>
-                            </div> --}}
                         </div>
                     </div>
                 </div>

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,7 +17,9 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-// =========== Website Frontends ===========
+// ================================= Frontend Start =================================
+
+// Home page
 Route::get('/', function () {
     return view('index');
 });
@@ -89,11 +92,8 @@ Route::get('/contact', function () {
 
 // =========== Hospital End ===========
 
-
 // =========== Departments Start ===========
-
 // =========== Clinical start =========== 
-
 // All Departments page
 Route::get('/clinicalServices', function () {
     return view('frontends.clinicalServices');
@@ -156,7 +156,6 @@ Route::get('/otorhinolaryngology', function () {
 // =========== Clinical end =========== 
 
 // =========== Diagnostic Services start ===========
-
 // All Diagnostic
 Route::get('/diagnosticServices', function () {
     return view('frontends.diagnosticServices');
@@ -200,7 +199,6 @@ Route::get('/XRay', function () {
 // =========== Diagnostic Services end =========== 
 
 // =========== Laboratory Services start ===========
-
 // All Laboratory
 Route::get('/laboratoryServices', function () {
     return view('frontends.laboratoryServices');
@@ -246,7 +244,6 @@ Route::get('/pharmacy', function () {
 // =========== Pharmacy end =========== 
 
 // =========== Transfusion Services start ===========
-
 // All Transfusion Services
 Route::get('/transfusionServices', function () {
     return view('frontends.transfusionServices');
@@ -264,7 +261,6 @@ Route::get('/bloodBank', function () {
 // =========== Transfusion Services end =========== 
 
 // =========== Professions Allied to Medicine start ===========
-
 // All Professions Services
 Route::get('/professionsAlliedToMedicine', function () {
     return view('frontends.professionsAlliedToMedicine');
@@ -330,9 +326,26 @@ Route::get('/digitalMedia', function () {
     return view('frontends.digitalMedia');
 });
 // =========== Media Coverage End ===========
+// ================================= Frontend End =================================
 
-// =========== Website Admin Panel ===========
+// ================================= Admin Panel Start =================================
+
+// =========== Login ===========
 Auth::routes();
-
 Route::get('/admin', [HomeController::class, 'index'])->name('home');
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+
+//User Manager
+Route::prefix('users')->controller(UserController::class)->middleware('auth')->group(function () {
+    Route::get('/index', 'index')->name('users.index');
+    Route::get('/add', 'create')->name('users.create');
+    Route::post('/store', 'store')->name('users.store');
+    Route::get('/edit/{id}', 'edit')->name('users.edit');
+    Route::put('/update/{id}', 'update')->name('users.update');
+    Route::get('/delete/{id}', 'destroy')->name('users.destroy');
+
+    // Log User
+    Route::get('/log', 'userLog')->name('users.log');
+});
+
+// ================================= Admin Panel End =================================

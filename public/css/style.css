@@ -213,7 +213,7 @@ input[type=email]:focus, input[type=password]:focus, input[type=text]:focus, inp
 }
 
 .section {
-  padding: 100px 0;
+  padding: 30px 0;
 }
 
 .section-sm {
@@ -671,7 +671,7 @@ a:focus {
 }
 
 .service {
-  padding-top: 50px;
+  padding-top: 30px;
 }
 .service .service-item {
   background: #fff;
