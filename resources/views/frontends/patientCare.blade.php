@@ -2,6 +2,40 @@
 @section('title', 'Patient Care')
 @section('content')
 
+<style>
+    .custom-card-deck {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .custom-card {
+        width: 300px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+    }
+
+    .custom-card:hover {
+        transform: scale(1.05);
+    }
+
+    .custom-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .custom-card .card-body {
+        text-align: center;
+    }
+
+    .custom-card .card-title {
+        font-size: 1.25rem;
+        margin-top: 10px;
+        color: #333;
+    }
+</style>
+
 <section class="page-title bg-1">
     <div class="overlay"></div>
     <div class="container">
@@ -25,81 +59,110 @@
         <div class="row justify-content-center">
             <div class="col-lg-7 text-center">
                 <div class="section-title">
-                    <h2>Award winning patient care</h2>
+                    <h1>Patient Care & Facilities</h1>
                     <div class="divider mx-auto my-4"></div>
-                    <p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt
-                        molestias nostrum laudantium. Maiores porro cumque quaerat.</p>
+                    {{-- <p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt
+                        molestias nostrum laudantium. Maiores porro cumque quaerat.</p> --}}
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card custom-card mb-4">
+                            <a href="/healthCheckUpPlan">
+                                <img class="card-img-top" src="images/service/service-1.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Health Check Up Plan</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card custom-card mb-4">
+                            <a href="/governmentSchemes">
+                                <img class="card-img-top" src="images/service/service-2.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Government Schemes</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card custom-card mb-4">
+                            <a href="/TPAEmpanelment">
+                                <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size: 1rem;">TPA Empanelment</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card custom-card mb-4">
+                            <a href="/patientTestimonial">
+                                <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Patient Testimonial</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card custom-card mb-4">
+                            <a href="/patientSuccessStories">
+                                <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Patient Success Stories</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card custom-card mb-4">
+                            <a href="/awardsAchievements">
+                                <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Awards & Achievements</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card custom-card mb-4">
+                            <a href="#">
+                                <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ramsnehi Optical</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card custom-card mb-4">
+                            <a href="#">
+                                <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Canteen</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card custom-card mb-4">
+                            <a href="#">
+                                <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Parking Facilities</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-6 ">
-                <div class="department-block mb-5">
-                    <img src="images/service/service-1.jpg" alt="" class="img-fluid w-100">
-                    <div class="content">
-                        <h4 class="mt-4 mb-2 title-color">Health Check Up Plan</h4>
-                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/healthCheckUpPlan" class="read-more">View More <i
-                                class="icofont-simple-right ml-2"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="department-block mb-5">
-                    <img src="images/service/service-2.jpg" alt="" class="img-fluid w-100">
-                    <div class="content">
-                        <h4 class="mt-4 mb-2  title-color">Government Schemes</h4>
-                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/governmentSchemes" class="read-more">View More <i
-                                class="icofont-simple-right ml-2"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="department-block mb-5">
-                    <img src="images/service/service-3.jpg" alt="" class="img-fluid w-100">
-                    <div class="content">
-                        <h4 class="mt-4 mb-2 title-color">TPA Empanelment</h4>
-                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/TPAEmpanelment" class="read-more">View More <i class="icofont-simple-right ml-2"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="department-block mb-5 mb-lg-0">
-                    <img src="images/service/service-8.jpg" alt="" class="img-fluid w-100">
-                    <div class="content">
-                        <h4 class="mt-4 mb-2 title-color">Patient Testimonial</h4>
-                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/patientTestimonial" class="read-more">View More <i
-                                class="icofont-simple-right ml-2"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="department-block mb-5 mb-lg-0">
-                    <img src="images/service/service-6.jpg" alt="" class="img-fluid w-100">
-                    <div class="content">
-                        <h4 class="mt-4 mb-2 title-color">Patient Success Stories</h4>
-                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/patientSuccessStories" class="read-more">View More <i
-                                class="icofont-simple-right ml-2"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="department-block mb-5 mb-lg-0">
-                    <img src="images/service/service-8.jpg" alt="" class="img-fluid w-100">
-                    <div class="content">
-                        <h4 class="mt-4 mb-2 title-color">Awards & Achievements</h4>
-                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/awardsAchievements" class="read-more">View More <i
-                                class="icofont-simple-right ml-2"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </section>
-
 @endsection

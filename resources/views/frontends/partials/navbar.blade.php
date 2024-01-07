@@ -9,19 +9,17 @@
             aria-expanded="false">{{ __('homepage.aboutUs_menu') }} <i
                 class="icofont-thin-down"></i></a>
         <ul class="dropdown-menu" aria-labelledby="dropdown02">
-            <li><a class="dropdown-item" href="/ramsnehi">Ramsnehi</a></li>
+            <li><a class="dropdown-item" href="/ramsnehi">About Ramsnehi</a></li>
             <li><a class="dropdown-item" href="/about">Overview</a></li>
             <li><a class="dropdown-item"
-                    href="/visionMission">{{ __('homepage.AboutUs_mission') }}</a>
-            </li>
+                    href="/visionMission">{{ __('homepage.AboutUs_mission') }}</a></li>
+            <li><a class="dropdown-item" href="http://www.ramsnehinursing.org/" target="_blank">Ramsnehi Nursing
+                    College</a></li>
             <li><a class="dropdown-item" href="/president">{{ __('homepage.AboutUs_president') }}</a>
             </li>
             <li><a class="dropdown-item" href="/secretary">{{ __('homepage.AboutUs_secretory') }}</a>
             </li>
-            {{-- <li><a class="dropdown-item" href="/">Mangement Team</a></li>
-            <li><a class="dropdown-item"
-                    href="/certificate">{{ __('homepage.AboutUs_certificates') }}</a>
-            </li> --}}
+            <li><a class="dropdown-item" href="#">Mangement Team</a></li>
         </ul>
     </li>
     {{-- AboutUs end --}}
@@ -29,7 +27,7 @@
     {{-- Patient Care --}}
     <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">Hospital <i class="icofont-thin-down"></i></a>
+            aria-expanded="false">Patient Care <i class="icofont-thin-down"></i></a>
         <ul class="dropdown-menu" aria-labelledby="dropdown02">
             <li><a class="dropdown-item" href="/patientCare">Patient Care & Facilities</a></li>
             <li><a class="dropdown-item" href="/healthCheckUpPlan">Health Check up plan</a>
@@ -41,6 +39,12 @@
             </li>
             <li><a class="dropdown-item" href="/awardsAchievements">Awards & Achievements</a>
             </li>
+            <li><a class="dropdown-item" href="#">Ramsnehi Optical</a>
+            </li>
+            <li><a class="dropdown-item" href="#">Canteen</a>
+            </li>
+            <li><a class="dropdown-item" href="#">Parking Facilities</a>
+            </li>
         </ul>
     </li>
     {{-- Patient Care --}}
@@ -50,7 +54,7 @@
         <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">Departments <i class="icofont-thin-down"></i></a>
         <ul class="dropdown-menu" aria-labelledby="dropdown02">
-            
+
             {{-- Clinical start --}}
             <li class="dropdown dropdown-submenu dropright">
                 <a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0301" role="button"
@@ -96,7 +100,8 @@
                 <ul class="dropdown-menu" aria-labelledby="dropdown0301">
                     <li><a class="dropdown-item" href="/laboratoryServices">All Laboratory Services</a></li>
                     <li><a class="dropdown-item" href="/clinicalBioChemistry">Clinical Bio-Chemistry</a></li>
-                    <li><a class="dropdown-item" href="/clinicalMicrobiologySerology">Clinical Microbiology and Serology</a></li>
+                    <li><a class="dropdown-item" href="/clinicalMicrobiologySerology">Clinical Microbiology and
+                            Serology</a></li>
                     <li><a class="dropdown-item" href="/clinicalPathology">Clinical Pathology</a></li>
                     <li><a class="dropdown-item" href="/cytopathology">Cytopathology</a></li>
                     <li><a class="dropdown-item" href="/haematology">Haematology</a></li>
@@ -126,7 +131,8 @@
                 <a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0301" role="button"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Professions Allied to Medicine</a>
                 <ul class="dropdown-menu" aria-labelledby="dropdown0301">
-                    <li><a class="dropdown-item" href="/professionsAlliedToMedicine">All Professions Allied to Medicine</a></li>
+                    <li><a class="dropdown-item" href="/professionsAlliedToMedicine">All Professions Allied to
+                            Medicine</a></li>
                     <li><a class="dropdown-item" href="/ambulance">Ambulance</a></li>
                     <li><a class="dropdown-item" href="/dietetics">Dietetics</a></li>
                     <li><a class="dropdown-item" href="/physiotherapy">Physiotherapy</a></li>
@@ -146,7 +152,7 @@
             <li><a class="dropdown-item" href="/allEvents">All Events</a></li>
             <li><a class="dropdown-item" href="/hospitalEvents">Hospital Events</a></li>
             <li><a class="dropdown-item" href="/healthCamp">Health Camp</a></li>
-            <li><a class="dropdown-item" href="/healthTalks">Health Talks</a></li>
+            <li><a class="dropdown-item" href="#">Training Program</a></li>
         </ul>
     </li>
     {{-- Events end --}}

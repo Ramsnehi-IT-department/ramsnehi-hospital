@@ -2,6 +2,41 @@
 @section('title', 'All Events')
 @section('content')
 
+<style>
+    .custom-card-deck {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .custom-card {
+        width: 300px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+    }
+
+    .custom-card:hover {
+        transform: scale(1.05);
+    }
+
+    .custom-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .custom-card .card-body {
+        text-align: center;
+    }
+
+    .custom-card .card-title {
+        font-size: 1.25rem;
+        margin-top: 10px;
+        color: #333;
+    }
+
+</style>
+
 <section class="page-title bg-1">
     <div class="overlay"></div>
     <div class="container">
@@ -25,48 +60,47 @@
         <div class="row justify-content-center">
             <div class="col-lg-7 text-center">
                 <div class="section-title">
-                    <h2>Award winning patient care</h2>
+                    <h1>Events</h1>
                     <div class="divider mx-auto my-4"></div>
-                    <p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt
-                        molestias nostrum laudantium. Maiores porro cumque quaerat.</p>
+                    {{-- <p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt
+                        molestias nostrum laudantium. Maiores porro cumque quaerat.</p> --}}
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card custom-card mb-4">
+                            <a href="/hospitalEvents">
+                                <img class="card-img-top" src="images/service/service-1.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hospital Events</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card custom-card mb-4">
+                            <a href="/healthCamp">
+                                <img class="card-img-top" src="images/service/service-2.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Health Camp</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card custom-card mb-4">
+                            <a href="#">
+                                <img class="card-img-top" src="images/service/service-2.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Training Program</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-6 ">
-                <div class="department-block mb-5">
-                    <img src="images/service/service-1.jpg" alt="" class="img-fluid w-100">
-                    <div class="content">
-                        <h4 class="mt-4 mb-2 title-color">Hospital Events</h4>
-                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/hospitalEvents" class="read-more">View More <i
-                                class="icofont-simple-right ml-2"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="department-block mb-5">
-                    <img src="images/service/service-2.jpg" alt="" class="img-fluid w-100">
-                    <div class="content">
-                        <h4 class="mt-4 mb-2  title-color">Health Camp</h4>
-                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/healthCamp" class="read-more">View More <i
-                                class="icofont-simple-right ml-2"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="department-block mb-5">
-                    <img src="images/service/service-3.jpg" alt="" class="img-fluid w-100">
-                    <div class="content">
-                        <h4 class="mt-4 mb-2 title-color">Health Talks</h4>
-                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/healthTalks" class="read-more">View More <i class="icofont-simple-right ml-2"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </section>
 
 @endsection

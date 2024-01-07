@@ -2,6 +2,41 @@
 @section('title', 'Diagnostic Services')
 @section('content')
 
+<style>
+    .custom-card-deck {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .custom-card {
+        width: 300px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+    }
+
+    .custom-card:hover {
+        transform: scale(1.05);
+    }
+
+    .custom-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .custom-card .card-body {
+        text-align: center;
+    }
+
+    .custom-card .card-title {
+        font-size: 1.25rem;
+        margin-top: 10px;
+        color: #333;
+    }
+
+</style>
+
 <section class="page-title bg-1">
     <div class="overlay"></div>
     <div class="container">
@@ -11,7 +46,8 @@
                     <ul class="list-inline">
                         <li class="list-inline-item"><a href="/" class="text-white">Home</a></li>
                         <li class="list-inline-item"><span class="text-white">/</span></li>
-                        <li class="list-inline-item"><a href="/diagnosticServices" class="text-white-50">Departments Detail</a></li>
+                        <li class="list-inline-item"><a href="/diagnosticServices" class="text-white-50">Departments
+                                Detail</a></li>
                     </ul>
                     <h1 class="text-capitalize mb-5 text-lg">Diagnostic Services</h1>
                 </div>
@@ -25,95 +61,91 @@
         <div class="row justify-content-center">
             <div class="col-lg-7 text-center">
                 <div class="section-title">
-                    <h2>Award winning patient care</h2>
+                    <h1>Diagnostic Services</h1>
                     <div class="divider mx-auto my-4"></div>
-                    <p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt
-                        molestias nostrum laudantium. Maiores porro cumque quaerat.</p>
+                    {{-- <p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt
+                        molestias nostrum laudantium. Maiores porro cumque quaerat.</p> --}}
                 </div>
             </div>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-4 col-md-6 ">
-                <div class="department-block mb-5">
-                    <img src="images/service/service-1.jpg" alt="" class="img-fluid w-100">
-                    <div class="content">
-                        <h4 class="mt-4 mb-2 title-color">2D Echo</h4>
-                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/2DEcho" class="read-more">View More <i class="icofont-simple-right ml-2"></i></a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card custom-card mb-4">
+                            <a href="/2DEcho">
+                                <img class="card-img-top" src="images/service/service-1.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">2D Echo</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card custom-card mb-4">
+                            <a href="/DSALab">
+                                <img class="card-img-top" src="images/service/service-2.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">DSA Lab</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card custom-card mb-4">
+                            <a href="/ECG">
+                                <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size: 1rem;">ECG</h5>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="department-block mb-5">
-                    <img src="images/service/service-2.jpg" alt="" class="img-fluid w-100">
-                    <div class="content">
-                        <h4 class="mt-4 mb-2  title-color">DSA Lab</h4>
-                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/DSALab" class="read-more">View More <i class="icofont-simple-right ml-2"></i></a>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card custom-card mb-4">
+                            <a href="/MRI">
+                                <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">MRI</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card custom-card mb-4">
+                            <a href="/treadMillTesting">
+                                <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tread Mill Testing</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card custom-card mb-4">
+                            <a href="/ultrasound">
+                                <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ultrasound</h5>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="department-block mb-5">
-                    <img src="images/service/service-3.jpg" alt="" class="img-fluid w-100">
-                    <div class="content">
-                        <h4 class="mt-4 mb-2 title-color">ECG</h4>
-                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/ECG" class="read-more">View More <i class="icofont-simple-right ml-2"></i></a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-lg-4 col-md-6 ">
-                <div class="department-block  mb-5 mb-lg-0">
-                    <img src="images/service/service-4.jpg" alt="" class="img-fluid w-100">
-                    <div class="content">
-                        <h4 class="mt-4 mb-2 title-color">MRI</h4>
-                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/MRI" class="read-more">View More <i class="icofont-simple-right ml-2"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="department-block mb-5 mb-lg-0">
-                    <img src="images/service/service-6.jpg" alt="" class="img-fluid w-100">
-                    <div class="content">
-                        <h4 class="mt-4 mb-2 title-color">Tread Mill Testing</h4>
-                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/treadMillTesting" class="read-more">View More <i
-                                class="icofont-simple-right ml-2"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="department-block mb-5 mb-lg-0">
-                    <img src="images/service/service-8.jpg" alt="" class="img-fluid w-100">
-                    <div class="content">
-                        <h4 class="mt-4 mb-2 title-color">Ultrasound</h4>
-                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/ultrasound" class="read-more">View More <i class="icofont-simple-right ml-2"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 ">
-                <div class="department-block  mb-5 mb-lg-0">
-                    <img src="images/service/service-4.jpg" alt="" class="img-fluid w-100">
-                    <div class="content">
-                        <h4 class="mt-4 mb-2 title-color">X-Ray</h4>
-                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/X-Ray" class="read-more">View More <i class="icofont-simple-right ml-2"></i></a>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card custom-card mb-4">
+                            <a href="/XRay">
+                                <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">X-Ray</h5>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 </section>
 
 @endsection

@@ -2,6 +2,40 @@
 @section('title', 'Clinical Services')
 @section('content')
 
+<style>
+    .custom-card-deck {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .custom-card {
+        width: 300px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+    }
+
+    .custom-card:hover {
+        transform: scale(1.05);
+    }
+
+    .custom-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .custom-card .card-body {
+        text-align: center;
+    }
+
+    .custom-card .card-title {
+        font-size: 1.25rem;
+        margin-top: 10px;
+        color: #333;
+    }
+</style>
+
 <section class="page-title bg-1">
     <div class="overlay"></div>
     <div class="container">
@@ -25,133 +59,143 @@
         <div class="row justify-content-center">
             <div class="col-lg-7 text-center">
                 <div class="section-title">
-                    <h2>Award winning patient care</h2>
+                    <h1>Clinical Services</h1>
                     <div class="divider mx-auto my-4"></div>
-                    <p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt
-                        molestias nostrum laudantium. Maiores porro cumque quaerat.</p>
+                    {{-- <p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt
+                        molestias nostrum laudantium. Maiores porro cumque quaerat.</p> --}}
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card custom-card mb-4">
+                            <a href="/anaesthesiology">
+                                <img class="card-img-top" src="images/service/service-1.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Anaesthesiology</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card custom-card mb-4">
+                            <a href="/cardiologyDepartment">
+                                <img class="card-img-top" src="images/service/service-2.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cardiology</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card custom-card mb-4">
+                            <a href="/dental">
+                                <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size: 1rem;">Dental</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card custom-card mb-4">
+                            <a href="/generalMedicine">
+                                <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">General Medicine</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card custom-card mb-4">
+                            <a href="/generalSurgery">
+                                <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size: 0.85rem;">General &amp; Laparoscopy Surgery</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card custom-card mb-4">
+                            <a href="/neuroSurgery">
+                                <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Neuro surgery</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card custom-card mb-4">
+                            <a href="/gynecology">
+                                <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size: 0.85rem;">Gynecology &amp; Obstetrics&#160;Department&#160</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card custom-card mb-4">
+                            <a href="/ophthalmology">
+                                <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ophthalmology</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card custom-card mb-4">
+                            <a href="/orthopedic">
+                                <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Orthopedic Surgery</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card custom-card mb-4">
+                            <a href="/Pediatric">
+                                <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pediatric &amp; Neonatology</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card custom-card mb-4">
+                            <a href="/otorhinolaryngology">
+                                <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size: 0.85rem;">Otorhinolaryngology (Ear Nose Throat)</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card custom-card mb-4">
+                            <a href="">
+                                <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Coming Soon</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-6 ">
-                <div class="department-block mb-5">
-                    <img src="images/service/service-1.jpg" alt="" class="img-fluid w-100">
-                    <div class="content">
-                        <h4 class="mt-4 mb-2 title-color">Anaesthesiology</h4>
-                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/anaesthesiology" class="read-more">View More <i
-                                class="icofont-simple-right ml-2"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="department-block mb-5">
-                    <img src="images/service/service-2.jpg" alt="" class="img-fluid w-100">
-                    <div class="content">
-                        <h4 class="mt-4 mb-2  title-color">Cardiology</h4>
-                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/cardiologyDepartment" class="read-more">View More <i
-                                class="icofont-simple-right ml-2"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="department-block mb-5">
-                    <img src="images/service/service-3.jpg" alt="" class="img-fluid w-100">
-                    <div class="content">
-                        <h4 class="mt-4 mb-2 title-color">Dental</h4>
-                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/dental" class="read-more">View More <i class="icofont-simple-right ml-2"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="department-block mb-5 mb-lg-0">
-                    <img src="images/service/service-8.jpg" alt="" class="img-fluid w-100">
-                    <div class="content">
-                        <h4 class="mt-4 mb-2 title-color">General Medicine</h4>
-                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/generalMedicine" class="read-more">View More <i
-                                class="icofont-simple-right ml-2"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="department-block mb-5 mb-lg-0">
-                    <img src="images/service/service-6.jpg" alt="" class="img-fluid w-100">
-                    <div class="content">
-                        <h4 class="mt-4 mb-2 title-color">General &amp; Laparoscopy Surgery</h4>
-                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/generalSurgery" class="read-more">View More <i
-                                class="icofont-simple-right ml-2"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="department-block mb-5 mb-lg-0">
-                    <img src="images/service/service-8.jpg" alt="" class="img-fluid w-100">
-                    <div class="content">
-                        <h4 class="mt-4 mb-2 title-color">Neuro surgery</h4>
-                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/neuroSurgery" class="read-more">View More <i
-                                class="icofont-simple-right ml-2"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="department-block mb-5 mb-lg-0">
-                    <img src="images/service/service-8.jpg" alt="" class="img-fluid w-100">
-                    <div class="content">
-                        <h4 class="mt-4 mb-2 title-color">Gynecology &amp; Obstetrics&#160;Department&#160</h4>
-                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/gynecology" class="read-more">View More <i class="icofont-simple-right ml-2"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 ">
-                <div class="department-block  mb-5 mb-lg-0">
-                    <img src="images/service/service-4.jpg" alt="" class="img-fluid w-100">
-                    <div class="content">
-                        <h4 class="mt-4 mb-2 title-color">Ophthalmology</h4>
-                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/ophthalmology" class="read-more">View More <i
-                                class="icofont-simple-right ml-2"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="department-block mb-5">
-                    <img src="images/service/service-3.jpg" alt="" class="img-fluid w-100">
-                    <div class="content">
-                        <h4 class="mt-4 mb-2 title-color">Orthopedic Surgery</h4>
-                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/orthopedic" class="read-more">View More <i class="icofont-simple-right ml-2"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="department-block mb-5 mb-lg-0">
-                    <img src="images/service/service-6.jpg" alt="" class="img-fluid w-100">
-                    <div class="content">
-                        <h4 class="mt-4 mb-2 title-color">Pediatric &amp; Neonatology</h4>
-                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/Pediatric" class="read-more">View More <i class="icofont-simple-right ml-2"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 ">
-                <div class="department-block  mb-5 mb-lg-0">
-                    <img src="images/service/service-4.jpg" alt="" class="img-fluid w-100">
-                    <div class="content">
-                        <h4 class="mt-4 mb-2 title-color">Otorhinolaryngology (Ear Nose Throat)</h4>
-                        <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                        <a href="/otorhinolaryngology" class="read-more">View More <i
-                                class="icofont-simple-right ml-2"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </section>
 
 @endsection
