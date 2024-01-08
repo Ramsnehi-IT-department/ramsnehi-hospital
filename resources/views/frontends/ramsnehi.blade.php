@@ -120,16 +120,6 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card custom-card mb-4">
-                            <a href="/laboratoryServices">
-                                <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Management Team</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

@@ -8,40 +8,39 @@
     </li><!-- End Dashboard Nav -->
 
 
-    <!-- Start Quality -->
+   <!-- Start Quality - Visible for 'quality' role and 'admin' -->
+    @if (auth()->user()->role == 'quality' || auth()->user()->role == 'admin')
     <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#components-Quality" href="#">
             <i class="bi bi-menu-button-wide"></i><span>Quality Department</span>
         </a>
     </li>
+    @endif
     <!-- End Quality -->
 
-    <!-- Start HR -->
+    <!-- Start HR - Visible for 'hr' role and 'admin' -->
+    @if (auth()->user()->role == 'hr' || auth()->user()->role == 'quality' || auth()->user()->role == 'admin')
     <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#components-HR" href="#">
             <i class="bi bi-menu-button-wide"></i><span>HR Department</span>
         </a>
     </li>
+    @endif
     <!-- End HR -->
 
-    <!-- Start User Manager Nav -->
+    <!-- User Manager and Log links only for 'admin' -->
     @if (auth()->user()->role == 'admin')
-        <li class="nav-item">
-            <a class="nav-link collapsed" data-bs-target="#components-userManager" href="{{ route('users.index') }}">
-                <i class="bi bi-menu-button-wide"></i><span>User Manager</span>
-            </a>
-        </li>
-    @endif
-    <!-- End User Manager Nav -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#components-userManager" href="{{ route('users.index') }}">
+            <i class="bi bi-menu-button-wide"></i><span>User Manager</span>
+        </a>
+    </li>
 
-    <!-- Start User Log Nav -->
-    @if (auth()->user()->role == 'admin')
-        <li class="nav-item">
-            <a class="nav-link collapsed" data-bs-target="#components-log" href="#">
-                <i class="bi bi-menu-button-wide"></i><span>Log</span>
-            </a>
-        </li>
+    <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#components-log" href="#">
+            <i class="bi bi-menu-button-wide"></i><span>Log</span>
+        </a>
+    </li>
     @endif
-    <!-- End User Log Nav -->
-
+    <!-- End User Manager and User Log Nav -->
 </ul>

@@ -85,11 +85,6 @@ Route::get('/awardsAchievements', function () {
     return view('frontends.awardsAchievements');
 });
 
-// Contact page
-Route::get('/contact', function () {
-    return view('frontends.contact');
-});
-
 // =========== Hospital End ===========
 
 // =========== Departments Start ===========
@@ -326,6 +321,17 @@ Route::get('/digitalMedia', function () {
     return view('frontends.digitalMedia');
 });
 // =========== Media Coverage End ===========
+
+// Career page
+Route::get('/career', function () {
+    return view('frontends.career');
+});
+
+// Contact page
+Route::get('/contact', function () {
+    return view('frontends.contact');
+});
+
 // ================================= Frontend End =================================
 
 // ================================= Admin Panel Start =================================

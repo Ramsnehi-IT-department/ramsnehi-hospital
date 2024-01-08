@@ -19,7 +19,6 @@
             </li>
             <li><a class="dropdown-item" href="/secretary">{{ __('homepage.AboutUs_secretory') }}</a>
             </li>
-            <li><a class="dropdown-item" href="#">Mangement Team</a></li>
         </ul>
     </li>
     {{-- AboutUs end --}}
@@ -30,21 +29,13 @@
             aria-expanded="false">Patient Care <i class="icofont-thin-down"></i></a>
         <ul class="dropdown-menu" aria-labelledby="dropdown02">
             <li><a class="dropdown-item" href="/patientCare">Patient Care & Facilities</a></li>
-            <li><a class="dropdown-item" href="/healthCheckUpPlan">Health Check up plan</a>
-            </li>
+            <li><a class="dropdown-item" href="/healthCheckUpPlan">Health Check up plan</a></li>
             <li><a class="dropdown-item" href="/governmentSchemes">Government Schemes</a></li>
             <li><a class="dropdown-item" href="/TPAEmpanelment">TPA Empanelment</a></li>
-            <li><a class="dropdown-item" href="/patientTestimonial">Patient Testimonial</a></li>
-            <li><a class="dropdown-item" href="/patientSuccessStories">Patient Success Stories</a>
-            </li>
-            <li><a class="dropdown-item" href="/awardsAchievements">Awards & Achievements</a>
-            </li>
-            <li><a class="dropdown-item" href="#">Ramsnehi Optical</a>
-            </li>
-            <li><a class="dropdown-item" href="#">Canteen</a>
-            </li>
-            <li><a class="dropdown-item" href="#">Parking Facilities</a>
-            </li>
+            <li><a class="dropdown-item" href="/patientSuccessStories">Patient Success Stories</a></li>
+            <li><a class="dropdown-item" href="/awardsAchievements">Awards & Achievements</a></li>
+            <li><a class="dropdown-item" href="#">Ramsnehi Optical</a></li>
+            <li><a class="dropdown-item" href="#">Facilities for Patients Attenders</a></li>
         </ul>
     </li>
     {{-- Patient Care --}}
@@ -147,7 +138,7 @@
     {{-- Events Start --}}
     <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">Events <i class="icofont-thin-down"></i></a>
+            aria-expanded="false">Events & Initiatives <i class="icofont-thin-down"></i></a>
         <ul class="dropdown-menu" aria-labelledby="dropdown02">
             <li><a class="dropdown-item" href="/allEvents">All Events</a></li>
             <li><a class="dropdown-item" href="/hospitalEvents">Hospital Events</a></li>
@@ -170,9 +161,9 @@
     </li>
     {{-- Media Coverage end --}}
 
-    {{-- Career with Us start --}}
-    <li class="nav-item"><a class="nav-link" href="/">Career</a></li>
-    {{-- Career with Us end --}}
+    {{-- Career start --}}
+    <li class="nav-item"><a class="nav-link" href="/career">Career</a></li>
+    {{-- Career end --}}
 
     {{-- Contact start --}}
     <li class="nav-item"><a class="nav-link" href="/contact">{{ __('homepage.contact_menu') }}</a>

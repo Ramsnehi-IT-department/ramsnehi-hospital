@@ -35,6 +35,58 @@
         color: #333;
     }
 
+    /* Style for the achievements section */
+    .achievements {
+        background-color: #bfafaf;
+        padding: 1rem;
+        border-radius: 0.5rem; 
+    }
+
+    /* Style for the working-hours section */
+    .working-hours {
+        background-color: #0b0a0a;
+        padding: 1rem;
+        border-radius: 0.5rem;
+    }
+
+    /* Style for the heading */
+    .working-hours h4 {
+        margin-bottom: 1rem;
+        color: #d7333e;
+    }
+
+    /* Style for the content within <p> tags to be displayed in one line */
+    .working-hours p {
+        margin-bottom: 0;
+        /* Adjust margin to prevent extra spacing */
+        display: flex;
+        /* Use flexbox */
+        justify-content: space-between;
+        /* Space content within the <p> tag */
+    }
+
+    /* Style for the list items */
+    .working-hours ul {
+        list-style: none;
+        padding: 0;
+        /* Adjust padding */
+    }
+
+    /* Style for spans within <p> tags */
+    .working-hours p span {
+        font-weight: bold;
+        /* Make span content bold */
+    }
+
+    /* Additional specific styles for certain items */
+    .working-hours li:nth-child(2) span {
+        color: #0f9d58;
+    }
+
+    .working-hours li:nth-child(8) span {
+        color: #ff5722;
+    }
+
 </style>
 <!-- Slider Start -->
 <section>
@@ -100,31 +152,40 @@
             <div class="row justify-content-center">
                 <div class="col-lg-12 text-center">
                     <div class="section-title">
-                        <div class="feature-block d-lg-flex">
-                            <div class="feature-item mb-5 mb-lg-0">
-                                <img src="images/shree-maharaj.jpg" alt="Shree Maharaj" class="img-fluid">
-                                <p style="margin-top: 3px; text-align: center; text-bold; font-size: 1.2rem;">स्वामीजी
-                                    श्री १००८ रामचरन जी महाराज</p>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4">
+                                <div class="feature-item mb-5 mb-lg-0">
+                                    <img src="images/shree_maharaj.jpeg" alt="Shree Maharaj" class="img-fluid">
+                                    <p class="text-center mt-3" style="font-size: 1.2rem;">स्वामीजी श्री १००८ रामचरन जी महाराज</p>
+                                </div>
                             </div>
-                            <div class="feature-item mb-5 mb-lg-0">
-                                <img src="images/ramsnehi_hospital.jpg" alt="Ramsnehi Hospital Bhilwara"
-                                    class="img-fluid">
-                                <p style="margin-top: 3px; text-align: center; text-bold; font-size: 1.2rem;">रामस्नेही
-                                    चिकित्सालय एवं अनुसंधान केंद्र</p>
+                            <div class="col-lg-4">
+                                <div class="feature-item mb-5 mb-lg-0">
+                                    <img src="images/ramsnehi_hospital.jpg" alt="Ramsnehi Hospital Bhilwara" class="img-fluid">
+                                    <p class="text-center mt-3" style="font-size: 1.2rem;">रामस्नेही चिकित्सालय एवं अनुसंधान केंद्र</p>
+                                </div>
                             </div>
-                            <div class="feature-item mb-5 mb-lg-0">
-                                <img src="images/acharya.jpg" alt="Acharya Shree" class="img-fluid">
-                                <p style="margin-top: 3px; text-align: center; text-bold; font-size: 1.2rem;">स्वामीजी
-                                    श्री १००८ रामदयाल जी महाराज</p>
+                            <div class="col-lg-4">
+                                <div class="feature-item mb-5 mb-lg-0">
+                                    <img src="images/acharya.jpeg" alt="Acharya Shree" class="img-fluid">
+                                    <p class="text-center mt-3" style="font-size: 1.2rem;">स्वामीजी श्री १००८ रामदयाल जी महाराज</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="row justify-content-center">
-                            <a href="/ramsnehi" class="btn btn-sm btn-primary"
-                                style="margin-top: 10px; padding: 4px 8px;">Overview</a>
+
+                        <div class="row mt-4">
+                            <p>Being a conventional institute Ramsnehi Hospital competing in the current corporate cohort of Rajasthan by breaching the paucity of reasonable but high end treatment for last 23 years. Ramsnehi Hospital and Research and Institute, a 300 bedded Multispecialty Hospital with 4 consecutive NABH Accreditation believes and based on the righteous principle of Ramsnehi International Community. Inaugurated by present Peetadhishwar Shri 1008 Shri Ram Dayal Ji Maharaj on 25th April 2000 focuses more and more in providing continuous quality service keeping the affordability as its major constraint. Having a track record of several awards and honor from the state government implies our active participation at intra state family welfare programme.</p>
+                        </div>
+
+                        <div class="row justify-content-center mt-4">
+                            <div class="col-lg-12 text-center">
+                                <a href="/ramsnehi" class="btn btn-sm btn-primary">Overview</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
 </section>
@@ -264,7 +325,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-7 text-center">
                 <div class="section-title">
-                    <h1>Events</h1>
+                    <h1>Events & Initiatives</h1>
                     <div class="divider mx-auto my-4"></div>
                     <p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt
                         molestias nostrum laudantium. Maiores porro cumque quaerat.</p>
@@ -307,44 +368,44 @@
             <div class="col-lg-7">
                 <div class="row con-col">
                     <div class="col-sm-6 col-xs-6 mb-4">
-                        <div class="count-col count-col-bdr text-center p-4 rounded bg-white">
+                        <div class="count-col count-col-bdr text-center p-4 achievements">
                             <p class="icon"><i class="fa fa-smile-o fa-3x text-primary"></i></p>
-                            <div class="numscroller numscroller-big-bottom main-text text-secondary">1,000,000 +</div>
-                            <p class="common-text text-dark">Happy patients</p>
+                            <div class="numscroller numscroller-big-bottom main-text text-secondary">350,000 +</div>
+                            <p class="common-text text-dark">OPD + IPD Patients</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-xs-6 mb-4">
-                        <div class="count-col text-center p-4 rounded bg-white">
-                            <p class="icon"><i class="fa fa-user-md fa-3x text-primary"></i></p>
-                            <div class="numscroller numscroller-big-bottom main-text text-secondary">30 +</div>
+                        <div class="count-col text-center p-4 achievements">
+                            <p class="icon"><i class="fa fa-group fa-3x text-primary"></i></p>
+                            <div class="numscroller numscroller-big-bottom main-text text-secondary">150,000 +</div>
+                            <p class="common-text text-dark">Surgery</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-6 mb-4">
+                        <div class="count-col text-center p-4 achievements">
+                            <p class="icon"><i class="fa fa-trophy fa-3x text-primary"></i></p>
+                            <div class="numscroller numscroller-big-bottom main-text text-secondary">50 +</div>
                             <p class="common-text text-dark">Doctors</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-xs-6 mb-4">
-                        <div class="count-col text-center p-4 rounded bg-white">
-                            <p class="icon"><i class="fa fa-group fa-3x text-primary"></i></p>
-                            <div class="numscroller numscroller-big-bottom main-text text-secondary">300 +</div>
-                            <p class="common-text text-dark">Staff</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-xs-6 mb-4">
-                        <div class="count-col text-center p-4 rounded bg-white">
+                        <div class="count-col text-center p-4 achievements">
                             <p class="icon"><i class="fa fa-trophy fa-3x text-primary"></i></p>
-                            <div class="numscroller numscroller-big-bottom main-text text-secondary">50 +</div>
+                            <div class="numscroller numscroller-big-bottom main-text text-secondary">100 +</div>
                             <p class="common-text text-dark">Awards</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-5">
-                <div class="working-hours bg-white p-4 rounded">
-                    <h4 class="mb-4 text-primary">Working hours</h4>
-                    <ul class="list-unstyled">
+                <div class="working-hours">
+                    <h4>Working hours</h4>
+                    <ul>
                         <li>
-                            <p>Our activities <span>24/7 Open</span></p>
+                            <p>Our Activities<span>24/7 Open</span></p>
                         </li>
                         <li>
-                            <p>OPD's Consultation <span>09:00 AM - 01:00 PM<br /> 05:00 PM - 07:00 PM</span></p>
+                            <p>OPD's Consultation <span>09:00 AM - 01:00 PM <br /> 05:00 PM - 07:00 PM</span></p>
                         </li>
                         <li>
                             <p>Pharmacy <span>24/7 Open</span></p>
@@ -356,10 +417,13 @@
                             <p>Treatment <span>24/7 Open</span></p>
                         </li>
                         <li>
-                            <p>Security team <span>24/7</span></p>
+                            <p>Security Team <span>24/7</span></p>
                         </li>
                         <li>
                             <p>Emergency <span>24/7</span></p>
+                        </li>
+                        <li>
+                            <p>Ramsnehi Optics <span>12 hour</span></p>
                         </li>
                     </ul>
                 </div>
@@ -367,8 +431,6 @@
         </div>
     </div>
 </section>
-
-
 <!--  achievements end -->
 
 <!--  Media's Covergare Start -->
