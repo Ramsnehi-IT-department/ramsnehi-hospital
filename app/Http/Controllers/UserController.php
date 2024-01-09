@@ -8,6 +8,9 @@ use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\File;
+use App\Helpers\FileHelpers;
+use User as GlobalUser;
 
 class UserController extends Controller
 {
@@ -57,16 +60,31 @@ class UserController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-            'role' => ['required', 'in:admin,quality,hr,user']
+            'role' => ['required', 'in:admin,quality,hr,user'],
+            'image' => ['required', 'image', 'mimes:jpeg,png,jpg', 'max:2048']
         ]);
-
+    
+        // Handling image upload
+        if ($request->hasFile('image')) {
+            $image = $request->file('image');
+            $imageName = time() . '_' . $image->getClientOriginalName(); // Adjust the file name as needed
+    
+            // Store the image in the public/uploads directory
+            $image->storeAs('uploads', $imageName, 'public');
+    
+            // Add the file path to the validated data
+            $validated['image'] = 'uploads/' . $imageName;
+        }
+    
         // Encrypting Password
         $validated['password'] = Hash::make($validated['password']);
-
+    
+        // Create the user with validated data
         User::create($validated);
-
+    
         return redirect()->route('users.index')->with('success', 'User created successfully');
     }
+    
 
     /**
         * Edit the specified resource.
@@ -83,7 +101,6 @@ class UserController extends Controller
     /**
      * Update the specified resource in storage.
      */
-
     public function update(Request $request, string $id)
     {
         // Find the user by ID
@@ -96,24 +113,39 @@ class UserController extends Controller
         // Validate the request data
         $validated = $request->validate([
             'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', Rule::unique('users')->ignore($user->id)],
-            'role' => ['required', 'in:admin,quality,hr,user']
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users,email,'.$user->id],
+            'password' => ['nullable', 'string', 'min:8', 'confirmed'],
+            'role' => ['required', 'in:admin,quality,hr,user'],
+            'image' => ['nullable', 'image', 'mimes:jpeg,png,jpg', 'max:2048']
         ]);
-
-        // Check if the password is present in the request
-        if ($request->has('password')) {
+    
+        // Check if a new image is uploaded and update it if necessary
+        if ($request->hasFile('image')) {
+            $image = $request->file('image');
+            $imageName = time() . '_' . $image->getClientOriginalName();
+            $image->storeAs('public/images', $imageName);
+    
+            // Update the image path in the validated data
+            $validated['image'] = 'images/' . $imageName;
+        }
+    
+        // Check if the password is present in the request and update if provided
+        if ($request->filled('password')) {
             // Validate password
             $request->validate([
                 'password' => ['required', 'string', 'min:8', 'confirmed'],
             ]);
-
+    
             // Encrypting Password
             $validated['password'] = Hash::make($request->input('password'));
+        } else {
+            // Remove password from validated data if not provided
+            unset($validated['password']);
         }
-
+    
         // Update the user attributes
         $user->update($validated);
-
+    
         return redirect()->route('users.index')->with('success', 'User updated successfully');
     }
 

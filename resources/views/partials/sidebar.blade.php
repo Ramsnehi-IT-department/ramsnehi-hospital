@@ -21,7 +21,7 @@
     <!-- Start HR - Visible for 'hr' role and 'admin' -->
     @if (auth()->user()->role == 'hr' || auth()->user()->role == 'quality' || auth()->user()->role == 'admin')
     <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#components-HR" href="#">
+        <a class="nav-link collapsed" data-bs-target="#components-HR" href="{{ route('careers.index') }}">
             <i class="bi bi-menu-button-wide"></i><span>HR Department</span>
         </a>
     </li>

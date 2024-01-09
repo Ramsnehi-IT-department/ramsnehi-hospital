@@ -2,40 +2,6 @@
 @section('title', 'Patient Care')
 @section('content')
 
-<style>
-    .custom-card-deck {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-
-    .custom-card {
-        width: 300px;
-        margin-bottom: 20px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        transition: transform 0.3s;
-    }
-
-    .custom-card:hover {
-        transform: scale(1.05);
-    }
-
-    .custom-card img {
-        width: 100%;
-        height: auto;
-    }
-
-    .custom-card .card-body {
-        text-align: center;
-    }
-
-    .custom-card .card-title {
-        font-size: 1.25rem;
-        margin-top: 10px;
-        color: #333;
-    }
-</style>
-
 <section class="page-title bg-1">
     <div class="overlay"></div>
     <div class="container">

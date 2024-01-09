@@ -91,6 +91,20 @@
                     </div>
                 </div>
             @endif
+            {{-- image --}}
+            <div class="row">
+                <div class="col-lg-6 mb-3">
+                    <div class="form-floating">
+                        <input type="file" name="image" id="image" class="form-control" onchange="previewImage()">
+                        <label for="image">Image</label>
+                    </div>
+                    <img src="{{ asset('storage/' . $user->image) }}" id="preview" width="100" height="100"
+                        alt="Student">
+                    @error('image')
+                        {{ $message }}
+                    @enderror
+                </div>
+            </div>
             {{-- Add button --}}
             <div class="row">
                 <div class="mt-3 col-lg-6">
@@ -117,4 +131,25 @@
             }
         }
     </script>
+    <script>
+        function previewImage() {
+            var input = document.getElementById('image');
+            var preview = document.getElementById('preview');
+
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function(e) {
+                    preview.src = e.target.result;
+                    preview.style.display = 'block';
+                }
+
+                reader.readAsDataURL(input.files[0]);
+            } else {
+                preview.src = '';
+                preview.style.display = 'none';
+            }
+        }
+    </script>
+
 @endsection

@@ -5,6 +5,7 @@ use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\CareerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -341,7 +342,19 @@ Auth::routes();
 Route::get('/admin', [HomeController::class, 'index'])->name('home');
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
-//User Manager
+// =========== Career admin Start ===========
+Route::prefix('career')->controller(CareerController::class)->group(function () {
+
+    Route::get('/index', 'index')->name('careers.index');
+    Route::get('/add', 'create')->name('careers.add');
+    Route::post('/{page}/store', 'store')->name('careers.store');
+    // Route::get('/{page}/edit/{id}', 'edit')->name('careers.view');
+    // Route::put('/{page}/view/{id}', 'update')->name('careers.view');
+    // Route::get('/{page}/delete/{id}', 'destroy')->name('careers.destroy');
+});
+// =========== Career admin End ===========
+
+// =========== User Manager Start ===========
 Route::prefix('users')->controller(UserController::class)->middleware('auth')->group(function () {
     Route::get('/index', 'index')->name('users.index');
     Route::get('/add', 'create')->name('users.create');
@@ -350,8 +363,11 @@ Route::prefix('users')->controller(UserController::class)->middleware('auth')->g
     Route::put('/update/{id}', 'update')->name('users.update');
     Route::get('/delete/{id}', 'destroy')->name('users.destroy');
 
-    // Log User
+// Log User
     Route::get('/log', 'userLog')->name('users.log');
+
+    // =========== User Manager End ===========
+
 });
 
 // ================================= Admin Panel End =================================

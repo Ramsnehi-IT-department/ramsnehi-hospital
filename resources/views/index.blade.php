@@ -2,92 +2,6 @@
 @section('title', 'Home')
 @section('content')
 
-<style>
-    .custom-card-deck {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-
-    .custom-card {
-        width: 300px;
-        margin-bottom: 20px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        transition: transform 0.3s;
-    }
-
-    .custom-card:hover {
-        transform: scale(1.05);
-    }
-
-    .custom-card img {
-        width: 100%;
-        height: auto;
-    }
-
-    .custom-card .card-body {
-        text-align: center;
-    }
-
-    .custom-card .card-title {
-        font-size: 1.25rem;
-        margin-top: 10px;
-        color: #333;
-    }
-
-    /* Style for the achievements section */
-    .achievements {
-        background-color: #bfafaf;
-        padding: 1rem;
-        border-radius: 0.5rem; 
-    }
-
-    /* Style for the working-hours section */
-    .working-hours {
-        background-color: #0b0a0a;
-        padding: 1rem;
-        border-radius: 0.5rem;
-    }
-
-    /* Style for the heading */
-    .working-hours h4 {
-        margin-bottom: 1rem;
-        color: #d7333e;
-    }
-
-    /* Style for the content within <p> tags to be displayed in one line */
-    .working-hours p {
-        margin-bottom: 0;
-        /* Adjust margin to prevent extra spacing */
-        display: flex;
-        /* Use flexbox */
-        justify-content: space-between;
-        /* Space content within the <p> tag */
-    }
-
-    /* Style for the list items */
-    .working-hours ul {
-        list-style: none;
-        padding: 0;
-        /* Adjust padding */
-    }
-
-    /* Style for spans within <p> tags */
-    .working-hours p span {
-        font-weight: bold;
-        /* Make span content bold */
-    }
-
-    /* Additional specific styles for certain items */
-    .working-hours li:nth-child(2) span {
-        color: #0f9d58;
-    }
-
-    .working-hours li:nth-child(8) span {
-        color: #ff5722;
-    }
-
-</style>
 <!-- Slider Start -->
 <section>
     <div id="imageSlider" class="carousel slide" data-ride="carousel">
@@ -156,36 +70,48 @@
                             <div class="col-lg-4">
                                 <div class="feature-item mb-5 mb-lg-0">
                                     <img src="images/shree_maharaj.jpeg" alt="Shree Maharaj" class="img-fluid">
-                                    <p class="text-center mt-3" style="font-size: 1.2rem;">स्वामीजी श्री १००८ रामचरन जी महाराज</p>
+                                    <p class="text-center mt-3" style="font-size: 1.2rem;">स्वामीजी श्री १००८ रामचरन जी
+                                        महाराज</p>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="feature-item mb-5 mb-lg-0">
-                                    <img src="images/ramsnehi_hospital.jpg" alt="Ramsnehi Hospital Bhilwara" class="img-fluid">
-                                    <p class="text-center mt-3" style="font-size: 1.2rem;">रामस्नेही चिकित्सालय एवं अनुसंधान केंद्र</p>
+                                    <img src="images/ramsnehi_hospital.jpg" alt="Ramsnehi Hospital Bhilwara"
+                                        class="img-fluid">
+                                    <p class="text-center mt-3" style="font-size: 1.2rem;">रामस्नेही चिकित्सालय एवं
+                                        अनुसंधान केंद्र</p>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="feature-item mb-5 mb-lg-0">
                                     <img src="images/acharya.jpeg" alt="Acharya Shree" class="img-fluid">
-                                    <p class="text-center mt-3" style="font-size: 1.2rem;">स्वामीजी श्री १००८ रामदयाल जी महाराज</p>
+                                    <p class="text-center mt-3" style="font-size: 1.2rem;">स्वामीजी श्री १००८ रामदयाल जी
+                                        महाराज</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="row mt-4">
-                            <p>Being a conventional institute Ramsnehi Hospital competing in the current corporate cohort of Rajasthan by breaching the paucity of reasonable but high end treatment for last 23 years. Ramsnehi Hospital and Research and Institute, a 300 bedded Multispecialty Hospital with 4 consecutive NABH Accreditation believes and based on the righteous principle of Ramsnehi International Community. Inaugurated by present Peetadhishwar Shri 1008 Shri Ram Dayal Ji Maharaj on 25th April 2000 focuses more and more in providing continuous quality service keeping the affordability as its major constraint. Having a track record of several awards and honor from the state government implies our active participation at intra state family welfare programme.</p>
+                            <p>Being a conventional institute Ramsnehi Hospital competing in the current corporate
+                                cohort of Rajasthan by breaching the paucity of reasonable but high end treatment for
+                                last 23 years. Ramsnehi Hospital and Research and Institute, a 300 bedded Multispecialty
+                                Hospital with 4 consecutive NABH Accreditation believes and based on the righteous
+                                principle of Ramsnehi International Community. Inaugurated by present Peetadhishwar Shri
+                                1008 Shri Ram Dayal Ji Maharaj on 25th April 2000 focuses more and more in providing
+                                continuous quality service keeping the affordability as its major constraint. Having a
+                                track record of several awards and honor from the state government implies our active
+                                participation at intra state family welfare programme.</p>
                         </div>
 
                         <div class="row justify-content-center mt-4">
                             <div class="col-lg-12 text-center">
-                                <a href="/ramsnehi" class="btn btn-sm btn-primary">Overview</a>
+                                <a href="/about" class="btn btn-sm btn-primary">Overview</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </div>
 </section>

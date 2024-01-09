@@ -45,6 +45,7 @@
             <thead class="table-dark">
                 <tr>
                     <th scope="col">Id</th>
+                    <th scope="col">Image</th>
                     <th scope="col">Role</th>
                     <th scope="col">Name</th>
                     <th scope="col">Email</th>
@@ -57,6 +58,17 @@
                 @foreach ($users as $key => $user)
                     <tr>
                         <td>{{ $loop->iteration }}</td>
+                        <td>
+                            <a href="{{ url("student/{$user->id}/documents") }}"></a>
+                            @if ($user->image)
+                                <a href="#">
+                                    <img class="round-image" src="{{ asset('storage/' . $user->image) }}"
+                                        style="height: 100px; width: 100px;">
+                                </a>
+                            @else
+                                <span>No image found!</span>
+                            @endif
+                        </td>
                         <td>{{ $user->role }}</td>
                         <td>{{ $user->name }}</a></td>
                         <td>{{ $user->email }}</td>

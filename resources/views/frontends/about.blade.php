@@ -13,8 +13,6 @@
                       <li class="list-inline-item"><a href="/" class="text-white">Home</a></li>
                       <li class="list-inline-item"><span class="text-white">/</span></li>
                       <li class="list-inline-item"><a href="/ramsnehi" class="text-white-50">Ramsnehi</a></li>
-                      <li class="list-inline-item"><span class="text-white">/</span></li>
-                      <li class="list-inline-item"><a href="/about" class="text-white-50">About Ramsnehi</a></li>
                   </ul>
                   <h1 class="text-capitalize mb-5 text-lg">About Ramsnehi Hospital</h1>
               </div>
@@ -28,7 +26,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
-                <h3 class="title-color">Ramsnehi Hospital and Research Center</h3>
+                <h4 class="title-color">Ramsnehi Chikitsalaya Evam Anusandhan Kendra</h4>
                 <h5>Hospital - An Introduction</h5>
                 <p>Ramsnehi hospital was established on 25th April 2000 by the present Peetadhishwar Jagadguru Anant Shri Vibhushit Acharya Swamiji Shri 1008 Shri Ram Dayal Ji Maharaja of the International Ramsnehi Community, committed to the idea of providing the best treatment to the proletariat at a reasonable rate.</p>
                 <p>Ramsnehi is a 300 bedded NABH accredited multispecialty hospital with all specialities like General Medicine, General surgery, orthopaedic ,pediatric, cardiology, Neuro, cardiology, physiotherapy, nephrology. All investigatory services like pathology, microbiology, X-ray, MRI, CT scan, Ultrasound, ECG, TMT, Doppler.</p>
