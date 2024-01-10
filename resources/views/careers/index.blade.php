@@ -15,7 +15,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-4">
             <div class="card custom-card">
                 <a href="#">
                     <div class="card-body" style="display: flex; justify-content: center; align-items: center;">
@@ -24,9 +24,18 @@
                 </a>
             </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-4">
             <div class="card custom-card">
-                <a href="{{ route('careers.add') }}">
+                <a href="{{ (route('careers.addPublish')) }}">
+                    <div class="card-body" style="display: flex; justify-content: center; align-items: center;">
+                        <h1 class="card-title">Vacancy Publish</h1>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card custom-card">
+                <a href="{{ route('careers.addOpening') }}">
                     <div class="card-body" style="display: flex; justify-content: center; align-items: center;">
                         <h1 class="card-title">Create Opening</h1>
                     </div>

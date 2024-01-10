@@ -69,23 +69,15 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-4">
                                 <div class="feature-item mb-5 mb-lg-0">
-                                    <img src="images/shree_maharaj.jpeg" alt="Shree Maharaj" class="img-fluid">
-                                    <p class="text-center mt-3" style="font-size: 1.2rem;">स्वामीजी श्री १००८ रामचरन जी
+                                    <img src="images/shree_maharaj.jpeg" alt="Shree Maharaj" class="img-fluid" style="width: 300px;">
+                                    <p class="text-center mt-3" style="font-size: 1rem;">स्वामीजी श्री १००८ रामचरन जी
                                         महाराज</p>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="feature-item mb-5 mb-lg-0">
-                                    <img src="images/ramsnehi_hospital.jpg" alt="Ramsnehi Hospital Bhilwara"
-                                        class="img-fluid">
-                                    <p class="text-center mt-3" style="font-size: 1.2rem;">रामस्नेही चिकित्सालय एवं
-                                        अनुसंधान केंद्र</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="feature-item mb-5 mb-lg-0">
-                                    <img src="images/acharya.jpeg" alt="Acharya Shree" class="img-fluid">
-                                    <p class="text-center mt-3" style="font-size: 1.2rem;">स्वामीजी श्री १००८ रामदयाल जी
+                                    <img src="images/acharya.jpeg" alt="Acharya Shree" class="img-fluid" style="width: 300px;">
+                                    <p class="text-center mt-3" style="font-size: 1rem;">स्वामीजी श्री १००८ रामदयाल जी
                                         महाराज</p>
                                 </div>
                             </div>

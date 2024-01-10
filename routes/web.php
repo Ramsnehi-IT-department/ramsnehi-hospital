@@ -344,10 +344,11 @@ Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
 // =========== Career admin Start ===========
 Route::prefix('career')->controller(CareerController::class)->group(function () {
-
     Route::get('/index', 'index')->name('careers.index');
-    Route::get('/add', 'create')->name('careers.add');
-    Route::post('/{page}/store', 'store')->name('careers.store');
+    Route::get('/addOpening', 'createOpening')->name('careers.addOpening');
+    Route::post('/storeOpening', 'storeOpening')->name('careers.storeOpening');
+    Route::get('/addPublish', 'createPublish')->name('careers.addPublish');
+    Route::post('/processPublish', 'processPublish')->name('careers.processPublish');
     // Route::get('/{page}/edit/{id}', 'edit')->name('careers.view');
     // Route::put('/{page}/view/{id}', 'update')->name('careers.view');
     // Route::get('/{page}/delete/{id}', 'destroy')->name('careers.destroy');
