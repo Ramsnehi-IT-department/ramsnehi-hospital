@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\CareerController;
+use App\Http\Controllers\QualityController;
 
 /*
 |--------------------------------------------------------------------------
@@ -90,7 +91,13 @@ Route::get('/awardsAchievements', function () {
 
 // =========== Departments Start ===========
 // =========== Clinical start =========== 
+
 // All Departments page
+Route::get('/allDept', function () {
+    return view('frontends.allDept');
+});
+
+// All Clinical Departments page
 Route::get('/clinicalServices', function () {
     return view('frontends.clinicalServices');
 });
@@ -232,6 +239,13 @@ Route::get('/histopathology', function () {
 
 // =========== Laboratory Services end =========== 
 
+// =========== Emergency start ===========
+// Emergency page
+Route::get('/emergency', function () {
+    return view('frontends.emergency');
+});
+// =========== Emergency end =========== 
+
 // =========== Pharmacy start ===========
 // Pharmacy page
 Route::get('/pharmacy', function () {
@@ -343,12 +357,23 @@ Route::get('/admin', [HomeController::class, 'index'])->name('home');
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
 // =========== Career admin Start ===========
+Route::prefix('quality')->controller(QualityController::class)->group(function () {
+    Route::get('/index', 'index')->name('qualities.index');
+    // Route::get('/addOpening', 'createOpening')->name('careers.addOpening');
+    // Route::post('/storeOpening', 'storeOpening')->name('careers.storeOpening');
+});
+// =========== Career admin End ===========
+
+
+// =========== Career admin Start ===========
 Route::prefix('career')->controller(CareerController::class)->group(function () {
     Route::get('/index', 'index')->name('careers.index');
     Route::get('/addOpening', 'createOpening')->name('careers.addOpening');
     Route::post('/storeOpening', 'storeOpening')->name('careers.storeOpening');
     Route::get('/addPublish', 'createPublish')->name('careers.addPublish');
     Route::post('/processPublish', 'processPublish')->name('careers.processPublish');
+    Route::get('/applicantList', 'applicantList')->name('careers.applicantList');
+
     // Route::get('/{page}/edit/{id}', 'edit')->name('careers.view');
     // Route::put('/{page}/view/{id}', 'update')->name('careers.view');
     // Route::get('/{page}/delete/{id}', 'destroy')->name('careers.destroy');
@@ -363,7 +388,6 @@ Route::prefix('users')->controller(UserController::class)->middleware('auth')->g
     Route::get('/edit/{id}', 'edit')->name('users.edit');
     Route::put('/update/{id}', 'update')->name('users.update');
     Route::get('/delete/{id}', 'destroy')->name('users.destroy');
-
 // Log User
     Route::get('/log', 'userLog')->name('users.log');
 

@@ -2,6 +2,7 @@
 
 namespace App\Http\Middleware;
 
+use App;
 use Closure;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
@@ -11,15 +12,10 @@ use Session;
 
 class Locale
 {
-   /**
+    /**
      * Handle an incoming request.
-     *
-     * @param Request $request
-     * @param Closure $next
-     * @return Response|JsonResponse|RedirectResponse
      */
-
-   public function handle(Request $request, Closure $next): Response|JsonResponse|RedirectResponse
+    public function handle(Request $request, Closure $next): Response|JsonResponse|RedirectResponse
     {
         // Setting initial value for locale
         $locale = config('app.locale');
@@ -30,9 +26,8 @@ class Locale
             $locale = $request->get('_locale');
 
             // Checking if the app supports locale
-            $supportedLocales = ['en', 'hi'];
-            if (!in_array($locale, $supportedLocales)) {
-                // If the requested locale is not supported, fallback to default
+            $locales = ['en', 'hi'];
+            if (! in_array($locale, $locales)) {
                 $locale = config('app.locale');
             }
 
@@ -41,7 +36,12 @@ class Locale
         }
 
         // Getting locale from session
-        $locale = session()->get('_locale', config('app.fallback_locale'));
+        $locale = session()->get('_locale');
+
+        // If session does not have locale then resetting with fallback locale
+        if (! (isset($locale))) {
+            $locale = config('app.fallback_locale');
+        }
 
         // Setting app locale
         app()->setLocale($locale);
