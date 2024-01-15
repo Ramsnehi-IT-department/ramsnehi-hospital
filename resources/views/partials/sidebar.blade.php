@@ -28,6 +28,14 @@
     @endif
     <!-- End HR -->
 
+    <!-- Gallery start -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#components-Gallery" href="{{ route('galleries.index') }}">
+            <i class="bi bi-menu-button-wide"></i><span>Gallery</span>
+        </a>
+    </li>
+    <!-- Gallery end -->
+
     <!-- User Manager and Log links only for 'admin' -->
     @if (auth()->user()->role == 'admin')
     <li class="nav-item">
@@ -35,7 +43,6 @@
             <i class="bi bi-menu-button-wide"></i><span>User Manager</span>
         </a>
     </li>
-
     <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#components-log" href="#">
             <i class="bi bi-menu-button-wide"></i><span>Log</span>

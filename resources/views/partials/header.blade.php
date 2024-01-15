@@ -1,6 +1,6 @@
 <div class="d-flex align-items-center justify-content-between">
     <a href="{{ route('home') }}" class="logo d-flex align-items-center">
-        <img src="admin-assets/img/logo.png" alt="" width="200">
+        <img src="/admin-assets/img/logo.png" alt="" width="200">
     </a>
     <i class="bi bi-list toggle-sidebar-btn"></i>
 </div><!-- End Logo -->

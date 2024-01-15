@@ -1,5 +1,4 @@
 <header>
-
     <style>
         .elementor-animation-grow {
             transition: transform 0.3s ease-in-out;
@@ -8,7 +7,7 @@
         }
 
         .elementor-animation-grow:hover {
-            transform: scale(2.2);
+            transform: scale(1.5);
         }
 
     </style>
@@ -32,7 +31,7 @@
                 <img src="images/logo.png" alt="Ramsnehi-Logo" class="img-fluid">
             </a>
 
-            <img width="50" height="50" src="images/NABH.jpg"
+            <img width="50" height="50" src="images/nabh.png"
                 class="elementor-animation-grow attachment-thumbnail size-thumbnail ls-is-cached lazyloaded"
                 alt="NABH Accreditation" decoding="async">
 

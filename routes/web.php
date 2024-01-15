@@ -6,7 +6,10 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\CareerController;
+use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\HomeWebController;
 use App\Http\Controllers\QualityController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -31,10 +34,19 @@ Route::get('/ramsnehi', function () {
     return view('frontends.ramsnehi');
 });
 
+Route::resource('galleries', GalleryController::class);
+
+
 // About page
-Route::get('/about', function () {
-    return view('frontends.about');
-});
+// Route::get('/about', function () {
+//     return view('frontends.about');
+// });
+
+
+// Route::get('/about', 'HomeWebController@about');
+
+Route::get('/about', [HomeWebController::class, 'about']);
+
 
 // Vision page
 Route::get('/visionMission', function () {
@@ -356,13 +368,24 @@ Auth::routes();
 Route::get('/admin', [HomeController::class, 'index'])->name('home');
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
-// =========== Career admin Start ===========
+// =========== Quality admin Start ===========
 Route::prefix('quality')->controller(QualityController::class)->group(function () {
     Route::get('/index', 'index')->name('qualities.index');
     // Route::get('/addOpening', 'createOpening')->name('careers.addOpening');
     // Route::post('/storeOpening', 'storeOpening')->name('careers.storeOpening');
 });
-// =========== Career admin End ===========
+// =========== Quality admin End ===========
+
+// =========== Gallery Start ===========
+Route::prefix('gallery')->controller(GalleryController::class)->group(function () {
+    Route::get('/index', 'index')->name('galleries.index');
+    Route::get('/create', 'create')->name('galleries.create');
+    Route::post('/store', 'store')->name('galleries.store');
+});
+
+
+
+// =========== Gallery End ===========
 
 
 // =========== Career admin Start ===========
@@ -373,10 +396,6 @@ Route::prefix('career')->controller(CareerController::class)->group(function () 
     Route::get('/addPublish', 'createPublish')->name('careers.addPublish');
     Route::post('/processPublish', 'processPublish')->name('careers.processPublish');
     Route::get('/applicantList', 'applicantList')->name('careers.applicantList');
-
-    // Route::get('/{page}/edit/{id}', 'edit')->name('careers.view');
-    // Route::put('/{page}/view/{id}', 'update')->name('careers.view');
-    // Route::get('/{page}/delete/{id}', 'destroy')->name('careers.destroy');
 });
 // =========== Career admin End ===========
 

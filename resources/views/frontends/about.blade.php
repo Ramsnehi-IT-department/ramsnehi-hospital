@@ -21,6 +21,29 @@
   </div>
 </section>
 
+
+{{-- @section('content') --}}
+    <div class="container">
+@foreach ($galleries as $key => $gallery)
+
+        <h1>{{ $gallery->title }}</h1>
+        <p>{{ $gallery->page_url }}</p>
+
+        <div>
+            {!! $gallery->description !!}
+        </div>
+
+        {{-- You can also display the uploaded file if available --}}
+        @if ($gallery->file)
+            <img src="{{ asset('storage/' . $gallery->file) }}" alt="Gallery Image">
+            
+        @endif
+    @endforeach
+
+    </div>
+{{-- @endsection --}}
+
+
 {{-- Content Start --}}
 <section class="section about-page">
     <div class="container">
