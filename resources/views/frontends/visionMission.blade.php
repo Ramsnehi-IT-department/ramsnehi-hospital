@@ -13,14 +13,40 @@
                         <li class="list-inline-item"><span class="text-white">/</span></li>
                         <li class="list-inline-item"><a href="/ramsnehi" class="text-white-50">Ramsnehi</a></li>
                         <li class="list-inline-item"><span class="text-white">/</span></li>
-                        <li class="list-inline-item"><a href="/visionMission" class="text-white-50">Vission and Mission</a></li>
+                        <li class="list-inline-item"><a href="/visionMission" class="text-white-50">Vission and
+                                Mission</a></li>
                     </ul>
                     <h1 class="text-capitalize mb-5 text-lg">Vission and Mission</h1>
                 </div>
             </div>
         </div>
     </div>
-  </section>
+</section>
+
+
+
+<section>
+    <div class="container">
+        @foreach($galleries as $key => $gallery)
+
+            {{-- @if($gallery->file && Storage::exists($gallery->file))
+                <img src="{{ asset('storage/' . $gallery->file) }}"
+            alt="{{ $gallery->title }}">
+            {{ $gallery->id }}
+            <p>ID: {{ $gallery->id }}</p>
+            <p>{{ $gallery->description }}</p>
+        @else
+            {{ $gallery->title }}
+        @endif--}}
+
+        @if($gallery->file)
+            <img src="{{ asset('storage/' . $gallery->file) }}" alt="Gallery Image">
+
+        @endif
+        @endforeach
+    </div>
+</section>
+{{-- @endsection --}}
 
 {{-- Vision Content Start --}}
 <section class="section about-page">
@@ -47,7 +73,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
-                <img src="images/vision/research-promotions-img.jpg" alt="" class="img-fluid" style="margin-bottom: 10px;">
+                <img src="images/vision/research-promotions-img.jpg" alt="" class="img-fluid"
+                    style="margin-bottom: 10px;">
             </div>
             <div class="col-lg-6">
                 <h3 class="title-color">OUR VISION</h3>

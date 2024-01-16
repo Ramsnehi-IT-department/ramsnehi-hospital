@@ -49,9 +49,12 @@ Route::get('/about', [HomeWebController::class, 'about']);
 
 
 // Vision page
-Route::get('/visionMission', function () {
-    return view('frontends.visionMission');
-});
+// Route::get('/visionMission', function () {
+//     return view('frontends.visionMission');
+// });
+
+Route::get('/visionMission', [HomeWebController::class, 'visionMission']);
+
 
 // President page
 Route::get('/president', function () {

@@ -45,8 +45,8 @@
                 <div class="carousel-caption d-none d-md-block">
                     <div class="block text-dark">
                         <h1 class="animated-text">{{ __('homepage.slider_text_top') }}</h1>
-                        <h1 class="animated-text">{{ __('homepage.slider_text_middle') }}</h1>
-                        <p class="animated-text">{{ __('homepage.slider_text_bottom') }}</p>
+                        <h3 class="animated-text">{{ __('homepage.slider_text_middle') }}</h3>
+                        <h5 class="animated-text">{{ __('homepage.slider_text_bottom') }}</h5>
                     </div>
                 </div>
             </div>
@@ -55,8 +55,8 @@
                 <div class="carousel-caption d-none d-md-block">
                     <div class="block text-dark">
                         <h1 class="animated-text">{{ __('homepage.slider_text_top') }}</h1>
-                        <h1 class="animated-text">{{ __('homepage.slider_text_middle') }}</h1>
-                        <p class="animated-text">{{ __('homepage.slider_text_bottom') }}</p>
+                        <h3 class="animated-text">{{ __('homepage.slider_text_middle') }}</h3>
+                        <h5 class="animated-text">{{ __('homepage.slider_text_bottom') }}</h5>
                     </div>
                 </div>
             </div>
@@ -65,8 +65,8 @@
                 <div class="carousel-caption d-none d-md-block">
                     <div class="block text-dark">
                         <h1 class="animated-text">{{ __('homepage.slider_text_top') }}</h1>
-                        <h1 class="animated-text">{{ __('homepage.slider_text_middle') }}</h1>
-                        <p class="animated-text">{{ __('homepage.slider_text_bottom') }}</p>
+                        <h3 class="animated-text">{{ __('homepage.slider_text_middle') }}</h3>
+                        <h5 class="animated-text">{{ __('homepage.slider_text_bottom') }}</h5>
                     </div>
                 </div>
             </div>
@@ -97,7 +97,7 @@
                                 <div class="feature-item mb-5 mb-lg-0">
                                     <img src="images/shree_maharaj.jpeg" alt="Shree Maharaj" class="img-fluid"
                                         style="width: 300px;">
-                                    <p class="text-center mt-3" style="font-size: 1rem;">स्वामीजी श्री १००८ रामचरन जी
+                                    <p class="text-center mt-3" style="font-size: 1rem;">स्वामीजी श्री १००८ रामचरण जी
                                         महाराज</p>
                                 </div>
                             </div>

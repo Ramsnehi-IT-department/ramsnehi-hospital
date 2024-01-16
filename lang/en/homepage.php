@@ -17,7 +17,7 @@ return [
 
     // Navbar start
     'home_menu' => 'Home',
-    'aboutUs_menu' => 'About Us',
+    'aboutUs_menu' => 'Ramsnehi',
         'AboutUs_ramsnehi' => 'About Ramsnehi',
         'AboutUs_overview' => 'Overview',
         'AboutUs_mission' => 'Our Vision Mission',
@@ -104,7 +104,7 @@ return [
 
     // Slider start
     'slider_text_top' => 'WELCOME TO RAMSNEHI HOSPITAL',
-    'slider_text_middle' => 'Your Health Is Our Priority',
+    'slider_text_middle' => 'Your Good Health Is Our Priority',
     'slider_text_bottom' => 'Ramsnehi Hospital is a Multi Specialty & General Hospital,
     Professionally managed fully equipped with modern equipment and surgical gadgets.',
     // Slider end

@@ -17,7 +17,7 @@ return [
  
     // Navbar start
     'home_menu' => 'होम',
-    'aboutUs_menu' => 'हमारे बारे में',
+    'aboutUs_menu' => 'रामस्नेही',
         'AboutUs_ramsnehi' => 'रामस्नेही के बारे में',
         'AboutUs_overview' => 'अवलोकन',
         'AboutUs_mission' => 'हमारा दृष्टिकोण और उद्देश्य',
@@ -34,7 +34,6 @@ return [
         'careCenter_awards' => 'पुरस्कार एवं उपलब्धियाँ',
         'careCenter_optical' => 'रामस्नेही ऑप्टिकल',
         'careCenter_patientsAttenders' => 'मरीजों की देखभाल करने वालों के लिए सुविधाएं',
-        
 
     'department_menu' => 'विभाग',
     'department_allDept' => 'विभाग',
@@ -105,7 +104,7 @@ return [
 
     // Slider start
     'slider_text_top' => 'रामस्नेही अस्पताल में आपका स्वागत है',
-    'slider_text_middle' => 'आपका स्वास्थ्य हमारी प्राथमिकता है',
+    'slider_text_middle' => 'आपका उत्तम स्वास्थ्य हमारी प्राथमिकता है',
     'slider_text_bottom' => 'रामस्नेही अस्पताल एक मल्टी स्पेशलिटी एवं सामान्य अस्पताल है, पेशेवर ढंग से प्रबंधित, आधुनिक उपकरणों और सर्जिकल गैजेट्स से पूरी तरह सुसज्जित।',
     // Slider end
 

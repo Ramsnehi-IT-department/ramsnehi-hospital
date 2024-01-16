@@ -35,6 +35,9 @@ class RouteServiceProvider extends ServiceProvider
 
             Route::middleware('web')
                 ->group(base_path('routes/web.php'));
+
+            Route::middleware(['web', \App\Http\Middleware\Locale::class]) // Add your middleware here
+                ->group(base_path('routes/web.php'));
         });
     }
 }
