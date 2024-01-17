@@ -10,7 +10,7 @@ class CareerController extends Controller
 {
     /**
      * Display a listing of the resource.
-     */
+    */
     public function index()
     {
         return view('careers.index');
@@ -18,7 +18,7 @@ class CareerController extends Controller
 
     /**
      * Show the form for createOpening a new resource.
-     */
+    */
     public function createOpening()
     {
         return view('careers.addOpening');
@@ -37,7 +37,8 @@ class CareerController extends Controller
         // Create the user with validated data
         Opening::create($validated);
     
-        return redirect()->route('careers.index')->with('success', 'Opening created successfully');
+        return redirect()->route('careers.index')->withSuccess('Opening created successfully');
+
     }
 
     /**

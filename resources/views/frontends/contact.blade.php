@@ -111,7 +111,7 @@
 
                     <div>
                         <input class="btn btn-main btn-round-full" name="submit" type="submit"
-                            value="Send Messege"></input>
+                            value="Send Messege" />
                     </div>
                 </form>
             </div>
@@ -119,10 +119,9 @@
     </div>
 </section>
 
-
 <div class="google-map ">
     <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen
-        src="https://www.google.com/maps"></iframe>
+        src="https://www.google.com/maps/dir/25.3568994,74.6517426/ramsnehi+hospital/@25.3524694,74.6390533,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3968c3b47a4b9c6f:0xf5d32517b994873f!2m2!1d74.6439567!2d25.3496475?entry=ttu"></iframe>
 </div>
 
 @endsection

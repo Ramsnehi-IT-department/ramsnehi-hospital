@@ -19,7 +19,7 @@
     .animated-text {
         display: inline-block;
         /* overflow: hidden; */
-        animation: textAnimation 3s forwards;
+        animation: textAnimation 5s forwards;
         margin-bottom: 10px !important;
         margin-top: 10px !important;
     }
@@ -41,12 +41,12 @@
     <div id="imageSlider" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="images/bg/slider-bg-1.jpg" class="slider-image d-block w-100" alt="Image 1">
+                <img src="images/bg/bg-4.jpeg" class="slider-image d-block w-100" alt="Image 1">
                 <div class="carousel-caption d-none d-md-block">
                     <div class="block text-dark">
-                        <h1 class="animated-text">{{ __('homepage.slider_text_top') }}</h1>
-                        <h3 class="animated-text">{{ __('homepage.slider_text_middle') }}</h3>
-                        <h5 class="animated-text">{{ __('homepage.slider_text_bottom') }}</h5>
+                        <h1 class="animated-text" style="color: white"></h1>
+                        <h3 class="animated-text" style="color: white"></h3>
+                        <h1 class="animated-text" style="color: white">{{ __('homepage.slider_text_top') }}</h1>
                     </div>
                 </div>
             </div>
@@ -54,14 +54,14 @@
                 <img src="images/bg/night_slide.jpeg" class="slider-image d-block w-100" alt="Image 2">
                 <div class="carousel-caption d-none d-md-block">
                     <div class="block text-dark">
-                        <h1 class="animated-text">{{ __('homepage.slider_text_top') }}</h1>
-                        <h3 class="animated-text">{{ __('homepage.slider_text_middle') }}</h3>
-                        <h5 class="animated-text">{{ __('homepage.slider_text_bottom') }}</h5>
+                        <h1 class="animated-text" style="color: white">{{ __('homepage.slider_text_top') }}</h1>
+                        <h3 class="animated-text" style="color: white">{{ __('homepage.slider_text_middle') }}</h3>
+                        <h5 class="animated-text" style="color: white">{{ __('homepage.slider_text_bottom') }}</h5>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="images/bg/bg-4.jpg" class="slider-image d-block w-100" alt="Image 3">
+                <img src="images/bg/slider-bg-1.jpg" class="slider-image d-block w-100" alt="Image 3">
                 <div class="carousel-caption d-none d-md-block">
                     <div class="block text-dark">
                         <h1 class="animated-text">{{ __('homepage.slider_text_top') }}</h1>

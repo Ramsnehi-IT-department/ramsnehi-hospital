@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-{{-- @section('title', 'Add Document') --}}
+@section('title', 'Add Opening')
 
 @section('content')
 <div class="container">
@@ -17,6 +17,14 @@
     </div>
     <!-- End Page Title -->
 
+    {{-- display success message start --}}
+    @if(session('success'))
+        <div class="alert alert-success">
+            {{ session('success') }}
+        </div>
+    @endif
+    {{-- display success message end --}}
+
     {{-- display error message start --}}
     @if(session('error'))
         <div class="alert alert-warning">
@@ -25,7 +33,8 @@
     @endif
     {{-- display error message end --}}
 
-    <form class="col-lg-6 row" action="{{ route('careers.storeOpening') }}" method="post" enctype="multipart/form-data" autocomplete="off">
+    <form class="col-lg-6 row" action="{{ route('careers.storeOpening') }}" method="post"
+        enctype="multipart/form-data" autocomplete="off">
         @csrf
 
         {{-- Title --}}
@@ -66,13 +75,13 @@
 <script>
     // create action
     function add() {
-        if (confirm("Are you wants to add document!")) {
+        if (confirm("Are you wants to Creare Opening!")) {
             document.getElementById("add_btn").click();
         }
     }
     // reset
     function cancel() {
-        if (confirm("Are you wants to reset document data!")) {
+        if (confirm("Are you wants to reset Opening!")) {
             location.reload();
         }
     }

@@ -35,11 +35,6 @@
             <div class="col-lg-8">
                 <select class="form-select" multiple aria-label="multiple select example" name="vacancies[]">
                     <option value="1">Medical Officer</option>
-                    <option value="2">Physician</option>
-                    <option value="3">Surgeon</option>
-                    <option value="4">Nursing Officer</option>
-                    <option value="5">GNM</option>
-                    <option value="6">ANM</option>
                 </select>
             </div>
         </div>

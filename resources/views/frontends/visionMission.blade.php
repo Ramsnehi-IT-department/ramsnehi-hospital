@@ -23,31 +23,6 @@
     </div>
 </section>
 
-
-
-<section>
-    <div class="container">
-        @foreach($galleries as $key => $gallery)
-
-            {{-- @if($gallery->file && Storage::exists($gallery->file))
-                <img src="{{ asset('storage/' . $gallery->file) }}"
-            alt="{{ $gallery->title }}">
-            {{ $gallery->id }}
-            <p>ID: {{ $gallery->id }}</p>
-            <p>{{ $gallery->description }}</p>
-        @else
-            {{ $gallery->title }}
-        @endif--}}
-
-        @if($gallery->file)
-            <img src="{{ asset('storage/' . $gallery->file) }}" alt="Gallery Image">
-
-        @endif
-        @endforeach
-    </div>
-</section>
-{{-- @endsection --}}
-
 {{-- Vision Content Start --}}
 <section class="section about-page">
     <div class="container">
@@ -61,7 +36,18 @@
                     worshipping God.</p>
             </div>
             <div class="col-lg-6">
-                <img src="images/vision/mission.jpg" alt="" class="img-fluid" style="margin-bottom: 10px;">
+                {{-- <img src="images/vision/mission.jpg" alt="" class="img-fluid" style="margin-bottom: 10px;"> --}}
+                @foreach($galleries as $key => $gallery)
+                    @if($gallery->file)
+                        <img src="{{ asset('storage/' . $gallery->file) }}"
+                            alt="Gallery Image">
+                    @endif
+
+                    @if($gallery->file)
+                        <img src="{{ asset('storage/' . $gallery->file) }}"
+                            alt="Gallery Image">
+                    @endif
+                @endforeach
             </div>
         </div>
     </div>
