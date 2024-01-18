@@ -13,7 +13,7 @@
                         <li class="list-inline-item"><span class="text-white">/</span></li>
                         <li class="list-inline-item"><a href="/ramsnehi" class="text-white-50">Ramsnehi</a></li>
                     </ul>
-                    <h1 class="text-capitalize mb-5 text-lg">Ramsnehi Chikitsalaya Evam Anusandhan Kendra</h1>
+                    <h1 class="text-capitalize mb-5">Ramsnehi Chikitsalaya Evam Anusandhan Kendra</h1>
                 </div>
             </div>
         </div>
@@ -23,11 +23,12 @@
 <section class="section service-2">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-7 text-center">
+            <div class="text-center">
                 <div class="section-title">
-                    <h1>Overview</h1>
+                    <h1>Ramsnehi Chikitsalaya Evam Anusandhan Kendra</h1>
                     <div class="divider mx-auto my-4"></div>
-                    {{-- <p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt
+                    {{-- <div class="divider mx-auto my-4"></div>
+                    <p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt
                         molestias nostrum laudantium. Maiores porro cumque quaerat.</p> --}}
                 </div>
             </div>
@@ -35,7 +36,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card custom-card mb-4">
-                            <a href="/about">
+                            <a href="/overview">
                                 <img class="card-img-top" src="images/service/service-1.jpg" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">Ramsnehi Hospital</h5>

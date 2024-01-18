@@ -67,16 +67,6 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card custom-card mb-4">
-                            <a href="/patientTestimonial">
-                                <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Patient Testimonial</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card custom-card mb-4">
                             <a href="/patientSuccessStories">
                                 <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
                                 <div class="card-body">
@@ -95,11 +85,9 @@
                             </a>
                         </div>
                     </div>
-                </div>
-                <div class="row">
                     <div class="col-md-4">
                         <div class="card custom-card mb-4">
-                            <a href="#">
+                            <a href="ramsnehiOptics">
                                 <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">Ramsnehi Optical</h5>
@@ -107,9 +95,11 @@
                             </a>
                         </div>
                     </div>
+                </div>
+                <div class="row">
                     <div class="col-md-4">
                         <div class="card custom-card mb-4">
-                            <a href="#">
+                            <a href="patientAttenders">
                                 <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title" style="font-size: 1.05rem;">Facilities for Patients Attenders</h5>

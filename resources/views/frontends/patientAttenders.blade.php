@@ -1,5 +1,5 @@
 @extends('frontends.layouts')
-@section('title', 'Patient Testimonial')
+@section('title', 'Patient Attenders')
 @section('content')
 
 <section class="page-title bg-1">
@@ -13,9 +13,9 @@
                         <li class="list-inline-item"><span class="text-white">/</span></li>
                         <li class="list-inline-item"><a href="/patientCare" class="text-white-50">Patient Care & Facilities</a></li>
                         <li class="list-inline-item"><span class="text-white">/</span></li>
-                        <li class="list-inline-item"><a href="/patientTestimonial" class="text-white-50">Details</a></li>
+                        <li class="list-inline-item"><a href="/patientAttenders" class="text-white-50">Details</a></li>
                     </ul>
-                    <h1 class="text-capitalize mb-5 text-lg">Patient Testimonial</h1>
+                    <h1 class="text-capitalize mb-5 text-lg">Patient Attenders</h1>
                 </div>
             </div>
         </div>

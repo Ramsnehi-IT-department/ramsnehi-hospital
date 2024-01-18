@@ -1,5 +1,5 @@
 @extends('frontends.layouts')
-@section('title', 'Government Schemes')
+@section('title', 'Ramsnehi Optics')
 @section('content')
 
 <section class="page-title bg-1">
@@ -13,9 +13,9 @@
                         <li class="list-inline-item"><span class="text-white">/</span></li>
                         <li class="list-inline-item"><a href="/patientCare" class="text-white-50">Patient Care & Facilities</a></li>
                         <li class="list-inline-item"><span class="text-white">/</span></li>
-                        <li class="list-inline-item"><a href="/governmentSchemes" class="text-white-50">Details</a></li>
+                        <li class="list-inline-item"><a href="/ramsnehiOptics" class="text-white-50">Details</a></li>
                     </ul>
-                    <h1 class="text-capitalize mb-5 text-lg">Government Schemes</h1>
+                    <h1 class="text-capitalize mb-5 text-lg">Ramsnehi Optics</h1>
                 </div>
             </div>
         </div>

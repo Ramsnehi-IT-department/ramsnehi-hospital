@@ -29,25 +29,14 @@
         <div class="row">
             <div class="col-lg-6">
                 <h3 class="title-color">OUR MISSION</h3>
-                <p>Ramsnehi Hospital’s Mission is to provide quality care and satisfaction to the patient; every patient
+                <p style="color: black">Ramsnehi Hospital’s Mission is to provide quality care and satisfaction to the patient; every patient
                     impending our hospital is equally important to us. For us, treating our patient with better and
                     upmost facility is the prime motto of our hospital. Once the patient enters the hospital premises,
                     they become an integral part of the hospital. We consider treating patient as an another form of
                     worshipping God.</p>
             </div>
             <div class="col-lg-6">
-                {{-- <img src="images/vision/mission.jpg" alt="" class="img-fluid" style="margin-bottom: 10px;"> --}}
-                @foreach($galleries as $key => $gallery)
-                    @if($gallery->file)
-                        <img src="{{ asset('storage/' . $gallery->file) }}"
-                            alt="Gallery Image">
-                    @endif
-
-                    @if($gallery->file)
-                        <img src="{{ asset('storage/' . $gallery->file) }}"
-                            alt="Gallery Image">
-                    @endif
-                @endforeach
+                <img src="images/vision/mission.jpg" alt="" class="img-fluid" style="margin-bottom: 10px;">
             </div>
         </div>
     </div>
@@ -64,7 +53,7 @@
             </div>
             <div class="col-lg-6">
                 <h3 class="title-color">OUR VISION</h3>
-                <p>Our vision is to make our hospital recognized not only at regional level; although at national level
+                <p style="color: black">Our vision is to make our hospital recognized not only at regional level; although at national level
                     where patients get peerless facilities and quality care.</p>
             </div>
         </div>
@@ -78,7 +67,7 @@
         <div class="row">
             <div class="col-lg-6">
                 <h3 class="title-color">SPECIALTY HOSPITAL</h3>
-                <p>This hospital is well equiped with all specialties like Gynae, Obstretics, Orthopedics, General
+                <p style="color: black">This hospital is well equiped with all specialties like Gynae, Obstretics, Orthopedics, General
                     surgery, Pediatrics, General physician, Nephrology .We are having all investingatory Facilities i.e
                     Biochemistry, Microbiology, Pathology, Digital X-ray, ultra sound, Doppler, E.C.G, Echocardiography
                     etc. We provide a large range of consulative, diagnostic and surgical services to people whose

@@ -11,8 +11,8 @@
                     <ul class="list-inline">
                         <li class="list-inline-item"><a href="/" class="text-white">Home</a></li>
                         <li class="list-inline-item"><span class="text-white">/</span></li>
-                        <li class="list-inline-item"><a href="/transfusionServices" class="text-white-50">Departments
-                                Detail</a></li>
+                        <li class="list-inline-item"><a href="/allDept" class="text-white-50">Departments</a></li>
+                        <li class="list-inline-item"><span class="text-white">/</span></li>
                     </ul>
                     <h1 class="text-capitalize mb-5 text-lg">Transfusion Services</h1>
                 </div>
@@ -28,8 +28,8 @@
                 <div class="section-title">
                     <h1>Transfusion Services</h1>
                     <div class="divider mx-auto my-4"></div>
-                    {{-- <p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt
-                        molestias nostrum laudantium. Maiores porro cumque quaerat.</p> --}}
+                    <p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt
+                        molestias nostrum laudantium. Maiores porro cumque quaerat.</p>
                 </div>
             </div>
             <div class="container">

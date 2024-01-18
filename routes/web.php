@@ -34,27 +34,15 @@ Route::get('/ramsnehi', function () {
     return view('frontends.ramsnehi');
 });
 
-Route::resource('galleries', GalleryController::class);
-
-
-// About page
-// Route::get('/about', function () {
-//     return view('frontends.about');
-// });
-
-
-// Route::get('/about', 'HomeWebController@about');
-
-Route::get('/about', [HomeWebController::class, 'about']);
-
+// Overview page
+Route::get('/overview', function () {
+    return view('frontends.overview');
+});
 
 // Vision page
-// Route::get('/visionMission', function () {
-//     return view('frontends.visionMission');
-// });
-
-Route::get('/visionMission', [HomeWebController::class, 'visionMission']);
-
+Route::get('/visionMission', function () {
+    return view('frontends.visionMission');
+});
 
 // President page
 Route::get('/president', function () {
@@ -87,11 +75,6 @@ Route::get('/TPAEmpanelment', function () {
     return view('frontends.TPAEmpanelment');
 });
 
-// Patient Testimonial page
-Route::get('/patientTestimonial', function () {
-    return view('frontends.patientTestimonial');
-});
-
 // Patient Success Stories page
 Route::get('/patientSuccessStories', function () {
     return view('frontends.patientSuccessStories');
@@ -100,6 +83,16 @@ Route::get('/patientSuccessStories', function () {
 // Awards & Achievements page
 Route::get('/awardsAchievements', function () {
     return view('frontends.awardsAchievements');
+});
+
+// Ramsnehi Optics page
+Route::get('/ramsnehiOptics', function () {
+    return view('frontends.ramsnehiOptics');
+});
+
+// Patient Attenders page
+Route::get('/patientAttenders', function () {
+    return view('frontends.patientAttenders');
 });
 
 // =========== Hospital End ===========
@@ -167,11 +160,11 @@ Route::get('/Paediatric', function () {
     return view('frontends.Paediatric');
 });
 
-// otorhinolaryngology (Ear Nose Throat) page
-Route::get('/otorhinolaryngology', function () {
-    return view('frontends.otorhinolaryngology');
+// ENT page
+Route::get('/ent', function () {
+    return view('frontends.ent');
 });
-// =========== Clinical end =========== 
+// =========== Clinical end ===========
 
 // =========== Diagnostic Services start ===========
 // All Diagnostic

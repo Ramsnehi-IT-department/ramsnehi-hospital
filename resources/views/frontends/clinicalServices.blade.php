@@ -11,7 +11,8 @@
                     <ul class="list-inline">
                         <li class="list-inline-item"><a href="/" class="text-white">Home</a></li>
                         <li class="list-inline-item"><span class="text-white">/</span></li>
-                        <li class="list-inline-item"><a href="/clinicalServices" class="text-white-50">Departments Detail</a></li>
+                        <li class="list-inline-item"><a href="/allDept" class="text-white-50">Departments</a></li>
+                        <li class="list-inline-item"><span class="text-white">/</span></li>
                     </ul>
                     <h1 class="text-capitalize mb-5 text-lg">Clinical Services</h1>
                 </div>
@@ -80,7 +81,8 @@
                             <a href="/generalSurgery">
                                 <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title" style="font-size: 0.85rem;">General &amp; Laparoscopy Surgery</h5>
+                                    <h5 class="card-title" style="font-size: 0.85rem;">General &amp; Laparoscopy Surgery
+                                    </h5>
                                 </div>
                             </a>
                         </div>
@@ -102,7 +104,8 @@
                             <a href="/gynecology">
                                 <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title" style="font-size: 0.85rem;">Gynecology &amp; Obstetrics&#160;Department&#160</h5>
+                                    <h5 class="card-title" style="font-size: 0.85rem;">Gynecology &amp;
+                                        Obstetrics&#160;Department&#160</h5>
                                 </div>
                             </a>
                         </div>
@@ -131,10 +134,10 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card custom-card mb-4">
-                            <a href="/Pediatric">
+                            <a href="/Paediatric">
                                 <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title">Pediatric &amp; Neonatology</h5>
+                                    <h5 class="card-title">Paediatric &amp; Neonatology</h5>
                                 </div>
                             </a>
                         </div>
@@ -144,17 +147,7 @@
                             <a href="/otorhinolaryngology">
                                 <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title" style="font-size: 0.85rem;">Otorhinolaryngology (Ear Nose Throat)</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card custom-card mb-4">
-                            <a href="">
-                                <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Coming Soon</h5>
+                                    <h5 class="card-title">Ear Nose Throat</h5>
                                 </div>
                             </a>
                         </div>

@@ -33,8 +33,8 @@
                         <h1 style="text-align: center; font-weight:bold;"><span style="font-size:2rem"><span
                                     style="color:#e74c3c">श्रीमद् रामचरणाय नमः</span></span></h1>
 
-                        <h3 class="title-color" style="font-weight: bolder">स्वामीजी श्री १००८ रामदयाल जी महाराज के
-                            आशीर्वचन</h3>
+                        <h4 class="title-color" style="font-weight: bolder">स्वामीजी श्री १००८ रामदयाल जी महाराज के
+                            आशीर्वचन</h4>
 
                         <p><span style="font-size:16px"><span style="color:#e74c3c">काम धर्म अर्थ मोक्ष फल, राम चरण दे
                                     राम । </span></span></p>

@@ -48,7 +48,7 @@ return [
         'department_obstetricsGynaecology' => 'प्रसूति एवं स्त्री रोग',
         'department_opthalmology' => 'नेत्र विज्ञान',
         'department_orthopaedicSurgery' => 'हड्डी रोग सर्जरी',
-        'department_otorhinolaryngology' => 'ईएनटी',
+        'department_ent' => 'ईएनटी',
         'department_paediatrics' => 'पेडियाट्रिक्स',
 
         'department_diagnosticServices' => 'निदान सेवाएँ',

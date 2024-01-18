@@ -8,13 +8,14 @@
       <div class="row">
           <div class="col-md-12">
               <div class="block">
-                  <ul class="list-inline">
-                      <li class="list-inline-item"><a href="/" class="text-white">Home</a></li>
-                      <li class="list-inline-item"><span class="text-white">/</span></li>
-                      <li class="list-inline-item"><a href="/clinicalServices" class="text-white-50">All Clinical Services</a></li>
-                      <li class="list-inline-item"><span class="text-white">/</span></li>
-                      <li class="list-inline-item"><a href="/neuroSurgery" class="text-white-50">Department Details</a></li>
-                  </ul>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="/" class="text-white">Home</a></li>
+                    <li class="list-inline-item"><span class="text-white">/</span></li>
+                    <li class="list-inline-item"><a href="/allDept" class="text-white-50">Departments</a></li>
+                    <li class="list-inline-item"><span class="text-white">/</span></li>
+                    <li class="list-inline-item"><a href="/clinicalServices" class="text-white-50">Clinical Services</a></li>
+                    <li class="list-inline-item"><span class="text-white">/</span></li>
+                </ul>
                   <h1 class="text-capitalize mb-5 text-lg">Neurosurgery</h1>
               </div>
           </div>

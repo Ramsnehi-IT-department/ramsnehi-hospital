@@ -49,7 +49,7 @@ return [
         'department_obstetricsGynaecology' => 'Obstetrics & Gynaecology',
         'department_opthalmology' => 'Opthalmology',
         'department_orthopaedicSurgery' => 'Orthopaedic Surgery',
-        'department_otorhinolaryngology' => 'Otorhinolaryngology',
+        'department_ent' => 'Ear Nose Throat',
         'department_paediatrics' => 'Paediatrics',
 
         'department_diagnosticServices' => 'Diagnostic Services',
