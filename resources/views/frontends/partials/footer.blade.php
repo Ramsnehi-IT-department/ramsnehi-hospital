@@ -16,9 +16,9 @@
                     <h4 class="text-capitalize mb-3">{{ __('homepage.footer_links') }}</h4>
                     <div class="divider mb-4"></div>
                     <ul class="list-unstyled footer-menu lh-35">
-                        <li><a href="/about">{{ __('homepage.AboutUs_overview') }} </a></li>
+                        <li><a href="/overview">{{ __('homepage.AboutUs_overview') }} </a></li>
                         <li><a href="/patientCare">{{ __('homepage.careCenter_facilities') }} </a></li>
-                        <li><a href="/allDept">{{ __('homepage.department_allDept') }} </a>
+                        <li><a href="/allDept">{{ __('homepage.department_menu') }} </a>
                         </li>
                         <li><a href="/allEvents">{{ __('homepage.events_allEvents') }} </a>
                         </li>

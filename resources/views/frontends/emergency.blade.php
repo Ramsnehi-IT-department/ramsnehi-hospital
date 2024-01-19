@@ -2,7 +2,7 @@
 @section('title', 'Emergency')
 @section('content')
 
-<section class="page-title bg-1">
+<section class="page-title emergency-bg">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">

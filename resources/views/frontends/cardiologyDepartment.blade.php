@@ -2,7 +2,16 @@
 @section('title', 'Cardiology Department')
 @section('content')
 
-<section class="page-title bg-1">
+<style>
+    .cath_lab {
+    background: url("../images/bg/cath_lab.jpeg") no-repeat 50% 50%;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.011);;
+    position: relative;
+}
+</style>
+
+<section class="page-title cath_lab">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">

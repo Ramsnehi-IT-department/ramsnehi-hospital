@@ -98,13 +98,7 @@ Route::get('/patientAttenders', function () {
 // =========== Hospital End ===========
 
 // =========== Departments Start ===========
-
-// Route::get('/departments', function () {
-//     return view('frontends.departments');
-// });
-
 // =========== Clinical start =========== 
-
 // All Departments page
 Route::get('/allDept', function () {
     return view('frontends.allDept');
@@ -363,7 +357,6 @@ Route::get('/contact', function () {
 // ================================= Frontend End =================================
 
 // ================================= Admin Panel Start =================================
-
 // =========== Login ===========
 Auth::routes();
 Route::get('/admin', [HomeController::class, 'index'])->name('home');
@@ -383,11 +376,7 @@ Route::prefix('gallery')->controller(GalleryController::class)->group(function (
     Route::get('/create', 'create')->name('galleries.create');
     Route::post('/store', 'store')->name('galleries.store');
 });
-
-
-
 // =========== Gallery End ===========
-
 
 // =========== Career admin Start ===========
 Route::prefix('career')->controller(CareerController::class)->group(function () {
@@ -410,9 +399,7 @@ Route::prefix('users')->controller(UserController::class)->middleware('auth')->g
     Route::get('/delete/{id}', 'destroy')->name('users.destroy');
 // Log User
     Route::get('/log', 'userLog')->name('users.log');
-
-    // =========== User Manager End ===========
-
 });
+// =========== User Manager End ===========
 
 // ================================= Admin Panel End =================================

@@ -63,17 +63,13 @@ class UserController extends Controller
             'role' => ['required', 'in:admin,quality,hr,user'],
             'image' => ['required', 'image', 'mimes:jpeg,png,jpg', 'max:2048']
         ]);
-    
+
         // Handling image upload
         if ($request->hasFile('image')) {
-            $image = $request->file('image');
-            $imageName = time() . '_' . $image->getClientOriginalName(); // Adjust the file name as needed
-    
-            // Store the image in the public/uploads directory
-            $image->storeAs('uploads', $imageName, 'public');
-    
+            // Get the file path from the FileHelper
+            $imagePath = FileHelpers::fileUpdate($request);
             // Add the file path to the validated data
-            $validated['image'] = 'uploads/' . $imageName;
+            $validated['image'] = $imagePath;
         }
     
         // Encrypting Password
@@ -84,7 +80,6 @@ class UserController extends Controller
     
         return redirect()->route('users.index')->with('success', 'User created successfully');
     }
-    
 
     /**
         * Edit the specified resource.

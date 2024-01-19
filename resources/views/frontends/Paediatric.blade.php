@@ -2,7 +2,7 @@
 @section('title', 'PAEDIATRICS')
 @section('content')
 
-<section class="page-title bg-1">
+<section class="page-title paediatric-bg">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">

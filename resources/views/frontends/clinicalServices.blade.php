@@ -144,7 +144,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card custom-card mb-4">
-                            <a href="/otorhinolaryngology">
+                            <a href="/ent">
                                 <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">Ear Nose Throat</h5>

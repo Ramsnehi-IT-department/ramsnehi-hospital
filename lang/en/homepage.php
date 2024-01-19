@@ -27,7 +27,7 @@ return [
 
    
     'careCenter_menu' => 'Patient Care & Facilities',
-        'careCenter_facilities' => 'Patient Care & Facilities',
+        'careCenter_facilities' => 'Patient Care',
         'careCenter_healthCheck' => 'Health Check up plan',
         'careCenter_governmentSchemes' => 'Government Schemes',
         'careCenter_TPA' => 'TPA Empanelment',
@@ -37,9 +37,9 @@ return [
         'careCenter_patientsAttenders' => 'Facilities for Patients Attenders',
     
     'department_menu' => 'Departments',
-    'department_allDept' => 'All Departments',
+    // 'department_allDept' => 'All Departments',
         'department_clinicalServices' => 'Clinical',
-        'department_allClinicalServices' => 'All Clinical Services',
+        'department_allClinicalServices' => 'Clinical Services',
         'department_anaesthesiology' => 'Anaesthesiology',
         'department_cardiology' => 'Cardiology',
         'department_dentistry' => 'Dentistry',
@@ -52,8 +52,8 @@ return [
         'department_ent' => 'Ear Nose Throat',
         'department_paediatrics' => 'Paediatrics',
 
-        'department_diagnosticServices' => 'Diagnostic Services',
-        'department_allDiagnosticServices' => 'All Diagnostic Services',
+        'department_diagnosticServices' => 'Diagnostic',
+        'department_allDiagnosticServices' => 'Diagnostic Services',
         'department_2DEcho' => '2D Echo',
         'department_DSALab' => 'DSA Lab',
         'department_ECG' => 'ECG',
@@ -62,8 +62,8 @@ return [
         'department_ultrasound' => 'Ultrasound',
         'department_XRay' => 'X-Ray',
 
-        'department_laboratoryServices' => 'Laboratory Services',
-        'department_allLaboratoryServices' => 'All Laboratory Services',
+        'department_laboratoryServices' => 'Laboratory',
+        'department_allLaboratoryServices' => 'Laboratory Services',
         'department_clinicalBioChemistry' => 'Clinical Bio-Chemistry',
         'department_clinicalMicrobiologySerology' => 'Clinical Microbiology and Serology',
         'department_clinicalPathology' => 'Clinical Pathology',
@@ -71,13 +71,13 @@ return [
         'department_haematology' => 'Haematology',
         'department_histopathology' => 'Histopathology',
 
-        'department_transfusionServices' => 'Transfusion Services',
-        'department_allTransfusionServices' => 'All Transfusion Services',
+        'department_transfusionServices' => 'Transfusion',
+        'department_allTransfusionServices' => 'Transfusion Services',
         'department_bloodTransfusionsServices' => 'Blood Transfusions Services',
         'department_bloodBank' => 'Blood Bank',
 
         'department_professionsAlliedMedicine' => 'Professions Allied to Medicine',
-        'department_allProfessionsAlliedMedicine' => 'All Professions Allied to Medicine',
+        'department_allProfessionsAlliedMedicine' => 'Professions Allied to Medicine',
         'department_ambulance' => 'Ambulance',
         'department_dietetics' => 'Dietetics',
         'department_physiotherapy' => 'Physiotherapy',
