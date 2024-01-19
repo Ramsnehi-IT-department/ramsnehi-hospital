@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="block text-center">
-                    <span class="text-white">Secretary's Message</span>
+                    {{-- <span class="text-white">Secretary's Message</span> --}}
                     <h1 class="text-capitalize mb-5 text-lg">Ramsnehi Chikitsalay Evam Anusandhan Kendra</h1>
                 </div>
             </div>
@@ -18,21 +18,219 @@
 {{-- Gallery End --}}
 
 {{-- Content Start --}}
-<section class="section about-page">
+<!-- portfolio -->
+<section class="section doctors">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-4">
-                <h2 class="title-color">Personal care for your healthy living</h2>
-            </div>
-            <div class="col-lg-8">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, quod laborum alias. Vitae
-                    dolorum, officia sit! Saepe ullam facere at, consequatur incidunt, quae esse, quis ut reprehenderit
-                    dignissimos, libero delectus.</p>
-                <img src="images/about/sign.png" alt="" class="img-fluid">
-            </div>
+          <div class="row justify-content-center">
+               <div class="col-lg-6 text-center">
+                  <div class="section-title">
+                      <h2>Departments</h2>
+                      <div class="divider mx-auto my-4"></div>
+                      <p>We provide a wide range of creative services adipisicing elit. Autem maxime rem modi eaque, voluptate. Beatae officiis neque </p>
+                  </div>
+              </div>
+          </div>
+  
+        <div class="col-12 text-center  mb-5">
+              <div class="btn-group btn-group-toggle " data-toggle="buttons">
+                <label class="btn active ">
+                  <input type="radio" name="shuffle-filter" value="all" checked="checked" />{{ __('homepage.department_allDept') }}
+                </label>
+                <label class="btn ">
+                  <input type="radio" name="shuffle-filter" value="cat1" />{{ __('homepage.department_clinicalServices') }}
+                </label>
+                <label class="btn">
+                  <input type="radio" name="shuffle-filter" value="cat2" />{{ __('homepage.department_diagnosticServices') }}
+                </label>
+                <label class="btn">
+                  <input type="radio" name="shuffle-filter" value="cat3" />{{ __('homepage.department_laboratoryServices') }}
+                </label>
+                <label class="btn">
+                  <input type="radio" name="shuffle-filter" value="cat4" />{{ __('homepage.department_transfusionServices') }}
+                </label>
+                 <label class="btn">
+                  <input type="radio" name="shuffle-filter" value="cat5" />{{ __('homepage.department_professionsAlliedMedicine') }}
+                </label>
+                <label class="btn">
+                  <input type="radio" name="shuffle-filter" value="cat6" />{{ __('homepage.department_emergencyDepartment') }}
+                </label>
+                <label class="btn">
+                    <input type="radio" name="shuffle-filter" value="cat6" />{{ __('homepage.department_pharmacy') }}
+                  </label>
+              </div>
         </div>
+  
+      <div class="row shuffle-wrapper portfolio-gallery">
+            <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;cat1&quot;,&quot;cat2&quot;]">
+                <div class="position-relative doctor-inner-box">
+                  <div class="doctor-profile">
+                     <div class="doctor-img">
+                             <img src="images/team/1.jpg" alt="doctor-image" class="img-fluid w-100">
+                     </div>
+                  </div>
+                  <div class="content mt-3">
+                      <h4 class="mb-0"><a href="doctor-single.html">Thomas Henry</a></h4>
+                      <p>Cardiology</p>
+                  </div> 
+                </div>
+            </div>
+  
+        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;cat2&quot;]">
+              <div class="position-relative doctor-inner-box">
+                  <div class="doctor-profile">
+                      <div class="doctor-img">
+                         <img src="images/team/2.jpg" alt="doctor-image" class="img-fluid w-100">
+                      </div>
+                  </div>
+                  <div class="content mt-3">
+                      <h4 class="mb-0"><a href="doctor-single.html">Harrision Samuel</a></h4>
+                      <p>Radiology</p>
+                  </div> 
+                </div>
+        </div>
+  
+        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;cat3&quot;]">
+              <div class="position-relative doctor-inner-box">
+                  <div class="doctor-profile">
+                      <div class="doctor-img">
+                         <img src="images/team/3.jpg" alt="doctor-image" class="img-fluid w-100">
+                      </div>
+                  </div>
+                  <div class="content mt-3">
+                      <h4 class="mb-0"><a href="doctor-single.html">Alexandar James</a></h4>
+                      <p>Dental</p>
+                  </div> 
+                </div>
+        </div>
+  
+        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;cat3&quot;,&quot;cat4&quot;]">
+              <div class="position-relative doctor-inner-box">
+                  <div class="doctor-profile">
+                      <div class="doctor-img">
+                         <img src="images/team/4.jpg" alt="doctor-image" class="img-fluid w-100">
+                      </div>
+                  </div>
+                  <div class="content mt-3">
+                      <h4 class="mb-0"><a href="doctor-single.html">Edward john</a></h4>
+                      <p>Pediatry</p>
+                  </div> 
+                </div>
+        </div>
+  
+            <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;cat5&quot;]">
+              <div class="position-relative doctor-inner-box">
+                  <div class="doctor-profile">
+                      <div class="doctor-img">
+                         <img src="images/team/1.jpg" alt="doctor-image" class="img-fluid w-100">
+                      </div>
+                  </div>
+                  <div class="content mt-3">
+                      <h4 class="mb-0"><a href="doctor-single.html">Thomas Henry</a></h4>
+                      <p>Neurology</p>
+                  </div> 
+                </div>
+            </div>
+  
+        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;cat6&quot;]">
+                  <div class="position-relative doctor-inner-box">
+                  <div class="doctor-profile">
+                      <div class="doctor-img">
+                         <img src="images/team/3.jpg" alt="doctor-image" class="img-fluid w-100">
+                      </div>
+                  </div>
+                  <div class="content mt-3">
+                      <h4 class="mb-0"><a href="doctor-single.html">Henry samuel</a></h4>
+                      <p>Palmology</p>
+                  </div> 
+                </div>
+        </div>
+  
+        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;cat4&quot;]">
+              <div class="position-relative doctor-inner-box">
+                  <div class="doctor-profile">
+                      <div class="doctor-img">
+                         <img src="images/team/1.jpg" alt="doctor-image" class="img-fluid w-100">
+                      </div>
+                  </div>
+                  <div class="content mt-3">
+                      <h4 class="mb-0"><a href="doctor-single.html">Thomas alexandar</a></h4>
+                      <p>Cardiology</p>
+                  </div> 
+              </div>
+        </div>
+  
+        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;cat5&quot;,&quot;cat6&quot;,&quot;cat1&quot;]">
+              <div class="position-relative doctor-inner-box">
+                  <div class="doctor-profile">
+                      <div class="doctor-img">
+                         <img src="images/team/3.jpg" alt="doctor-image" class="img-fluid w-100">
+                       </div>
+                   </div>
+                  <div class="content mt-3">
+                      <h4 class="mb-0"><a href="doctor-single.html">HarissonThomas </a></h4>
+                      <p>Traumatology</p>
+                  </div> 
+                </div>
+        </div>
+  
+        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item illustration" data-groups="[&quot;cat2&quot;]">
+              <div class="position-relative doctor-inner-box">
+                  <div class="doctor-profile">
+                      <div class="doctor-img">
+                         <img src="images/team/4.jpg" alt="doctor-image" class="img-fluid w-100">
+                      </div>
+                  </div>
+                  <div class="content mt-3">
+                      <h4 class="mb-0"><a href="doctor-single.html">Jonas Thomson</a></h4>
+                      <p>Cardiology</p>
+                  </div> 
+                </div>
+          </div>
+  
+           <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;cat5&quot;,&quot;cat6&quot;,&quot;cat1&quot;]">
+              <div class="position-relative doctor-inner-box">
+                  <div class="doctor-profile">
+                      <div class="doctor-img">
+                         <img src="images/team/3.jpg" alt="doctor-image" class="img-fluid w-100">
+                      </div>
+                  </div>
+                  <div class="content mt-3">
+                      <h4 class="mb-0"><a href="doctor-single.html">Henry Forth</a></h4>
+                      <p>hematology</p>
+                  </div> 
+                </div>
+        </div>
+  
+        <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item illustration" data-groups="[&quot;cat2&quot;]">
+              <div class="position-relative doctor-inner-box">
+                  <div class="doctor-profile">
+                      <div class="doctor-img">
+                         <img src="images/team/4.jpg" alt="doctor-image" class="img-fluid w-100">
+                       </div>
+                   </div>
+                  <div class="content mt-3">
+                      <h4 class="mb-0"><a href="doctor-single.html">Thomas Henry</a></h4>
+                      <p>Dental</p>
+                  </div> 
+                </div>
+          </div>
+      </div>
     </div>
-</section>
+  </section>
+  <!-- /portfolio -->
+  <section class="section cta-page">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-7">
+                  <div class="cta-content">
+                      <div class="divider mb-4"></div>
+                      <h2 class="mb-5 text-lg">We are pleased to offer you the <span class="title-color">chance to have the healthy</span></h2>
+                      <a href="appoinment.html" class="btn btn-main-2 btn-round-full">Get appoinment<i class="icofont-simple-right  ml-2"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
 {{-- Content End --}}
 
 @endsection

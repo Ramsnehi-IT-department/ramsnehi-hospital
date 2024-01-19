@@ -36,7 +36,7 @@ return [
         'careCenter_patientsAttenders' => 'मरीजों की देखभाल करने वालों के लिए सुविधाएं',
 
     'department_menu' => 'विभाग',
-    'department_allDept' => 'विभाग',
+    'department_allDept' => 'सभी विभाग',
         'department_clinicalServices' => 'नैदानिक सेवाएँ',
         'department_allClinicalServices' => 'सभी नैदानिक सेवाएँ',
         'department_anaesthesiology' => 'अनेस्थिसियोलॉजी',

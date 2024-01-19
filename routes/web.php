@@ -98,6 +98,11 @@ Route::get('/patientAttenders', function () {
 // =========== Hospital End ===========
 
 // =========== Departments Start ===========
+
+// Route::get('/departments', function () {
+//     return view('frontends.departments');
+// });
+
 // =========== Clinical start =========== 
 
 // All Departments page

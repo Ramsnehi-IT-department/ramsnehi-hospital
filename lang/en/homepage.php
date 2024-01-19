@@ -37,8 +37,8 @@ return [
         'careCenter_patientsAttenders' => 'Facilities for Patients Attenders',
     
     'department_menu' => 'Departments',
-    'department_allDept' => 'Departments',
-        'department_clinicalServices' => 'Clinical Services',
+    'department_allDept' => 'All Departments',
+        'department_clinicalServices' => 'Clinical',
         'department_allClinicalServices' => 'All Clinical Services',
         'department_anaesthesiology' => 'Anaesthesiology',
         'department_cardiology' => 'Cardiology',
