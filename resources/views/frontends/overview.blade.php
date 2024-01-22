@@ -10,11 +10,11 @@
             <div class="col-md-12">
                 <div class="block">
                     <ul class="list-inline">
-                        <li class="list-inline-item"><a href="/" class="text-white">Home</a></li>
+                        <li class="list-inline-item"><a href="/" class="text-white">{{ __('ramsnehi.home') }}</a></li>
                         <li class="list-inline-item"><span class="text-white">/</span></li>
-                        <li class="list-inline-item"><a href="/ramsnehi" class="text-white-50">Ramsnehi</a></li>
+                        <li class="list-inline-item"><a href="/ramsnehi" class="text-white-50">{{ __('ramsnehi.Ramsnehi') }}</a></li>
                     </ul>
-                    <h1 class="text-capitalize mb-5 text-lg">Ramsnehi Hospital</h1>
+                    <h1 class="text-capitalize mb-5 text-lg">{{ __('ramsnehi.ramsnehiHospital') }}</h1>
                 </div>
             </div>
         </div>
@@ -26,12 +26,9 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
-                <h4 class="title-color">Ramsnehi Chikitsalaya Evam Anusandhan Kendra</h4>
-                <h5>Hospital - An Introduction</h5>
-                <p style="color: black">Ramsnehi hospital was established on 25th April 2000 by the present Peetadhishwar Jagadguru Anant
-                    Shri Vibhushit Acharya Swamiji Shri 1008 Shri Ram Dayal Ji Maharaja of the International Ramsnehi
-                    Community, committed to the idea of providing the best treatment to the proletariat at a reasonable
-                    rate.</p>
+                <h4 class="title-color">{{ __('ramsnehi.ramsnehiChikitsalaya') }}</h4>
+                <h5>{{ __('ramsnehi.introduction') }}</h5>
+                <p style="color: black">{{ __('ramsnehi.content_1') }}</p>
                 <p style="color: black">Ramsnehi is a 300 bedded NABH accredited multispecialty hospital with all specialities like General
                     Medicine, General surgery, orthopaedic ,pediatric, cardiology, Neuro, cardiology, physiotherapy,
                     nephrology. All investigatory services like pathology, microbiology, X-ray, MRI, CT scan,

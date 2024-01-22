@@ -1,5 +1,5 @@
 @extends('frontends.layouts')
-@section('title', 'Print Media')
+@section('title', 'Health Camp')
 @section('content')
 
 <section class="page-title bg-1">
@@ -11,11 +11,11 @@
                     <ul class="list-inline">
                         <li class="list-inline-item"><a href="/" class="text-white">Home</a></li>
                         <li class="list-inline-item"><span class="text-white">/</span></li>
-                        <li class="list-inline-item"><a href="/allMediaCoverage" class="text-white-50">Media Coverage</a></li>
+                        <li class="list-inline-item"><a href="/allEvents" class="text-white-50">Events</a></li>
                         <li class="list-inline-item"><span class="text-white">/</span></li>
-                        <li class="list-inline-item"><a href="/printMedia" class="text-white-50">Details</a></li>
+                        <li class="list-inline-item"><a href="/healthCamp" class="text-white-50">Details</a></li>
                     </ul>
-                    <h1 class="text-capitalize mb-5 text-lg">Print Media</h1>
+                    <h1 class="text-capitalize mb-5 text-lg">Training Program</h1>
                 </div>
             </div>
         </div>
@@ -41,7 +41,7 @@
                     <a href="#">
                         <img class="card-img-top" src="images/service/service-1.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Print Media 1</h5>
+                            <h5 class="card-title">Training 1</h5>
                         </div>
                     </a>
                 </div>
@@ -51,7 +51,7 @@
                     <a href="#">
                         <img class="card-img-top" src="images/service/service-1.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Print Media 2</h5>
+                            <h5 class="card-title">Training 2</h5>
                         </div>
                     </a>
                 </div>
@@ -61,7 +61,7 @@
                     <a href="#">
                         <img class="card-img-top" src="images/service/service-1.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Print Media 3</h5>
+                            <h5 class="card-title">Training 3</h5>
                         </div>
                     </a>
                 </div>

@@ -26,7 +26,7 @@ return [
         'AboutUs_certificates' => 'Certificates',
 
    
-    'careCenter_menu' => 'Patient Care & Facilities',
+    'careCenter_menu' => 'Patient Care',
         'careCenter_facilities' => 'Patient Care',
         'careCenter_healthCheck' => 'Health Check up plan',
         'careCenter_governmentSchemes' => 'Government Schemes',
@@ -51,8 +51,20 @@ return [
         'department_orthopaedicSurgery' => 'Orthopaedic Surgery',
         'department_ent' => 'Ear Nose Throat',
         'department_paediatrics' => 'Paediatrics',
+        'department_radiology' => 'Radiology',
+        'department_pathology' => 'Pathology',
+        'department_physiotherapy' => 'Physiotherapy',
+        'department_emergencyDepartment' => 'Emergency Department',
 
+    'services_menu' => 'Services',
         'department_diagnosticServices' => 'Diagnostic',
+        'department_imagingServices' => 'Imaging Services',
+        'department_laboratoryServices' => 'Laboratory',
+        'department_transfusionServices' => 'Transfusion',
+        'department_professionsAlliedMedicine' => 'Professions Allied to Medicine',
+
+
+
         'department_allDiagnosticServices' => 'Diagnostic Services',
         'department_2DEcho' => '2D Echo',
         'department_DSALab' => 'DSA Lab',
@@ -62,7 +74,6 @@ return [
         'department_ultrasound' => 'Ultrasound',
         'department_XRay' => 'X-Ray',
 
-        'department_laboratoryServices' => 'Laboratory',
         'department_allLaboratoryServices' => 'Laboratory Services',
         'department_clinicalBioChemistry' => 'Clinical Bio-Chemistry',
         'department_clinicalMicrobiologySerology' => 'Clinical Microbiology and Serology',
@@ -71,18 +82,17 @@ return [
         'department_haematology' => 'Haematology',
         'department_histopathology' => 'Histopathology',
 
-        'department_transfusionServices' => 'Transfusion',
+        // 'department_transfusionServices' => 'Transfusion',
         'department_allTransfusionServices' => 'Transfusion Services',
         'department_bloodTransfusionsServices' => 'Blood Transfusions Services',
         'department_bloodBank' => 'Blood Bank',
 
-        'department_professionsAlliedMedicine' => 'Professions Allied to Medicine',
+        // 'department_professionsAlliedMedicine' => 'Professions Allied to Medicine',
         'department_allProfessionsAlliedMedicine' => 'Professions Allied to Medicine',
         'department_ambulance' => 'Ambulance',
         'department_dietetics' => 'Dietetics',
-        'department_physiotherapy' => 'Physiotherapy',
 
-        'department_emergencyDepartment' => 'Emergency Department',
+
         'department_pharmacy' => 'Pharmacy',
 
 
@@ -92,7 +102,7 @@ return [
         'events_healthCamp' => 'Health Camp',
         'events_trainingProgram' => 'Training Program',
 
-    'media_menu' => 'Media Coverage',
+    'media_menu' => 'Media',
         'media_menu_allMediaCoverage' => 'Media Coverage',
         'media_menu_doctorDesk' => 'Doctor Desk',
         'media_menu_printMedia' => 'Print Media',

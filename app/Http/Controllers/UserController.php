@@ -40,9 +40,20 @@ class UserController extends Controller
     public function index()
     {
         $users = User::orderBy("id", "desc")->get();
-        // dd($users);
         return view('users.index', compact('users'));   
-     }
+    }
+
+    // public function index()
+    // {
+    //     $users = User::orderBy("id", "desc")->get();
+
+    //     // Attach the file paths to each user in the collection
+    //     foreach ($users as $user) {
+    //         $user->imagePath = FileHelpers::fileUpdate($user->image);
+    //     }
+
+    //     return view('users.index', compact('users'));
+    // }
 
     /**
      * Show the form for creating a new resource.
@@ -112,7 +123,7 @@ class UserController extends Controller
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users,email,'.$user->id],
             'password' => ['nullable', 'string', 'min:8', 'confirmed'],
             'role' => ['required', 'in:admin,quality,hr,user'],
-            'image' => ['nullable', 'image', 'mimes:jpeg,png,jpg', 'max:2048']
+            'image' => ['required', 'image', 'mimes:jpeg,png,jpg', 'max:2048']
         ]);
     
         // Check if a new image is uploaded and update it if necessary

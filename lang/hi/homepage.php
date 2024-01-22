@@ -25,7 +25,7 @@ return [
         'AboutUs_secretory' => 'सचिव संदेश',
         'AboutUs_certificates' => 'प्रमाण पत्र',
 
-        'careCenter_menu' => 'रोगी देखभाल एवं सुविधाएं',
+        'careCenter_menu' => 'रोगी देखभाल',
         'careCenter_facilities' => 'रोगी देखभाल',
         'careCenter_healthCheck' => 'स्वास्थ्य जांच योजना',
         'careCenter_governmentSchemes' => 'सरकारी योजनाएं',
@@ -50,9 +50,17 @@ return [
         'department_orthopaedicSurgery' => 'हड्डी रोग सर्जरी',
         'department_ent' => 'ईएनटी',
         'department_paediatrics' => 'पेडियाट्रिक्स',
+        'department_radiology' => 'रेडियोलोजी',
+        'department_pathology' => 'पैथोलॉजी',
+        'department_physiotherapy' => 'फिजियोथेरेपी',
+        'department_emergencyDepartment' => 'आपातकालीन विभाग',
 
+'services_menu' => 'सेवाएँ',
         'department_diagnosticServices' => 'निदान',
         'department_allDiagnosticServices' => 'निदान सेवाएँ',
+
+        'department_imagingServices' => 'इमेजिंग सेवाएँ',
+
         'department_2DEcho' => '2डी ईको',
         'department_DSALab' => 'डीएसए लैब',
         'department_ECG' => 'ईसीजी',
@@ -60,7 +68,6 @@ return [
         'department_treadMillTesting' => 'ट्रेड मिल परीक्षण',
         'department_ultrasound' => 'अल्ट्रासाउंड',
         'department_XRay' => 'एक्स-रे',
-
         'department_laboratoryServices' => 'प्रयोगशाला',
         'department_allLaboratoryServices' => 'प्रयोगशाला सेवाएँ',
         'department_clinicalBioChemistry' => 'क्लिनिकल बायो-कैमिस्ट्री',
@@ -79,9 +86,8 @@ return [
         'department_allProfessionsAlliedMedicine' => 'चिकित्सा से संबद्ध व्यवसाय',
         'department_ambulance' => 'रोगी वाहन',
         'department_dietetics' => 'डायटीशियन',
-        'department_physiotherapy' => 'फिजियोथेरेपी',
 
-        'department_emergencyDepartment' => 'आपातकालीन विभाग',
+
         'department_pharmacy' => 'फार्मेसी',
 
 
@@ -91,7 +97,7 @@ return [
         'events_healthCamp' => 'स्वास्थ्य शिविर',
         'events_trainingProgram' => 'प्रशिक्षण कार्यक्रम',
 
-    'media_menu' => 'मीडिया कवरेज',
+    'media_menu' => 'मीडिया',
         'media_menu_allMediaCoverage' => 'मीडिया कवरेज',
         'media_menu_doctorDesk' => 'डॉक्टर डेस्क',
         'media_menu_printMedia' => 'प्रिंट मीडिया',

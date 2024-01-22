@@ -59,19 +59,20 @@
             @foreach($users as $key => $user)
                 <tr>
                     <td>{{ $loop->iteration }}</td>
+
                     <td>
-                        @if($user->image && Storage::exists($user->image))
-                            {{-- <a title="View File">
+                        @if($user->image)
+                            <a title="View Profile"
+                                href="{{ asset('storage/' . $user->image) }}">
                                 <img src="{{ asset('storage/' . $user->image) }}"
                                     alt="{{ $user->name }}" style="height: 100px; width: 100px;">
-                            </a> --}}
-                            <a href="{{ Storage::url($user->image) }}"></a>
-
+                            </a>
                         @else
-                            <!-- File doesn't exist, so don't generate the link -->
-                            {{ $user->name }}
+                            <img src="{{ asset('/admin-assets/img/user.jpg') }}"
+                                alt="{{ $user->name }}" style="height: 100px; width: 100px;">
                         @endif
                     </td>
+
                     <td>{{ $user->role }}</td>
                     <td>{{ $user->name }}</a></td>
                     <td>{{ $user->email }}</td>
@@ -97,9 +98,6 @@
     function confirmDelete() {
         return confirm("Are you sure you want to delete this document?");
     }
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-    });
 
 </script>
 @endsection

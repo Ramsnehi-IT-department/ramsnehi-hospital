@@ -22,21 +22,29 @@
     </div>
 </section>
 
-{{-- Vision Content Start --}}
+{{-- Content Start --}}
 <section class="section about-page">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <h3 class="title-color">Introduction</h3>
-                <p>Wipro GE Company's high-tech Kethleb and cardiac ICU for specialized services for heart disease in
-                    the hospital. Has been established. Through which angiography and angioplasty are being done here
-                    regularly, the work of applying pacemakers has also been done successfully here. Starting from 3
-                    December 2014, 1622 angiography and 381 angioplasty have also been done in this department as well
-                    as installation of pace maker.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio voluptates doloremque necessitatibus
+                    in ducimus deserunt hic, magni, ex ratione praesentium et, non eius omnis officiis quisquam rerum
+                    natus cumque amet!</p>
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="row">
+            <h5 class="title-color">Accommodations</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente perspiciatis ut temporibus eveniet fugit officia, quisquam voluptatum consectetur vitae dolores praesentium nemo facere aut labore voluptas, necessitatibus odio corrupti eligendi.</p>
+        </div>
+        <div class="row">
+            <h5 class="title-color">Parking and Canteen</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi doloribus dicta voluptas assumenda excepturi officiis possimus cum nostrum. Odio laborum dicta sunt nisi excepturi nemo veritatis error! Consectetur, nemo dignissimos!</p>
+        </div>
+    </div>
 </section>
-{{-- neuro End --}}
+{{-- Content End --}}
 
 @endsection

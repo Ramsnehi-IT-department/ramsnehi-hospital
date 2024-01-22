@@ -3,22 +3,13 @@
 @section('content')
 
 <style>
-    /* public/css/styles.css */
-
     .slider-image {
         width: 100% !important;
         height: 70vh !important;
     }
 
-    /* public/css/styles.css */
-    /* .text-container {
-        text-align: center;
-        margin-top: 50px;
-    } */
-
     .animated-text {
         display: inline-block;
-        /* overflow: hidden; */
         animation: textAnimation 5s forwards;
         margin-bottom: 10px !important;
         margin-top: 10px !important;
@@ -34,7 +25,6 @@
         }
     }
 </style>
-
 
 <!-- Slider Start -->
 <section>
@@ -94,7 +84,7 @@
                     <div class="section-title">
                         <div class="row justify-content-center">
                             <div class="col-lg-4">
-                                <div class="feature-item mb-5 mb-lg-0">
+                                <div class="feature-item mb-5 mb-lg-0" style="box-shadow: none !important;">
                                     <img src="images/shree_maharaj.jpeg" alt="Shree Maharaj" class="img-fluid"
                                         style="width: 300px;">
                                     <p class="text-center mt-3" style="font-size: 1rem;">स्वामीजी श्री १००८ रामचरण जी
@@ -102,7 +92,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-4">
-                                <div class="feature-item mb-5 mb-lg-0">
+                                <div class="feature-item mb-5 mb-lg-0" style="box-shadow: none !important;">
                                     <img src="images/acharya.jpeg" alt="Acharya Shree" class="img-fluid"
                                         style="width: 300px;">
                                     <p class="text-center mt-3" style="font-size: 1rem;">स्वामीजी श्री १००८ रामदयाल जी
@@ -115,7 +105,7 @@
                         </div>
                         <div class="row justify-content-center mt-4">
                             <div class="col-lg-12 text-center">
-                                <a href="/about"
+                                <a href="/overview"
                                     class="btn btn-sm btn-primary">{{ __('homepage.about_us') }}</a>
                             </div>
                         </div>
@@ -129,7 +119,7 @@
 <!--  About End -->
 
 <!--  Patient Care Start -->
-<section class="section service-2">
+{{-- <section class="section service-2">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-7 text-center">
@@ -171,11 +161,11 @@
             <a href="/patientCare"
                 class="btn btn-primary mt-3">{{ __('homepage.care_icon_more') }}</a>
         </div>
-</section>
+</section> --}}
 <!--  Patient Care End -->
 
 <!--  Departments Start -->
-<section class="section service-2">
+{{-- <section class="section service-2">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-7 text-center">
@@ -228,11 +218,11 @@
                 </div>
             </div>
         </div>
-</section>
+</section> --}}
 <!--  Departments End -->
 
 <!--  Events Start -->
-<section class="section service-2">
+{{-- <section class="section service-2">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-7 text-center">
@@ -270,7 +260,7 @@
                 </div>
             </div>
         </div>
-</section>
+</section> --}}
 <!--  Events End -->
 
 <!--  achievements starts -->
@@ -350,7 +340,7 @@
 <!--  achievements end -->
 
 <!--  Media's Covergare Start -->
-<section class="section service-2">
+{{-- <section class="section service-2">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-7 text-center">
@@ -388,7 +378,7 @@
                 </div>
             </div>
         </div>
-</section>
+</section> --}}
 <!--  Media's Covergare  End -->
 
 <!--  Testimonial Start -->
@@ -398,9 +388,6 @@
             <div class="col-lg-7">
                 <div class="section-title text-center">
                     <h3>{{ __('homepage.testimonial_review') }}</h3>
-                    <div class="divider mx-auto my-4"></div>
-                    <p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt
-                        molestias nostrum laudantium. Maiores porro cumque quaerat.</p>
                 </div>
             </div>
         </div>
@@ -457,9 +444,6 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-12 text-center">
-                <a class="btn btn-sm btn-primary mt-3">{{ __('homepage.Departments_iconMore') }}</a>
-            </div>
         </div>
 
         <div class="row align-items-center">
@@ -496,9 +480,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-12 text-center">
-                <a class="btn btn-sm btn-primary mt-3">{{ __('homepage.Departments_iconMore') }}</a>
             </div>
         </div>
     </div>

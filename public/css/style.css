@@ -406,7 +406,7 @@ a:focus {
 
 #navbarmain .nav-link {
     font-weight: 600;
-    padding: 15px 15px;
+    padding: 10px 10px;
     color: #222;
     font-family: "Exo", sans-serif;
     text-transform: capitalize;
@@ -507,6 +507,7 @@ a:focus {
 
 .navigation .dropdown-item {
     padding: 13px 20px;
+    margin: auto;
     background: transparent;
     font-weight: 400;
     color: #555;
