@@ -61,10 +61,11 @@
                     <td>{{ $loop->iteration }}</td>
                     <td>
                         @if($user->image && Storage::exists($user->image))
-                            <a title="View File">
+                            {{-- <a title="View File">
                                 <img src="{{ asset('storage/' . $user->image) }}"
                                     alt="{{ $user->name }}" style="height: 100px; width: 100px;">
-                            </a>
+                            </a> --}}
+                            <a href="{{ Storage::url($user->image) }}"></a>
 
                         @else
                             <!-- File doesn't exist, so don't generate the link -->
