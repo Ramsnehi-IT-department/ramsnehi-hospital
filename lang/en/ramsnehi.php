@@ -20,11 +20,18 @@ return [
     // Content Start
     'ramsnehiChikitsalaya'=> 'Ramsnehi Chikitsalaya Evam Anusandhan Kendra',
     'introduction' => 'Introduction',
+
     'content_1'=> 'Ramsnehi Hospital was established on 25 April 2000 by the present Peethadhishwar Jagadguru Acharya Swamiji Shri 1008 Ramdayal Ji Maharaj to provide the best treatment at reasonable prices to the working class.',
-    'cotent_2'=> 'It is still serving the purpose of Maharaj shri by providing treatment for humanity. The hospital has received several awards from the state government for its continuous participation in the family welfare program for 5 years and continued its active participation at the state level. Ramsnehi hospital honored by other autonomous organizations as well for it’s contribution on healthcare fraternity.',
-    'content_3'=> 'It is also worth mentioning that Ramsnehi has not been behind in serving society even in natural calamities or during pandemic times.',
-    'content_4'=> 'Distance has never been a barrier to us in providing medical care to the deprived people, our medical team has extended quick relief services even to the faraway places. Not only this, we have organized free camps time to time where even medicines are provided at subsidized rates. During Covid-19 second wave, Ramsnehi hospital have been provided e-consultation facility to people from other state also.',
-    'content_5'=> 'With the aim of always providing efficient staff for the care of patients we have established Ramsnehi college of Nursing in 2008.',
+
+    'content_2'=> 'Ramsnehi is a 300 bedded NABH accredited multispecialty hospital with all general specialties like General Medicine, General Surgery, Orthopedic, Gynecology, Pediatrics, Cardiology, Neuro, ENT, Dental, all testing services like Pathology, Microbiology, X-Ray, MRI, CT Scan, ECG, TMT, Doppler.',
+
+    'content_3'=> 'It is still serving the purpose of Shri Maharaj by providing treatment to humanity. The hospital has received several awards from the State Government for its continuous participation in the family program for 5 years and continuing its active participation at the state level. Ramsnehi Hospital was also honored by other autonomous organizations for their contribution in the healthcare sector.',
+
+    'content_4'=> 'It is also noteworthy that Ramsnehi Hospital has not lagged behind in serving the society even during natural or pandemic times.',
+    
+    'content_5'=> 'Distance has never been a hindrance for the hospital in providing medical care to the underprivileged, Ramsnehi medical team has provided quick relief services even to the remotest places. Not only this, we have also organized free camps from time to time, where medicines are also provided at concessional rates. During the second wave of COVID-19, Ramsnehi Hospital has also provided e-consultation facility to people from other states.',
+
+    'content_6'=> 'With the aim of always providing efficient staff for the care of patients we have established Ramsnehi college of Nursing in 2008.',
     // Content End
 
 ];

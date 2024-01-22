@@ -20,11 +20,18 @@ return [
         // Content Start
         'ramsnehiChikitsalaya'=> 'रामस्नेही चिकित्सालय एवं अनुसंधान केंद्र',
         'introduction' => 'परिचय',
-        'content_1'=> 'रामस्नेही अस्पताल की स्थापना 25 अप्रैल 2000 को वर्तमान पीठाधीश्वर जगद्गुरु आचार्य स्वामीजी श्री 1008 रामदयाल जी महाराज द्वारा सर्वहारा वर्ग को उचित मूल्य पर सर्वोत्तम उपचार प्रदान करने के लिए किया गया।.',
-        'cotent_2'=> 'It is still serving the purpose of Maharaj shri by providing treatment for humanity. The hospital has received several awards from the state government for its continuous participation in the family welfare program for 5 years and continued its active participation at the state level. Ramsnehi hospital honored by other autonomous organizations as well for it’s contribution on healthcare fraternity.',
-        'content_3'=> 'It is also worth mentioning that Ramsnehi has not been behind in serving society even in natural calamities or during pandemic times.',
-        'content_4'=> 'Distance has never been a barrier to us in providing medical care to the deprived people, our medical team has extended quick relief services even to the faraway places. Not only this, we have organized free camps time to time where even medicines are provided at subsidized rates. During Covid-19 second wave, Ramsnehi hospital have been provided e-consultation facility to people from other state also.',
-        'content_5'=> 'With the aim of always providing efficient staff for the care of patients we have established Ramsnehi college of Nursing in 2008.',
+
+        'content_1'=> 'रामस्नेही अस्पताल की स्थापना 25 अप्रैल 2000 को वर्तमान पीठाधीश्वर जगद्गुरु आचार्य स्वामीजी श्री 1008 रामदयाल जी महाराज द्वारा सर्वहारा वर्ग को उचित मूल्य पर सर्वोत्तम उपचार प्रदान करने के लिए किया गया।',
+
+        'content_2'=> 'रामस्नेही एक 300 बिस्तरों वाला एनएबीएच मान्यता प्राप्त मल्टीस्पेशयलिटी अस्पताल है, जिसमें सभी सामान्य विशिष्टताएँ हैं, जैसे सामान्य मेडिसिन, सामान्य सर्जरी, आर्थोपेडिक, स्त्री एवं प्रसूति रोग, बाल चिकित्सा, कार्डियोलॉजी, न्यूरो, इएनटी, दन्त चिकित्सा,  सभी जांच सेवाएं जैसे पैथोलॉजी, माइक्रोबायोलॉजी, एक्स-रे, एमआरआई, सीटी स्कैन, ईसीजी, टीएमटी, डॉपलर।।',
+
+        'content_3'=> 'यह अभी भी मानवता के लिए उपचार प्रदान करके श्री महाराज  के उद्देश्य की सेवा कर रहा है। पारिवारिक कार्यक्रम में 5 वर्षों तक लगातार भागीदारी निभाने और राज्य स्तर पर अपनी सक्रिय भागीदारी जारी रखने के लिए अस्पताल को राज्य सरकार से कई पुरस्कार मिले हैं। रामस्नेही चिकित्सालय को स्वास्थ्य सेवा क्षेत्र में उनके योगदान के लिए अन्य स्वायत्त संगठनों द्वारा भी सम्मानित किया गया।',
+
+        'content_4'=> 'यह भी उल्लेखनीय है कि रामस्नेही चिकित्सालय प्राकृतिक या महामारी काल में भी समाज की सेवा करने में पीछे नहीं रहा हैं।',
+
+        'content_5'=> 'वंछित लोगों को चिकित्सा देखभाल प्रदान करने में दूरी कभी भी चिकित्सालय लिए बाधा नहीं बनी, रामस्नेही चिकित्सा टीम ने दूर-दराज के स्थानों तक भी त्वरित राहत सेवाएं पहुंचाई हैं। इतना ही नहीं, हमने समय-समय पर निःशुल्क शिविरों का भी आयोजन किया है, जहाँ रियायती दरों पर दवाएँ भी उपलब्ध करायी जाती हैं। कोविड-19 की दूसरी लहर के दौरान, रामस्नेही अस्पताल में अन्य राज्य के लोगों को भी ई-परामर्श सुविधा प्रदान की गई है।',
+
+        'content_6'=> 'मरीजों की देखभाल के लिए हमेशा कुशल स्टाफ उपलब्ध कराने के उद्देश्य से 2008 में रामस्नेही कॉलेज ऑफ नर्सिंग की स्थापना की गयी।',
         // Content End
 
 ];
