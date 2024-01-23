@@ -55,7 +55,7 @@
         <a class="nav-link dropdown-toggle" id="dropdown02" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">{{ __('homepage.department_menu') }}<i
                 class="icofont-thin-down"></i></a>
-        <ul class="dropdown-menu multi-column" aria-labelledby="dropdown02">
+        <ul class="dropdown-menu multi-column" aria-labelledby="dropdown02" style="min-width: 30rem!important">
             <div class="row">
                 <div class="col-md-6">
                     <li><a class="dropdown-item"

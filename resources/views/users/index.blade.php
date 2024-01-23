@@ -64,6 +64,7 @@
                         @if($user->image)
                             <a title="View Profile"
                                 href="{{ asset('storage/' . $user->image) }}">
+                                {{ $user->image }}
                                 <img src="{{ asset('storage/' . $user->image) }}"
                                     alt="{{ $user->name }}" style="height: 100px; width: 100px;">
                             </a>
