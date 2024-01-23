@@ -17,8 +17,6 @@
             </li>
             <li><a class="dropdown-item" href="/secretary">{{ __('homepage.AboutUs_secretory') }}</a>
             </li>
-            <li><a class="dropdown-item" href="http://www.ramsnehinursing.org/" target="_blank">Ramsnehi Nursing
-                    College</a></li>
         </ul>
     </li>
     {{-- AboutUs end --}}
@@ -41,8 +39,6 @@
             </li>
             <li><a class="dropdown-item"
                     href="/awardsAchievements">{{ __('homepage.careCenter_awards') }}</a></li>
-            <li><a class="dropdown-item"
-                    href="/ramsnehiOptics">{{ __('homepage.careCenter_optical') }}</a></li>
             <li><a class="dropdown-item"
                     href="/patientAttenders">{{ __('homepage.careCenter_patientsAttenders') }}</a>
             </li>

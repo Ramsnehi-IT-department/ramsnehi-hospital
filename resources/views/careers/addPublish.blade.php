@@ -29,7 +29,6 @@
         @csrf
 
         {{-- Select Opening --}}
-        
         <div class="row mb-3">
             <label class="col-lg-4 col-form-label" style="font-weight: bold">Vacancy select (You can select multiple)</label>
             <div class="col-lg-8">

@@ -9,7 +9,7 @@
 </style>
 
 <div class="row align-items-center">
-    <div class="col-sm-1 col-md-4 col-lg-6">
+    <div class="col-sm-1 col-md-4 col-lg-7">
         <ul class="top-bar-info list-inline-item pl-0 mb-0">
             <li class="list-inline-item"><a href="mailto:ramsnehi11@gmail.com"><i
                         class="icofont-support-faq mr-2"></i>ramsnehi11@gmail.com</a></li>
@@ -17,6 +17,7 @@
             </li>
         </ul>
     </div>
+    
     <div class="col-sm-1 col-md-4 col-lg-4 top-right-bar mt-2 mt-lg-0">
         <a href="tel:01482234100">
             <span>{{ __('homepage.header_call') }}</span>

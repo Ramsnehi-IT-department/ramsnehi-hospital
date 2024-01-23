@@ -7,18 +7,18 @@
   ================================================== -->
     <meta charset="utf-8">
     {{-- <title>Ramsnehi Chikitsalya &amp; Anusandhan Kendra</title> --}}
-    <title>@yield('title'): रामस्नेही चिकित्सालय एवं अनुसन्धान केन्द्र</title>
+    <title>@yield('title'): रामस्नेही चिकित्सालय एवं अनुसंधान केन्द्र</title>
 
     <!-- Mobile Specific Metas
   ================================================== -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="रामस्नेही चिकित्सालय एवं अनुसन्धान केन्द्र">
+    <meta name="description" content="रामस्नेही चिकित्सालय एवं अनुसंधान केन्द्र">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <meta name="author" content="Themefisher">
-    <meta name="generator" content="रामस्नेही चिकित्सालय एवं अनुसन्धान केन्द्र">
+    <meta name="generator" content="रामस्नेही चिकित्सालय एवं अनुसंधान केन्द्र">
 
     <!-- theme meta -->
-    <meta name="theme-name" content="रामस्नेही चिकित्सालय एवं अनुसन्धान केन्द्र" />
+    <meta name="theme-name" content="रामस्नेही चिकित्सालय एवं अनुसंधान केन्द्र" />
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png" />

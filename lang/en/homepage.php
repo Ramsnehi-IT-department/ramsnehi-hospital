@@ -11,7 +11,7 @@ return [
     |
     */
     // Top navbar start
-    'header_address' => 'Swami Ramcharan Marg, Nehru Road, Ramdwara, Bhilwara - 311001',
+    'header_address' => 'Swami Ramcharan Marg, Ramdwara, Bhilwara - 311001',
     'header_call'=> 'Call Now:',
     // Top navbar end
 
@@ -107,7 +107,7 @@ return [
         'media_menu_doctorDesk' => 'Doctor Desk',
         'media_menu_printMedia' => 'Print Media',
         'media_menu_digitalMedia' => 'Digital Media',    
-    'career_menu' => 'Career',
+    'career_menu' => 'Vecancy',
     'contact_menu' => 'Contact',
     'content' => 'Being a conventional institute Ramsnehi Hospital competing in the current corporate cohort of Rajasthan by breaching the paucity of reasonable but high end treatment for last 23 years. Ramsnehi Hospital and Research and Institute, a 300 bedded Multispecialty Hospital with 4 consecutive NABH Accreditation believes and based on the righteous principle of Ramsnehi International Community. Inaugurated by present Peetadhishwar Shri 1008 Shri Ram Dayal Ji Maharaj on 25th April 2000 focuses more and more in providing continuous quality service keeping the affordability as its major constraint. Having a track record of several awards and honor from the state government implies our active participation at intra state family welfare programme.',
     // Navbar end
