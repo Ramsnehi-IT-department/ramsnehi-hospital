@@ -37,8 +37,7 @@ class CareerController extends Controller
         // Create the user with validated data
         Opening::create($validated);
     
-        return redirect()->route('careers.index')->withSuccess('Opening created successfully');
-
+        return redirect()->route('careers.index')->with('success', 'Opening created successfully');
     }
 
     /**
@@ -46,7 +45,9 @@ class CareerController extends Controller
      */
     public function createPublish ()
     {
-        return view('careers.addPublish');
+        $openings =Opening::all();
+
+        return view('careers.addPublish', compact('openings'));
     }
 
     /**

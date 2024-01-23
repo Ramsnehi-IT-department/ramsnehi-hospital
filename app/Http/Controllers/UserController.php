@@ -3,14 +3,14 @@
 namespace App\Http\Controllers;
 use App\Models\User;
 use App\Models\UserLog;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
-use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\File;
 use App\Helpers\FileHelpers;
-use User as GlobalUser;
+use Illuminate\Validation\Rule;
+
 
 class UserController extends Controller
 {
@@ -43,18 +43,6 @@ class UserController extends Controller
         return view('users.index', compact('users'));   
     }
 
-    // public function index()
-    // {
-    //     $users = User::orderBy("id", "desc")->get();
-
-    //     // Attach the file paths to each user in the collection
-    //     foreach ($users as $user) {
-    //         $user->imagePath = FileHelpers::fileUpdate($user->image);
-    //     }
-
-    //     return view('users.index', compact('users'));
-    // }
-
     /**
      * Show the form for creating a new resource.
     */
@@ -70,7 +58,7 @@ class UserController extends Controller
     {
         $validated = $request->validate([
             'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'email' => ['required', 'string', 'email', 'max:255'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'role' => ['required', 'in:admin,quality,hr,user'],
             'image' => ['required', 'image', 'mimes:jpeg,png,jpg', 'max:2048']
@@ -112,47 +100,40 @@ class UserController extends Controller
     {
         // Find the user by ID
         $user = User::findOrFail($id);
-       
+        
         if (! Gate::allows('edit_profile', $user)) {
             abort(403);
         }
         
         // Validate the request data
-        $validated = $request->validate([
+        $request->validate([
             'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users,email,'.$user->id],
-            'password' => ['nullable', 'string', 'min:8', 'confirmed'],
+            'email' => ['required', 'string', 'email', 'max:255', Rule::unique('users')->ignore($user->id)],
+            'password' => ['required', 'string', 'min:8', 'confirmed'],
             'role' => ['required', 'in:admin,quality,hr,user'],
             'image' => ['required', 'image', 'mimes:jpeg,png,jpg', 'max:2048']
         ]);
-    
-        // Check if a new image is uploaded and update it if necessary
+        
+        // Update the user fields
+        $user->name = $request->name;
+        $user->password = Hash::make($request->password); // Encrypting Password
+        $user->role = $request->role;
+
+        // Check if a new file is uploaded and update it if necessary
         if ($request->hasFile('image')) {
-            $image = $request->file('image');
-            $imageName = time() . '_' . $image->getClientOriginalName();
-            $image->storeAs('public/images', $imageName);
-    
-            // Update the image path in the validated data
-            $validated['image'] = 'images/' . $imageName;
+            $newFileName = FileHelpers::fileUpdate($request);
+            $oldFileName = $user->image;
+
+            if ($oldFileName) { 
+                Storage::move($newFileName, $oldFileName);
+                $user->image = $oldFileName;
+            } else {
+                $user->image = $newFileName;
+            }
         }
-    
-        // Check if the password is present in the request and update if provided
-        if ($request->filled('password')) {
-            // Validate password
-            $request->validate([
-                'password' => ['required', 'string', 'min:8', 'confirmed'],
-            ]);
-    
-            // Encrypting Password
-            $validated['password'] = Hash::make($request->input('password'));
-        } else {
-            // Remove password from validated data if not provided
-            unset($validated['password']);
-        }
-    
-        // Update the user attributes
-        $user->update($validated);
-    
+
+        $user->save(); // Use save() method to update the user instance
+
         return redirect()->route('users.index')->with('success', 'User updated successfully');
     }
 
@@ -163,6 +144,14 @@ class UserController extends Controller
     {
         // Find the document respective page record
         $user = User::find($id);
+        
+        // Delete the document record
+        if ($user) {
+            $image = $user->image;
+            if ($image && Storage::exists($image)) {
+                Storage::delete($image);
+            }
+        }
         
         // Delete the document record
         $user->delete();

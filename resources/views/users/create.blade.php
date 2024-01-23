@@ -73,7 +73,6 @@
                         <option value="admin">Admin</option>
                         <option value="quality">Quality</option>
                         <option value="hr">Hr</option>
-                        <option value="user">User</option>
                     </select>
                     @error('role')
                         <div class="alert alert-danger">{{ $message }}</div>

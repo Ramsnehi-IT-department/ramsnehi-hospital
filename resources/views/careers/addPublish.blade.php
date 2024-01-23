@@ -34,11 +34,12 @@
             <label class="col-lg-4 col-form-label" style="font-weight: bold">Vacancy select (You can select multiple)</label>
             <div class="col-lg-8">
                 <select class="form-select" multiple aria-label="multiple select example" name="vacancies[]">
-                    <option value="1">Medical Officer</option>
+                    @foreach($openings as $opening)
+                        <option value="{{ $opening->id }}">{{ $opening->title }} - {{ $opening->sub_title }}</option>
+                    @endforeach
                 </select>
             </div>
         </div>
-        
 
         {{-- Add button --}}
         <div class="row">

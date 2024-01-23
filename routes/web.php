@@ -237,7 +237,6 @@ Route::get('/career', function () {
 Route::get('/contact', function () {
     return view('frontends.contact');
 });
-
 // ================================= Frontend End =================================
 
 // ================================= Admin Panel Start =================================
@@ -245,7 +244,6 @@ Route::get('/contact', function () {
 Auth::routes();
 Route::get('/admin', [HomeController::class, 'index'])->name('home');
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
-
 // =========== Quality admin Start ===========
 Route::prefix('quality')->controller(QualityController::class)->group(function () {
     Route::get('/index', 'index')->name('qualities.index');
@@ -253,7 +251,6 @@ Route::prefix('quality')->controller(QualityController::class)->group(function (
     // Route::post('/storeOpening', 'storeOpening')->name('careers.storeOpening');
 });
 // =========== Quality admin End ===========
-
 // =========== Gallery Start ===========
 Route::prefix('gallery')->controller(GalleryController::class)->group(function () {
     Route::get('/index', 'index')->name('galleries.index');
@@ -261,7 +258,6 @@ Route::prefix('gallery')->controller(GalleryController::class)->group(function (
     Route::post('/store', 'store')->name('galleries.store');
 });
 // =========== Gallery End ===========
-
 // =========== Career admin Start ===========
 Route::prefix('career')->controller(CareerController::class)->group(function () {
     Route::get('/index', 'index')->name('careers.index');
@@ -272,7 +268,6 @@ Route::prefix('career')->controller(CareerController::class)->group(function () 
     Route::get('/applicantList', 'applicantList')->name('careers.applicantList');
 });
 // =========== Career admin End ===========
-
 // =========== User Manager Start ===========
 Route::prefix('users')->controller(UserController::class)->middleware('auth')->group(function () {
     Route::get('/index', 'index')->name('users.index');
@@ -285,5 +280,4 @@ Route::prefix('users')->controller(UserController::class)->middleware('auth')->g
     Route::get('/log', 'userLog')->name('users.log');
 });
 // =========== User Manager End ===========
-
 // ================================= Admin Panel End =================================

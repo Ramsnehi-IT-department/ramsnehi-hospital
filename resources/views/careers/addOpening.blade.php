@@ -17,22 +17,6 @@
     </div>
     <!-- End Page Title -->
 
-    {{-- display success message start --}}
-    @if(session('success'))
-        <div class="alert alert-success">
-            {{ session('success') }}
-        </div>
-    @endif
-    {{-- display success message end --}}
-
-    {{-- display error message start --}}
-    @if(session('error'))
-        <div class="alert alert-warning">
-            {{ session('error') }}
-        </div>
-    @endif
-    {{-- display error message end --}}
-
     <form class="col-lg-6 row" action="{{ route('careers.storeOpening') }}" method="post"
         enctype="multipart/form-data" autocomplete="off">
         @csrf

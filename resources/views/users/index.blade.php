@@ -59,21 +59,18 @@
             @foreach($users as $key => $user)
                 <tr>
                     <td>{{ $loop->iteration }}</td>
-
                     <td>
                         @if($user->image)
-                            <a title="View Profile"
+                            <a title="Profile"
                                 href="{{ asset('storage/' . $user->image) }}">
-                                {{ $user->image }}
                                 <img src="{{ asset('storage/' . $user->image) }}"
-                                    alt="{{ $user->name }}" style="height: 100px; width: 100px;">
+                                    alt="{{ $user->image }}" style="width: 100px">
                             </a>
                         @else
                             <img src="{{ asset('/admin-assets/img/user.jpg') }}"
                                 alt="{{ $user->name }}" style="height: 100px; width: 100px;">
                         @endif
                     </td>
-
                     <td>{{ $user->role }}</td>
                     <td>{{ $user->name }}</a></td>
                     <td>{{ $user->email }}</td>
