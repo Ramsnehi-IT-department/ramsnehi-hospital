@@ -5,7 +5,11 @@
 <style>
     .slider-image {
         width: 100% !important;
-        height: 70vh !important;
+        height: 100vh !important;
+    }
+
+    /* .slide {
+        position: relative;
     }
 
     .animated-text {
@@ -13,18 +17,26 @@
         animation: textAnimation 5s forwards;
         margin-bottom: 10px !important;
         margin-top: 10px !important;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
     }
 
     @keyframes textAnimation {
         0% {
             transform: translateY(100%);
+            opacity: 0;
         }
 
         100% {
             transform: translateY(0);
+            opacity: 1;
         }
-    }
+    } */
 </style>
+
 
 <!-- Slider Start -->
 <section>

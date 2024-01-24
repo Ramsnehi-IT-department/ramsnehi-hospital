@@ -7,14 +7,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class Opening extends Model
 {
-        /**
+    use HasFactory;
+
+    /**
      * The attributes that are mass assignable.
      *
      * @var array<int, string>
      */
     protected $fillable = [
         'title',
-        'sub_title'
+        'sub_title',
+        'status'
     ];
-    use HasFactory;
 }

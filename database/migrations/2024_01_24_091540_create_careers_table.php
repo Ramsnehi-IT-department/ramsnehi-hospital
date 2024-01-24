@@ -16,11 +16,15 @@ return new class extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('contact', 15)->unique(); // Adjust the length as needed
-            $table->string('position');
-            $table->string('file'); // Assuming file is optional
+            $table->string('file')->nullable(); // Assuming file is optional
+            $table->unsignedBigInteger('opening_id')->nullable(); // Foreign key column
             $table->timestamps();
+
+            // Define the foreign key constraint
+            $table->foreign('opening_id')->references('id')->on('openings')->onDelete('cascade');
         });
     }
+
     /**
      * Reverse the migrations.
      */

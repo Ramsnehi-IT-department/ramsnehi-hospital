@@ -16,12 +16,19 @@ class CareerController extends Controller
         return view('careers.index');
     }
 
+    public function opening()
+    {
+        $openings = Opening::all();
+
+        return view('careers.opening', compact('openings'));
+    }
+
     /**
      * Show the form for createOpening a new resource.
     */
     public function createOpening()
     {
-        return view('careers.addOpening');
+        return view('careers.opening');
     }
 
     /**
@@ -38,29 +45,6 @@ class CareerController extends Controller
         Opening::create($validated);
     
         return redirect()->route('careers.index')->with('success', 'Opening created successfully');
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function createPublish ()
-    {
-        $openings =Opening::all();
-
-        return view('careers.addPublish', compact('openings'));
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function processPublish(Request $request)
-    {
-        $selectedVacancies = $request->input('openings', []);
-
-        // Assuming your Opening model has a category_id column
-        $openings = Opening::whereIn('category_id', $selectedVacancies)->get();
-
-        return view('openings', compact('openings'));
     }
 
     /**

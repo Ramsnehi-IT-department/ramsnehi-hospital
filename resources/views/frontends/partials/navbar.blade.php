@@ -58,14 +58,27 @@
                             href="/cardiologyDepartment">{{ __('homepage.department_cardiology') }}</a>
                     </li>
                     <li><a class="dropdown-item"
-                            href="/dental">{{ __('homepage.department_dentistry') }}</a></li>
-                    <li><a class="dropdown-item"
                             href="/generalMedicine">{{ __('homepage.department_medicine') }}</a></li>
+                    <li><a class="dropdown-item"
+                            href="/neuroSurgery">{{ __('homepage.department_neuroSurgery') }}</a></li>
+                    <li><a class="dropdown-item"
+                            href="/orthopedic">{{ __('homepage.department_orthopaedicSurgery') }}</a>
+                    </li>
                     <li><a class="dropdown-item"
                             href="/generalSurgery">{{ __('homepage.department_surgery') }}</a></li>
                     <li><a class="dropdown-item"
                             href="/ophthalmology">{{ __('homepage.department_opthalmology') }}</a>
                     </li>
+                    <li><a class="dropdown-item"
+                            href="/gynecology">{{ __('homepage.department_obstetricsGynaecology') }}</a>
+                    </li>
+                    <li><a class="dropdown-item"
+                            href="/Paediatric">{{ __('homepage.department_paediatrics') }}</a></li>
+                    <li><a class="dropdown-item" href="/ent">{{ __('homepage.department_ent') }}</a>
+                    </li>
+                    <li><a class="dropdown-item"
+                            href="/dental">{{ __('homepage.department_dentistry') }}</a></li>
+
                     <li><a class="dropdown-item"
                             href="/pathology">{{ __('homepage.department_pathology') }}</a></li>
                     <li><a class="dropdown-item"
@@ -76,22 +89,7 @@
                 </div>
                 <div class="col-md-6">
                     <li><a class="dropdown-item"
-                            href="/orthopedic">{{ __('homepage.department_orthopaedicSurgery') }}</a>
-                    </li>
-                    <li><a class="dropdown-item"
-                            href="/Paediatric">{{ __('homepage.department_paediatrics') }}</a></li>
-                    <li><a class="dropdown-item" href="/ent">{{ __('homepage.department_ent') }}</a>
-                    </li>
-                    <li><a class="dropdown-item"
                             href="/radiology">{{ __('homepage.department_radiology') }}</a></li>
-                    <li><a class="dropdown-item"
-                            href="/physiotherapy">{{ __('homepage.department_physiotherapy') }}</a>
-                    </li>
-                    <li><a class="dropdown-item"
-                            href="/gynecology">{{ __('homepage.department_obstetricsGynaecology') }}</a>
-                    </li>
-                    <li><a class="dropdown-item"
-                            href="/neuroSurgery">{{ __('homepage.department_neuroSurgery') }}</a></li>
                 </div>
             </div>
         </ul>

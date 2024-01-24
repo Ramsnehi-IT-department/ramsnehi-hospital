@@ -13,7 +13,16 @@ class Career extends Model
         'name',
         'email',
         'contact',
-        'position',
+        'opening_id',
         'file',
     ];
+
+     /**
+     * Get the openings associated with the career.
+     */
+    public function openings()
+    {
+        return $this->hasMany(Opening::class);
+    }
+
 }

@@ -23,7 +23,7 @@
     </div>
 </section>
 
-{{-- Vision Content Start --}}
+{{-- Content Start --}}
 <section class="section about-page">
     <div class="container">
         <div class="row">

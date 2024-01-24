@@ -8,6 +8,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\CareerController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\HomeWebController;
+use App\Http\Controllers\OpeningController;
 use App\Http\Controllers\QualityController;
 
 
@@ -244,6 +245,7 @@ Route::get('/contact', function () {
 Auth::routes();
 Route::get('/admin', [HomeController::class, 'index'])->name('home');
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+
 // =========== Quality admin Start ===========
 Route::prefix('quality')->controller(QualityController::class)->group(function () {
     Route::get('/index', 'index')->name('qualities.index');
@@ -251,6 +253,7 @@ Route::prefix('quality')->controller(QualityController::class)->group(function (
     // Route::post('/storeOpening', 'storeOpening')->name('careers.storeOpening');
 });
 // =========== Quality admin End ===========
+
 // =========== Gallery Start ===========
 Route::prefix('gallery')->controller(GalleryController::class)->group(function () {
     Route::get('/index', 'index')->name('galleries.index');
@@ -258,16 +261,30 @@ Route::prefix('gallery')->controller(GalleryController::class)->group(function (
     Route::post('/store', 'store')->name('galleries.store');
 });
 // =========== Gallery End ===========
+
 // =========== Career admin Start ===========
 Route::prefix('career')->controller(CareerController::class)->group(function () {
     Route::get('/index', 'index')->name('careers.index');
-    Route::get('/addOpening', 'createOpening')->name('careers.addOpening');
-    Route::post('/storeOpening', 'storeOpening')->name('careers.storeOpening');
-    Route::get('/addPublish', 'createPublish')->name('careers.addPublish');
-    Route::post('/processPublish', 'processPublish')->name('careers.processPublish');
-    Route::get('/applicantList', 'applicantList')->name('careers.applicantList');
+    Route::get('/opening', 'opening')->name('careers.opening');
+    Route::get('/application', 'application')->name('careers.application');
 });
 // =========== Career admin End ===========
+
+// =========== Opening admin Start ===========
+Route::prefix('openings')->controller(OpeningController::class)->group(function () {
+    Route::get('/index', 'index')->name('openings.index');
+    Route::get('/create', 'create')->name('openings.create');
+    Route::get('/edit/{id}', 'edit')->name('openings.edit');
+    Route::put('/{opening}', 'update')->name('openings.update');
+
+    Route::post('/store', 'store')->name('openings.store');
+});
+// =========== Opening admin End ===========
+
+// Route::get('/openings/create', 'OpeningController@create')->name('careers.createOpening');
+// Route::get('/openings/{id}/edit', 'OpeningController@edit')->name('openings.edit');
+// Route::post('/openings', 'OpeningController@store')->name('openings.store');
+
 // =========== User Manager Start ===========
 Route::prefix('users')->controller(UserController::class)->middleware('auth')->group(function () {
     Route::get('/index', 'index')->name('users.index');

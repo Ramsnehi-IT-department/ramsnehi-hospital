@@ -23,29 +23,20 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-6">
             <div class="card custom-card">
                 <a href="#">
                     <div class="card-body" style="display: flex; justify-content: center; align-items: center;">
-                        <h1 class="card-title">View Resume</h1>
+                        <h1 class="card-title">Applications</h1>
                     </div>
                 </a>
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-6">
             <div class="card custom-card">
-                <a href="{{ (route('careers.addPublish')) }}">
+                <a href="{{ route('openings.index') }}">
                     <div class="card-body" style="display: flex; justify-content: center; align-items: center;">
-                        <h1 class="card-title">Vacancy Publish</h1>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="card custom-card">
-                <a href="{{ route('careers.addOpening') }}">
-                    <div class="card-body" style="display: flex; justify-content: center; align-items: center;">
-                        <h1 class="card-title">Create Opening</h1>
+                        <h1 class="card-title">Opening</h1>
                     </div>
                 </a>
             </div>

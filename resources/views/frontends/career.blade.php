@@ -39,8 +39,7 @@
             <div class="col-lg-6">
                 <div class="appoinment-wrap mt-5 mt-lg-0 pl-lg-5">
                     <h2 class="mb-2 title-color">Send Your Application</h2>
-                    <!-- Floating Labels Form -->
-                    <form class="row g-3">
+                    {{-- <form class="row g-3">
                         <div class="col-md-12">
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control" id="floatingName" placeholder="Your Name">
@@ -70,17 +69,31 @@
                         <div class="col-md-12">
                             <div class="form-floating mb-3">
                                 <input type="file" class="form-control" id="fileInput" placeholder="Upload Resume">
-                                <!-- You can add a label for the input if needed -->
                                 <label for="fileInput">Upload Resume</label>
                             </div>
                         </div>
-                        <!-- Here's the reCAPTCHA widget -->
-                        {{-- <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div> --}}
                         
                         <div class="col-md-12">
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
-                    </form><!-- End floating Labels Form -->
+                    </form> --}}
+
+                    <form action="{{ route('careers.processPublish') }}" method="POST">
+                        @csrf
+                    
+                        <!-- Other form fields -->
+                    
+                        <label for="opening_id">Select Opening:</label>
+                        <select name="opening_id" id="opening_id">
+                            @foreach($openings as $opening)
+                                <option value="{{ $opening->id }}">{{ $opening->job_title }}</option>
+                            @endforeach
+                        </select>
+                    
+                        <button type="submit">Submit</button>
+                    </form>
+
+                    
                 </div>
             </div>
         </div>

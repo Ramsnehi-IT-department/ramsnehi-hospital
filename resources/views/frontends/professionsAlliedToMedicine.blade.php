@@ -67,6 +67,48 @@
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card custom-card mb-4">
+                            <a href="#">
+                                <img class="card-img-top" src="images/service/service-2.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Blood Bank</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card custom-card mb-4">
+                            <a href="#">
+                                <img class="card-img-top" src="images/service/service-2.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dietetics</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card custom-card mb-4">
+                            <a href="#">
+                                <img class="card-img-top" src="images/service/service-2.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Physiotherapy</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card custom-card mb-4">
+                            <a href="#">
+                                <img class="card-img-top" src="images/service/service-2.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Blood Bank</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 </section>

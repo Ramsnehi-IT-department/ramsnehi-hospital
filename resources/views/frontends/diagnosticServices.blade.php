@@ -36,27 +36,7 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
-                    <div class="card custom-card mb-4">
-                        <a href="/2DEcho">
-                            <img class="card-img-top" src="images/service/service-1.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">2D Echo</h5>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card custom-card mb-4">
-                        <a href="/DSALab">
-                            <img class="card-img-top" src="images/service/service-2.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">DSA Lab</h5>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card custom-card mb-4">
                         <a href="/ECG">
                             <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
@@ -66,12 +46,76 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
+                    <div class="card custom-card mb-4">
+                        <a href="/2DEcho">
+                            <img class="card-img-top" src="images/service/service-1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">2D Echo</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card custom-card mb-4">
+                        <a href="/DSALab">
+                            <img class="card-img-top" src="images/service/service-2.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">X-Ray</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card custom-card mb-4">
+                        <a href="/2DEcho">
+                            <img class="card-img-top" src="images/service/service-1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">CT Scan</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card custom-card mb-4">
+                        <a href="/DSALab">
+                            <img class="card-img-top" src="images/service/service-2.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">MRI</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
                     <div class="card custom-card mb-4">
                         <a href="/ECG">
                             <img class="card-img-top" src="images/service/service-3.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title" style="font-size: 1rem;">Tread Mill Testing</h5>
+                                <h5 class="card-title" style="font-size: 1rem;">Endoscopy</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card custom-card mb-4">
+                        <a href="/2DEcho">
+                            <img class="card-img-top" src="images/service/service-1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">TMT</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card custom-card mb-4">
+                        <a href="/DSALab">
+                            <img class="card-img-top" src="images/service/service-2.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Cath Lab</h5>
                             </div>
                         </a>
                     </div>
