@@ -19,4 +19,6 @@ class Opening extends Model
         'sub_title',
         'status'
     ];
+    protected $table = 'openings';
+
 }

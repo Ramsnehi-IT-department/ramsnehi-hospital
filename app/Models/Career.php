@@ -17,12 +17,5 @@ class Career extends Model
         'file',
     ];
 
-     /**
-     * Get the openings associated with the career.
-     */
-    public function openings()
-    {
-        return $this->hasMany(Opening::class);
-    }
-
+    
 }

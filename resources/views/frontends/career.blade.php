@@ -39,7 +39,17 @@
             <div class="col-lg-6">
                 <div class="appoinment-wrap mt-5 mt-lg-0 pl-lg-5">
                     <h2 class="mb-2 title-color">Send Your Application</h2>
-                    {{-- <form class="row g-3">
+                    <form class="row g-3">
+                        <div class="col-lg-12">
+                            <label for="floatingSelect">For Desired Position</label>
+                            <div class="form-floating mb-3">
+                                <select class="form-select" id="floatingSelect" name="opening_id" aria-label="State">
+                                    @foreach ($openings as $opening)
+                                        <option value="{{ $opening->opening_id }}">{{ $opening->title }}-{{ $opening->sub_title }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                        </div>
                         <div class="col-md-12">
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control" id="floatingName" placeholder="Your Name">
@@ -52,23 +62,12 @@
                         </div>
                         <div class="col-md-12">
                             <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="floatingEmail" placeholder="Your Contact">
+                                <input type="text" class="form-control" id="floatingContact" placeholder="Your Contact">
                             </div>
                         </div>
-                        <div class="col-lg-12">
-                            <label for="floatingSelect">For Desired Position</label>
+                       <div class="col-md-12">
                             <div class="form-floating mb-3">
-                                <select class="form-select" id="floatingSelect" aria-label="State">
-                                    <option value="1">doctor</option>
-                                    <option value="2">Nurse</option>
-                                    <option value="2">Nurse ICU</option>
-                                    <option value="2">Nurse office staff</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-floating mb-3">
-                                <input type="file" class="form-control" id="fileInput" placeholder="Upload Resume">
+                                <input type="file" class="form-control" name="image" id="fileInput" placeholder="Upload Resume">
                                 <label for="fileInput">Upload Resume</label>
                             </div>
                         </div>
@@ -76,24 +75,7 @@
                         <div class="col-md-12">
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
-                    </form> --}}
-
-                    <form action="{{ route('careers.processPublish') }}" method="POST">
-                        @csrf
-                    
-                        <!-- Other form fields -->
-                    
-                        <label for="opening_id">Select Opening:</label>
-                        <select name="opening_id" id="opening_id">
-                            @foreach($openings as $opening)
-                                <option value="{{ $opening->id }}">{{ $opening->job_title }}</option>
-                            @endforeach
-                        </select>
-                    
-                        <button type="submit">Submit</button>
                     </form>
-
-                    
                 </div>
             </div>
         </div>

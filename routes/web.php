@@ -229,10 +229,8 @@ Route::get('/digitalMedia', function () {
 });
 // =========== Media End ===========
 
-// Career page
-Route::get('/career', function () {
-    return view('frontends.career');
-});
+Route::get('/career', [HomeWebController::class, 'getResume'])->name('frontends.career');
+Route::post('/career', [HomeWebController::class, 'submitResume'])->name('frontends.career');
 
 // Contact page
 Route::get('/contact', function () {
@@ -241,10 +239,12 @@ Route::get('/contact', function () {
 // ================================= Frontend End =================================
 
 // ================================= Admin Panel Start =================================
-// =========== Login ===========
+
+// =========== User Login Start ===========
 Auth::routes();
 Route::get('/admin', [HomeController::class, 'index'])->name('home');
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+// =========== User Login End ===========
 
 // =========== Quality admin Start ===========
 Route::prefix('quality')->controller(QualityController::class)->group(function () {
@@ -265,8 +265,8 @@ Route::prefix('gallery')->controller(GalleryController::class)->group(function (
 // =========== Career admin Start ===========
 Route::prefix('career')->controller(CareerController::class)->group(function () {
     Route::get('/index', 'index')->name('careers.index');
-    Route::get('/opening', 'opening')->name('careers.opening');
-    Route::get('/application', 'application')->name('careers.application');
+//     Route::get('/opening', 'opening')->name('careers.opening');
+//     Route::get('/application', 'application')->name('careers.application');
 });
 // =========== Career admin End ===========
 
@@ -275,15 +275,13 @@ Route::prefix('openings')->controller(OpeningController::class)->group(function 
     Route::get('/index', 'index')->name('openings.index');
     Route::get('/create', 'create')->name('openings.create');
     Route::get('/edit/{id}', 'edit')->name('openings.edit');
-    Route::put('/{opening}', 'update')->name('openings.update');
-
+    Route::put('/update/{opening}', 'update')->name('openings.update');
     Route::post('/store', 'store')->name('openings.store');
-});
-// =========== Opening admin End ===========
 
-// Route::get('/openings/create', 'OpeningController@create')->name('careers.createOpening');
-// Route::get('/openings/{id}/edit', 'OpeningController@edit')->name('openings.edit');
-// Route::post('/openings', 'OpeningController@store')->name('openings.store');
+    Route::post('/changeStatus', 'changeStatus')->name('openings.changeStatus');
+});
+
+// =========== Opening admin End ===========
 
 // =========== User Manager Start ===========
 Route::prefix('users')->controller(UserController::class)->middleware('auth')->group(function () {

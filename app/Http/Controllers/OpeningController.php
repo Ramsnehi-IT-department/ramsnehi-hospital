@@ -27,7 +27,6 @@ class OpeningController extends Controller
         $validatedData = $request->validate([
             'title' => 'required',
             'sub_title' => 'required',
-            'status' => 'required|boolean',
         ]);
 
         Opening::create($validatedData);
@@ -36,35 +35,69 @@ class OpeningController extends Controller
     }
 
     // Show the form for editing an existing opening
-    public function edit(Opening $opening)
+    public function edit($id)
     {
+        // Retrieve the opening by ID and pass it to the view
+        $opening = Opening::findOrFail($id);
         return view('openings.create', compact('opening'));
     }
 
     // Update the specified opening in the database
     public function update(Request $request, Opening $opening)
     {
-        $validatedData = $request->validate([
+        // Validate the request data as needed
+        $request->validate([
             'title' => 'required',
             'sub_title' => 'required',
-            'status' => 'required|boolean',
         ]);
 
-        $opening->update($validatedData);
-
-        return redirect()->route('openings.index')->with('success', 'Opening updated successfully');
-    }
-
-    public function updateStatus(Request $request, Opening $opening)
-    {
-        $request->validate([
-            'status' => 'required|boolean',
-        ]);
-
+        // Update the opening with the new data
         $opening->update([
-            'status' => $request->input('status'),
+            'title' => $request->input('title'),
+            'sub_title' => $request->input('sub_title'),
         ]);
 
-        return response()->json(['message' => 'Status updated successfully']);
+        // Redirect back or wherever you need
+        return redirect()->route('openings.index');
     }
+
+
+    // public function updateStatus(Request $request, Opening $opening)
+    // {
+    //     dd($request);
+    //     $request->validate([
+    //         'status' => 'required|boolean',
+    //     ]);
+    
+    //     $opening->update([
+    //         'status' => $request->input('status'),
+    //     ]);
+    
+    //     return response()->json(['message' => 'Status updated successfully']);
+    // }
+
+    // Toggle change status
+    // public function changeStatus(Request $request, $id)
+    // {
+    //     $openings = Opening::findOrFail($id);
+
+    //     // $openings = Opening::find($request->id);
+    //     if (isset($openings) && $openings != null) {
+    //         $openings->status = $request->status;
+    //         $openings->save();
+    //         return response()->json(['status' => 'Status changed successfully.']);
+    //     }
+    //     return response()->json(['status' => 'Something went wrong.']);
+    // }
+
+    public function changeStatus(Request $request)
+    {
+        $openings = Opening::find($request->id);
+        $openings->status = $request->status;
+        $openings->save();
+  
+        return response()->json(['success'=>'Status change successfully.']);
+    }
+    
+    
 }

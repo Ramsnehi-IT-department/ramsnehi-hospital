@@ -58,15 +58,19 @@
                     <td>{{ $opening->title }}</a></td>
                     <td>{{ $opening->sub_title }}</td>
                     <td>{{ $opening->created_at }}</td>
+
                     <td>
+                        <span id="status{{ $opening->id }}"></span>
                         <div class="form-check form-switch">
-                            <input class="form-check-input toggle-status" type="checkbox" id="flexSwitchCheck{{ $key }}"
-                                data-opening-id="{{ $opening->id }}"
+                            <input data-id="{{ $opening->id }}" class="form-check-input toggle-class" type="checkbox"
+                                data-onstyle="success" data-offstyle="danger" data-toggle="toggle" data-on="Active"
+                                data-off="InActive"
                                 {{ $opening->status ? 'checked' : '' }}>
                         </div>
                     </td>
                     <td>
-                        <a type="button" href="{{ url('/openings/edit/' . $opening->id) }}"
+                        <a type="button"
+                            href="{{ url('/openings/edit/' . $opening->id) }}"
                             class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top"
                             title="Edit File"><i class="fas fa-pencil-alt"></i></a>
                     </td>
@@ -76,7 +80,6 @@
     </table>
 </div>
 
-
 <script>
     function confirmDelete() {
         return confirm("Are you sure you want to delete this document?");
@@ -84,28 +87,24 @@
 
 </script>
 
+<!-- Include jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 <script>
-    $(document).ready(function () {
-        $('.toggle-status').on('change', function () {
-            var openingId = $(this).data('opening-id');
-            var status = $(this).prop('checked') ? 1 : 0;
+    $(function () {
+        $('.toggle-class').change(function () {
+            var status = $(this).prop('checked') == true ? 1 : 0;
+            var id = $(this).data('id'); // Use the correct variable name 'id'
 
             $.ajax({
-                url: '/update-opening-status/' + openingId,
-                method: 'POST',
+                type: "post",
+                dataType: "json",
+                url: '/openings/changeStatus',
                 data: {
-                    _token: '{{ csrf_token() }}',
-                    status: status,
+                    "_token": "{{ csrf_token() }}",
+                    'status': status,
+                    'id': id // Use the correct variable name 'id'
                 },
-                success: function (response) {
-                    console.log(response);
-                    // You can handle the response here if needed
-                },
-                error: function (error) {
-                    console.error(error);
-                }
             });
         });
     });
