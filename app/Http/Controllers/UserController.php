@@ -61,17 +61,19 @@ class UserController extends Controller
             'email' => ['required', 'string', 'email', 'max:255'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'role' => ['required', 'in:admin,quality,hr,user'],
-            'image' => ['required', 'image', 'mimes:jpeg,png,jpg', 'max:2048']
+            'file_path' => ['required', 'file', 'mimes:jpeg,png,jpg', 'max:2048']
         ]);
-
-        // Handling image upload
-        if ($request->hasFile('image')) {
-            // Get the file path from the FileHelper
-            $imagePath = FileHelpers::fileUpdate($request);
-            // Add the file path to the validated data
-            $validated['image'] = $imagePath;
-        }
     
+        // Handling image upload
+        if ($request->hasFile('file_path')) {
+            // Get the file path from the FileHelper
+            $file_path = FileHelpers::fileUpdate($request);
+            // Add the file path to the validated data
+            $validated['file_path'] = $file_path;
+        }
+        // Capitalize the first letter of the name
+        $validated['name'] = ucwords($validated['name']);
+        
         // Encrypting Password
         $validated['password'] = Hash::make($validated['password']);
     
@@ -80,7 +82,7 @@ class UserController extends Controller
     
         return redirect()->route('users.index')->with('success', 'User created successfully');
     }
-
+    
     /**
         * Edit the specified resource.
     */
@@ -111,24 +113,25 @@ class UserController extends Controller
             'email' => ['required', 'string', 'email', 'max:255', Rule::unique('users')->ignore($user->id)],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'role' => ['required', 'in:admin,quality,hr,user'],
-            'image' => ['required', 'image', 'mimes:jpeg,png,jpg', 'max:2048']
+            'file_path' => ['required', 'file', 'mimes:jpeg,png,jpg', 'max:2048']
         ]);
         
+        
         // Update the user fields
-        $user->name = $request->name;
+        $user->name = ucwords($request->name);
         $user->password = Hash::make($request->password); // Encrypting Password
         $user->role = $request->role;
 
         // Check if a new file is uploaded and update it if necessary
-        if ($request->hasFile('image')) {
+        if ($request->hasFile('file_path')) {
             $newFileName = FileHelpers::fileUpdate($request);
-            $oldFileName = $user->image;
+            $oldFileName = $user->file_path;
 
             if ($oldFileName) { 
                 Storage::move($newFileName, $oldFileName);
-                $user->image = $oldFileName;
+                $user->file_path = $oldFileName;
             } else {
-                $user->image = $newFileName;
+                $user->file_path = $newFileName;
             }
         }
 
@@ -147,9 +150,9 @@ class UserController extends Controller
         
         // Delete the document record
         if ($user) {
-            $image = $user->image;
-            if ($image && Storage::exists($image)) {
-                Storage::delete($image);
+            $file_path = $user->file_path;
+            if ($file_path && Storage::exists($file_path)) {
+                Storage::delete($file_path);
             }
         }
         

@@ -13,9 +13,7 @@ class Career extends Model
         'name',
         'email',
         'contact',
+        'file_path',
         'opening_id',
-        'file',
     ];
-
-    
 }

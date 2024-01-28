@@ -33,15 +33,16 @@ class HomeWebController extends Controller
             'name' => 'required|string',
             'email' => 'required|email',
             'contact' => 'required|string',
-            'image' => 'required|image|mimes:pdf,doc,docx|max:2048', // Validate file type and size
+            'file_path' => 'required|file_path|mimes:pdf,doc,docx|max:2048', // Validate file type and size
         ]);
-     // Handling image upload
-     if ($request->hasFile('image')) {
+     // Handling file_path upload
+     if ($request->hasFile('file_path')) {
         // Get the file path from the FileHelper
-        $imagePath = FileHelpers::fileUpdate($request);
+        $file_path = FileHelpers::fileUpdate($request);
         // Add the file path to the validated data
-        $validated['image'] = $imagePath;
+        $validated['file_path'] = $file_path;
     }
+    
     
        
         // Create the user with validated data

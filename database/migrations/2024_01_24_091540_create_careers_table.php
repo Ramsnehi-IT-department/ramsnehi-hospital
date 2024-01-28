@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('contact', 15)->unique(); // Adjust the length as needed
-            $table->string('file')->nullable(); // Assuming file is optional
+            $table->string('file_path')->nullable(); // Assuming file is optional
             $table->unsignedBigInteger('opening_id')->nullable(); // Foreign key column
             $table->timestamps();
 

@@ -78,7 +78,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    {{-- <div class="col-md-4">
                         <div class="card custom-card mb-4">
                             <a href="#">
                                 <img class="card-img-top" src="images/service/service-2.jpg" alt="Card image cap">
@@ -87,8 +87,8 @@
                                 </div>
                             </a>
                         </div>
-                    </div>
-                    <div class="col-md-4">
+                    </div> --}}
+                    {{-- <div class="col-md-4">
                         <div class="card custom-card mb-4">
                             <a href="#">
                                 <img class="card-img-top" src="images/service/service-2.jpg" alt="Card image cap">
@@ -97,8 +97,8 @@
                                 </div>
                             </a>
                         </div>
-                    </div>
-                    <div class="col-md-4">
+                    </div> --}}
+                    {{-- <div class="col-md-4">
                         <div class="card custom-card mb-4">
                             <a href="#">
                                 <img class="card-img-top" src="images/service/service-2.jpg" alt="Card image cap">
@@ -107,7 +107,7 @@
                                 </div>
                             </a>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>

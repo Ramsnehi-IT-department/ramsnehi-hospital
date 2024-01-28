@@ -60,11 +60,11 @@
                 <tr>
                     <td>{{ $loop->iteration }}</td>
                     <td>
-                        @if($user->image)
+                        @if($user->file_path)
                             <a title="Profile"
-                                href="{{ asset('storage/' . $user->image) }}">
-                                <img src="{{ asset('storage/' . $user->image) }}"
-                                    alt="{{ $user->image }}" style="width: 100px">
+                                href="{{ asset('storage/' . $user->file_path) }}">
+                                <img src="{{ asset('storage/' . $user->file_path) }}"
+                                    alt="{{ $user->file_path }}" style="width: 100px">
                             </a>
                         @else
                             <img src="{{ asset('/admin-assets/img/user.jpg') }}"

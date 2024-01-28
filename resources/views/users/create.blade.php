@@ -83,11 +83,11 @@
              <div class="row">
                 <div class="col-lg-6">
                     <div class="form-floating">
-                        <input type="file" name="image" id="image" class="form-control" onchange="previewImage()">
-                        <label for="image">Image</label>
+                        <input type="file" name="file_path" id="file_path" class="form-control" onchange="previewImage()">
+                        <label for="file_path">Image</label>
                     </div>
                     <img id="preview" width="100" height="100" style="display: none;" />
-                    @error('image')
+                    @error('file_path')
                         {{ $message }}
                     @enderror
                 </div>
@@ -121,7 +121,7 @@
     </script>
         <script>
             function previewImage() {
-                var input = document.getElementById('image');
+                var input = document.getElementById('file_path');
                 var preview = document.getElementById('preview');
     
                 if (input.files && input.files[0]) {

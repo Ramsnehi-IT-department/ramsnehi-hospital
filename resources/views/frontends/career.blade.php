@@ -28,13 +28,11 @@
                 <p>We are dedicated to upgrading our infrastructure to provide better facilities and ensure utmost
                     reliability in our services</p>
                 <h3 class="mb-2 title-color">Find your job today by applying for &#8211;</h3>
-                <ul>
-                    <li>Medical Officer</li>
-                    <li>Nursing Staff</li>
-                    <li>Technician</li>
-                    <li>Office Staff</li>
-                    <li>Fourth Grade</li>
-                </ul>
+                <div class="form-floating mb-3">
+                        @foreach ($openings as $opening)
+                            <option value="{{ $opening->opening_id }}">{{ $opening->title }}-{{ $opening->sub_title }}</option>
+                        @endforeach
+                </div>
             </div>
             <div class="col-lg-6">
                 <div class="appoinment-wrap mt-5 mt-lg-0 pl-lg-5">
@@ -67,7 +65,7 @@
                         </div>
                        <div class="col-md-12">
                             <div class="form-floating mb-3">
-                                <input type="file" class="form-control" name="image" id="fileInput" placeholder="Upload Resume">
+                                <input type="file" class="form-control" name="file_path" id="file_path" placeholder="Upload Resume">
                                 <label for="fileInput">Upload Resume</label>
                             </div>
                         </div>
