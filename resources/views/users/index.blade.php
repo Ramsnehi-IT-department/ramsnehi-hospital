@@ -34,7 +34,7 @@
 
 <div class="container mx-end my-1">
     <div class="mb-2">
-        @if(auth()->user()->role == 'admin')
+        @if(auth()->user()->role == 'Admin')
             <a href="{{ route('users.create') }}" class="btn btn-sm btn-primary" data-toggle="tooltip"
                 data-placement="top" title="Create New Admin"><i class="fas fa-plus"></i></a>
         @endif
@@ -50,7 +50,8 @@
                 <th scope="col">Role</th>
                 <th scope="col">Name</th>
                 <th scope="col">Email</th>
-                @if(auth()->user()->role == 'admin')
+                <th scope="col">Status</th>
+                @if(auth()->user()->role == 'Admin')
                     <th colspan="2">Action</th>
                 @endif
             </tr>
@@ -74,19 +75,23 @@
                     <td>{{ $user->role }}</td>
                     <td>{{ $user->name }}</a></td>
                     <td>{{ $user->email }}</td>
-                    @if(auth()->user()->role == 'admin')
-                        <td>
-                            <a type="button"
-                                href="{{ url('/users/edit/' . $user->id) }}"
-                                class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top"
-                                title="Edit File"><i class="fas fa-pencil-alt"></i></a>
-                            <a type="button"
-                                href="{{ url('/users/delete/' . $user->id) }}"
-                                class="btn btn-primary btn-sm" onclick="return confirmDelete()" data-toggle="tooltip"
-                                data-placement="top" title="Delete Quarter"><i class="fa fa-trash"
-                                    aria-hidden="true"></i></a>
-                        </td>
-                    @endif
+                    <td>
+                        <span id="status{{ $user->id }}"></span>
+                        <div class="form-check form-switch">
+                            <input data-id="{{ $user->id }}" class="form-check-input toggle-class" type="checkbox"
+                                data-onstyle="success" data-offstyle="danger" data-toggle="toggle" data-on="Active"
+                                data-off="InActive"
+                                {{ $user->status ? 'checked' : '' }}>
+                        </div>
+                    </td>
+                    <td>
+                        <a type="button" href="{{ url('/users/edit/' . $user->id) }}"
+                            class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top"
+                            title="Edit File"><i class="fas fa-pencil-alt"></i></a>
+                        <a type="button" href="{{ url('/users/delete/' . $user->id) }}"
+                            class="btn btn-primary btn-sm" onclick="return confirmDelete()" data-toggle="tooltip"
+                            data-placement="top" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                    </td>
                 </tr>
             @endforeach
         </tbody>
@@ -94,8 +99,31 @@
 </div>
 <script>
     function confirmDelete() {
-        return confirm("Are you sure you want to delete this document?");
+        return confirm("Are you sure you want to remove this user?");
     }
-
 </script>
+
+<!-- Include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<script>
+    $(function () {
+        $('.toggle-class').change(function () {
+            var status = $(this).prop('checked') == true ? 1 : 0;
+            var id = $(this).data('id'); // Use the correct variable name 'id'
+
+            $.ajax({
+                type: "post",
+                dataType: "json",
+                url: '/users/changeStatus',
+                data: {
+                    "_token": "{{ csrf_token() }}",
+                    'status': status,
+                    'id': id // Use the correct variable name 'id'
+                },
+            });
+        });
+    });
+</script>
+
 @endsection

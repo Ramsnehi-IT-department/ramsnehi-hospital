@@ -60,36 +60,6 @@ class OpeningController extends Controller
         // Redirect back or wherever you need
         return redirect()->route('openings.index');
     }
-
-
-    // public function updateStatus(Request $request, Opening $opening)
-    // {
-    //     dd($request);
-    //     $request->validate([
-    //         'status' => 'required|boolean',
-    //     ]);
-    
-    //     $opening->update([
-    //         'status' => $request->input('status'),
-    //     ]);
-    
-    //     return response()->json(['message' => 'Status updated successfully']);
-    // }
-
-    // Toggle change status
-    // public function changeStatus(Request $request, $id)
-    // {
-    //     $openings = Opening::findOrFail($id);
-
-    //     // $openings = Opening::find($request->id);
-    //     if (isset($openings) && $openings != null) {
-    //         $openings->status = $request->status;
-    //         $openings->save();
-    //         return response()->json(['status' => 'Status changed successfully.']);
-    //     }
-    //     return response()->json(['status' => 'Something went wrong.']);
-    // }
-
     public function changeStatus(Request $request)
     {
         $openings = Opening::find($request->id);

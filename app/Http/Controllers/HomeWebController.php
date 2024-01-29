@@ -3,11 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Gallery;
 use App\Models\Career;
 use App\Models\Opening;
 use App\Helpers\FileHelpers;
-
+use Illuminate\Validation\Rule;
 
 class HomeWebController extends Controller
 {
@@ -30,11 +29,12 @@ class HomeWebController extends Controller
         // Validate the form data
         $validated = $request->validate([
             'opening_id' => 'required|exists:openings,id', // Validate that opening_id exists in the openings table
-            'name' => 'required|string',
-            'email' => 'required|email',
-            'contact' => 'required|string',
-            'file_path' => 'required|file_path|mimes:pdf,doc,docx|max:2048', // Validate file type and size
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255'],
+            'contact' => ['required', 'string'],
+            'file_path' => ['required', 'file', 'mimes:jpeg,png,jpg', 'max:2048']
         ]);
+        
      // Handling file_path upload
      if ($request->hasFile('file_path')) {
         // Get the file path from the FileHelper
@@ -43,12 +43,8 @@ class HomeWebController extends Controller
         $validated['file_path'] = $file_path;
     }
     
-    
-       
         // Create the user with validated data
         Career::create($validated);
-    
-        return redirect()->route('users.index')->with('success', 'User created successfully');
+        return redirect()->route('frontends.career')->with('success', 'Your Resume submit successfully');
     }
-    
 }

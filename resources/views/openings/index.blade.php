@@ -58,7 +58,6 @@
                     <td>{{ $opening->title }}</a></td>
                     <td>{{ $opening->sub_title }}</td>
                     <td>{{ $opening->created_at }}</td>
-
                     <td>
                         <span id="status{{ $opening->id }}"></span>
                         <div class="form-check form-switch">
@@ -108,7 +107,6 @@
             });
         });
     });
-
 </script>
 
 @endsection

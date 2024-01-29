@@ -9,23 +9,23 @@
 
 
     <!-- Start Quality - Visible for 'quality' role and 'admin' -->
-    @if (auth()->user()->role == 'quality' || auth()->user()->role == 'admin')
+    {{-- @if (auth()->user()->role == 'quality' || auth()->user()->role == 'admin') --}}
         <li class="nav-item">
             <a class="nav-link collapsed" data-bs-target="#components-Quality" href="#">
                 <i class="bi bi-menu-button-wide"></i><span>Quality Department</span>
             </a>
         </li>
-    @endif
+    {{-- @endif --}}
     <!-- End Quality -->
 
     <!-- Start HR - Visible for 'hr' role and 'admin' -->
-    @if (auth()->user()->role == 'hr' || auth()->user()->role == 'quality' || auth()->user()->role == 'admin')
+    {{-- @if (auth()->user()->role == 'hr' || auth()->user()->role == 'quality' || auth()->user()->role == 'admin') --}}
         <li class="nav-item">
             <a class="nav-link collapsed" data-bs-target="#components-HR" href="{{ route('careers.index') }}">
                 <i class="bi bi-menu-button-wide"></i><span>HR Department</span>
             </a>
         </li>
-    @endif
+    {{-- @endif --}}
     <!-- End HR -->
 
     <!-- Patient Success stories start -->
@@ -46,7 +46,7 @@
     <!-- Events & Initiatives end -->
 
     <!-- User Manager and Log links only for 'admin' -->
-    @if (auth()->user()->role == 'admin')
+    {{-- @if (auth()->user()->role == 'admin') --}}
         <li class="nav-item">
             <a class="nav-link collapsed" data-bs-target="#components-userManager" href="{{ route('users.index') }}">
                 <i class="bi bi-menu-button-wide"></i><span>User Manager</span>
@@ -57,6 +57,6 @@
                 <i class="bi bi-menu-button-wide"></i><span>Log</span>
             </a>
         </li>
-    @endif
+    {{-- @endif --}}
     <!-- End User Manager and User Log Nav -->
 </ul>

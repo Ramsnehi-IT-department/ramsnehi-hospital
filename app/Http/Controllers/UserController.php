@@ -56,6 +56,7 @@ class UserController extends Controller
     */
     public function store(Request $request)
     {
+        // Validate input data
         $validated = $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255'],
@@ -64,17 +65,19 @@ class UserController extends Controller
             'file_path' => ['required', 'file', 'mimes:jpeg,png,jpg', 'max:2048']
         ]);
     
-        // Handling image upload
+        // Handle image upload
         if ($request->hasFile('file_path')) {
             // Get the file path from the FileHelper
             $file_path = FileHelpers::fileUpdate($request);
             // Add the file path to the validated data
             $validated['file_path'] = $file_path;
         }
-        // Capitalize the first letter of the name
+    
+        // Capitalize the first letter of the role and name
+        $validated['role'] = ucfirst($validated['role']);
         $validated['name'] = ucwords($validated['name']);
-        
-        // Encrypting Password
+    
+        // Encrypt password
         $validated['password'] = Hash::make($validated['password']);
     
         // Create the user with validated data
@@ -82,6 +85,7 @@ class UserController extends Controller
     
         return redirect()->route('users.index')->with('success', 'User created successfully');
     }
+    
     
     /**
         * Edit the specified resource.
@@ -92,7 +96,7 @@ class UserController extends Controller
         if (! Gate::allows('edit_profile', $user)) {
             abort(403);
         }
-        return view('users.edit', compact('user'));
+        return view('users.create', compact('user'));
     }
 
     /**
@@ -103,6 +107,7 @@ class UserController extends Controller
         // Find the user by ID
         $user = User::findOrFail($id);
         
+        // Check if the authenticated user has permission to edit the profile
         if (! Gate::allows('edit_profile', $user)) {
             abort(403);
         }
@@ -115,18 +120,17 @@ class UserController extends Controller
             'role' => ['required', 'in:admin,quality,hr,user'],
             'file_path' => ['required', 'file', 'mimes:jpeg,png,jpg', 'max:2048']
         ]);
-        
-        
-        // Update the user fields
-        $user->name = ucwords($request->name);
-        $user->password = Hash::make($request->password); // Encrypting Password
-        $user->role = $request->role;
-
+    
+        // Update user fields
+        $user->name = ucwords($request->name); // Capitalize each word in the name
+        $user->password = Hash::make($request->password); // Encrypt password
+        $user->role = ucfirst($request->role); // Capitalize the first letter of the role
+    
         // Check if a new file is uploaded and update it if necessary
         if ($request->hasFile('file_path')) {
             $newFileName = FileHelpers::fileUpdate($request);
             $oldFileName = $user->file_path;
-
+    
             if ($oldFileName) { 
                 Storage::move($newFileName, $oldFileName);
                 $user->file_path = $oldFileName;
@@ -134,12 +138,12 @@ class UserController extends Controller
                 $user->file_path = $newFileName;
             }
         }
-
+    
         $user->save(); // Use save() method to update the user instance
-
+    
         return redirect()->route('users.index')->with('success', 'User updated successfully');
     }
-
+    
     /**
      * Remove the specified resource from storage.
      */
@@ -160,6 +164,17 @@ class UserController extends Controller
         $user->delete();
         return redirect()->route('users.index')->with('success', 'User delete successfully');
     }
+
+    // Change Status
+    public function changeStatus(Request $request)
+    {
+        $users = User::find($request->id);
+        $users->status = $request->status;
+        $users->save();
+  
+        return response()->json(['success'=>'Status change successfully.']);
+    }
+
 
     /**
      * listing for user log data.

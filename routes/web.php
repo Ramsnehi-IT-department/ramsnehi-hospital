@@ -265,8 +265,6 @@ Route::prefix('gallery')->controller(GalleryController::class)->group(function (
 // =========== Career admin Start ===========
 Route::prefix('career')->controller(CareerController::class)->group(function () {
     Route::get('/index', 'index')->name('careers.index');
-//     Route::get('/opening', 'opening')->name('careers.opening');
-//     Route::get('/application', 'application')->name('careers.application');
 });
 // =========== Career admin End ===========
 
@@ -274,25 +272,25 @@ Route::prefix('career')->controller(CareerController::class)->group(function () 
 Route::prefix('openings')->controller(OpeningController::class)->group(function () {
     Route::get('/index', 'index')->name('openings.index');
     Route::get('/create', 'create')->name('openings.create');
+    Route::post('/store', 'store')->name('openings.store');
     Route::get('/edit/{id}', 'edit')->name('openings.edit');
     Route::put('/update/{opening}', 'update')->name('openings.update');
-    Route::post('/store', 'store')->name('openings.store');
-
     Route::post('/changeStatus', 'changeStatus')->name('openings.changeStatus');
 });
-
 // =========== Opening admin End ===========
 
 // =========== User Manager Start ===========
 Route::prefix('users')->controller(UserController::class)->middleware('auth')->group(function () {
     Route::get('/index', 'index')->name('users.index');
-    Route::get('/add', 'create')->name('users.create');
+    Route::get('/create', 'create')->name('users.create');
     Route::post('/store', 'store')->name('users.store');
     Route::get('/edit/{id}', 'edit')->name('users.edit');
-    Route::put('/update/{id}', 'update')->name('users.update');
+    Route::put('/update/{user}', 'update')->name('users.update');
+    Route::post('/changeStatus', 'changeStatus')->name('users.changeStatus');
     Route::get('/delete/{id}', 'destroy')->name('users.destroy');
 // Log User
     Route::get('/log', 'userLog')->name('users.log');
 });
+
 // =========== User Manager End ===========
 // ================================= Admin Panel End =================================

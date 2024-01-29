@@ -29,47 +29,52 @@
                     reliability in our services</p>
                 <h3 class="mb-2 title-color">Find your job today by applying for &#8211;</h3>
                 <div class="form-floating mb-3">
-                        @foreach ($openings as $opening)
-                            <option value="{{ $opening->opening_id }}">{{ $opening->title }}-{{ $opening->sub_title }}</option>
-                        @endforeach
+                    @foreach($openings as $opening)
+                        <option value="{{ $opening->opening_id }}">{{ $opening->title }}-{{ $opening->sub_title }}
+                        </option>
+                    @endforeach
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="appoinment-wrap mt-5 mt-lg-0 pl-lg-5">
                     <h2 class="mb-2 title-color">Send Your Application</h2>
-                    <form class="row g-3">
+                    <form class="row g-3" method="POST" action="{{ route('frontends.career') }}"
+                        enctype="multipart/form-data" autocomplete="off">
+                        @csrf
                         <div class="col-lg-12">
                             <label for="floatingSelect">For Desired Position</label>
                             <div class="form-floating mb-3">
-                                <select class="form-select" id="floatingSelect" name="opening_id" aria-label="State">
-                                    @foreach ($openings as $opening)
-                                        <option value="{{ $opening->opening_id }}">{{ $opening->title }}-{{ $opening->sub_title }}</option>
+                                <select class="form-select" id="floatingSelect" name="opening_id">
+                                    @foreach($openings as $opening)
+                                        <option value="{{ $opening->id }}">
+                                            {{ $opening->title }}-{{ $opening->sub_title }}</option>
                                     @endforeach
                                 </select>
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="floatingName" placeholder="Your Name">
+                                <input type="text" class="form-control" id="floatingName" name="name" placeholder="Your Name">
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="floatingEmail" placeholder="Your Email">
+                                <input type="email" class="form-control" id="floatingEmail" name="email" placeholder="Your Email">
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="floatingContact" placeholder="Your Contact">
+                                <input type="text" class="form-control" id="floatingContact" name="contact" placeholder="Your Contact">
                             </div>
                         </div>
-                       <div class="col-md-12">
+                        <div class="col-md-12">
                             <div class="form-floating mb-3">
-                                <input type="file" class="form-control" name="file_path" id="file_path" placeholder="Upload Resume">
+                                <input type="file" class="form-control" name="file_path" id="file_path"
+                                    placeholder="Upload Resume">
                                 <label for="fileInput">Upload Resume</label>
                             </div>
                         </div>
-                        
+
                         <div class="col-md-12">
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </div>

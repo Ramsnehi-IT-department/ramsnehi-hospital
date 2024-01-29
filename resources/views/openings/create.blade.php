@@ -4,7 +4,8 @@
 
 @section('content')
 
-<form method="POST" action="{{ isset($opening) ? route('openings.update', ['opening' => $opening->id]) : route('openings.store') }}">
+<form method="POST"
+    action="{{ isset($opening) ? route('openings.update', ['opening' => $opening->id]) : route('openings.store') }}">
     @csrf
 
     @if(isset($opening))
@@ -14,15 +15,13 @@
 
     <label for="title">Title:</label>
     <input type="text" name="title"
-        value="{{ old('title', isset($opening) ? $opening->title : '') }}" required>
+        value="{{ old('title', isset($opening) ? $opening->title : '') }}"
+        required>
 
     <label for="sub_title">Subtitle:</label>
     <input type="text" name="sub_title"
-        value="{{ old('sub_title', isset($opening) ? $opening->sub_title : '') }}" required>
-
-    {{-- <label for="status">Status:</label>
-    <input type="checkbox" name="status" value="1"
-        {{ (old('status', isset($opening) && $opening->status) ? 'checked' : '') }}> --}}
+        value="{{ old('sub_title', isset($opening) ? $opening->sub_title : '') }}"
+        required>
 
     <!-- Add a hidden input with the same name and value 0 to ensure the unchecked value is submitted -->
     <input type="hidden" name="status" value="0">
