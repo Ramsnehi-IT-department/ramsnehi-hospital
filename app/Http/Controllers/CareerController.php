@@ -28,7 +28,6 @@ class CareerController extends Controller
     }
 
 
-
     public function getResume()
     {
         // Fetch positions with active status from the database
@@ -60,6 +59,6 @@ class CareerController extends Controller
     
     // Create the user with validated data
     Career::create($validated);
-    return redirect()->route('frontends.career')->with('success', 'Resume submitted successfully');
+    return redirect()->route('frontends.career')->with('success', 'Your Resume submitted successfully');
     }
 }
