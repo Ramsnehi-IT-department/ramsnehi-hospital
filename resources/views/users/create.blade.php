@@ -18,20 +18,22 @@
     <div class="row mb-3">
         <label for="name" class="col-sm-3 col-form-label">Name</label>
         <div class="col-sm-9">
-            <input type="text" name="name" id="name" value="{{ old('name', isset($user) ? $user->name : '') }}" class="form-control"
-                autocomplete="off">
+            <input type="text" name="name" id="name"
+                value="{{ old('name', isset($user) ? $user->name : '') }}"
+                class="form-control" autocomplete="off">
             @error('name')
                 <div class="alert alert-danger">{{ $message }}</div>
             @enderror
         </div>
     </div>
-    
+
     {{-- Email --}}
     <div class="row mb-3">
         <label for="email" class="col-sm-3 col-form-label">Email</label>
         <div class="col-sm-9">
-            <input type="text" name="email" id="email" value="{{ old('email', isset($user) ? $user->email : '') }}" class="form-control"
-                autocomplete="off">
+            <input type="text" name="email" id="email"
+                value="{{ old('email', isset($user) ? $user->email : '') }}"
+                class="form-control" autocomplete="off">
             @error('email')
                 <div class="alert alert-danger">{{ $message }}</div>
             @enderror
@@ -52,7 +54,8 @@
     <div class="row mb-3">
         <label for="password-confirm" class="col-sm-3 col-form-label">Confirm Password</label>
         <div class="col-sm-9">
-            <input type="password" name="password_confirmation" id="password-confirm" class="form-control" autocomplete="off">
+            <input type="password" name="password_confirmation" id="password-confirm" class="form-control"
+                autocomplete="off">
             @error('password')
                 <div class="alert alert-danger">{{ $message }}</div>
             @enderror
@@ -74,8 +77,8 @@
             @enderror
         </div>
     </div>
-     {{-- image --}}
-     <div class="row">
+    {{-- image --}}
+    <div class="row">
         <div class="col-lg-6">
             <div class="form-floating">
                 <input type="file" name="file_path" id="file_path" class="form-control" onchange="previewImage()">
@@ -88,34 +91,19 @@
         </div>
     </div>
 
-    <!-- Add a hidden input with the same name and value 0 to ensure the unchecked value is submitted -->
-    {{-- <input type="hidden" name="status" value="0">
-
-    <button type="submit" onclick="showAlert()">
-        {{ isset($user) ? 'Update' : 'Create' }}
-    </button>
-
-    <a href="{{ route('users.index') }}">
-        <button type="button">
-            Back
-        </button>
-    </a> --}}
-
-
-     {{-- Add button --}}
-     <div class="row">
+    {{-- Add button --}}
+    <div class="row">
         <div class="mt-3 col-lg-6">
             <input type="hidden" name="status" value="0">
-          
+
             <input type="submit" hidden id="add_btn" name="">
-            
-            <p onclick="add()" class="btn btn-sm btn-primary">{{ isset($user) ? 'Update' : 'Create' }}</p>
-            
+
+            <p onclick="add()" class="btn btn-sm btn-primary">
+                {{ isset($user) ? 'Update' : 'Create' }}</p>
+
             <a href="{{ route('users.index') }}" class="btn btn-sm btn-warning mb-3">Back</a>
         </div>
     </div>
-
-
 </form>
 
 <script>
@@ -131,6 +119,7 @@
             location.reload();
         }
     }
+
 </script>
 
 <script>

@@ -229,8 +229,10 @@ Route::get('/digitalMedia', function () {
 });
 // =========== Media End ===========
 
+// =========== Career Start ===========
 Route::get('/career', [CareerController::class, 'getResume'])->name('frontends.career');
 Route::post('/career', [CareerController::class, 'submitResume'])->name('frontends.career');
+// =========== Career End ===========
 
 // Contact page
 Route::get('/contact', function () {
@@ -265,6 +267,7 @@ Route::prefix('gallery')->controller(GalleryController::class)->group(function (
 // =========== Career admin Start ===========
 Route::prefix('career')->controller(CareerController::class)->group(function () {
     Route::get('/index', 'index')->name('careers.index');
+    Route::get('/application', 'view')->name('careers.application');
 });
 // =========== Career admin End ===========
 

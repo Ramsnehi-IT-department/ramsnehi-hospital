@@ -16,4 +16,9 @@ class Career extends Model
         'contact',
         'file_path',
     ];
+
+    public function opening()
+    {
+        return $this->belongsTo(Opening::class, 'opening_id');
+    }
 }

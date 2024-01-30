@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use App\Helpers\FileHelpers;
 
 
+
 class CareerController extends Controller
 {
     /**
@@ -18,6 +19,15 @@ class CareerController extends Controller
     {
         return view('careers.index');
     }
+
+    public function view()
+    {
+        $careers = Career::all();
+
+        return view('careers.application', compact('careers'));
+    }
+
+
 
     public function getResume()
     {
@@ -36,7 +46,7 @@ class CareerController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255'],
             'contact' => ['required', 'string'],
-            'file_path' => ['required', 'file', 'mimes:jpeg,png,jpg', 'max:2048']
+            'file_path' => ['required', 'file', 'mimes:jpeg,png,jpg,pdf', 'max:2048']
         ]);
         
 
@@ -48,13 +58,8 @@ class CareerController extends Controller
         $validated['file_path'] = $file_path;
     }
     
-        // Create the user with validated data
-        try {
-            Career::create($validated);
-        } catch (\Exception $e) {
-            return redirect()->route('frontends.career')->with('error', 'Error submitting your resume: ' . $e->getMessage());
-        }
-        
+    // Create the user with validated data
+    Career::create($validated);
+    return redirect()->route('frontends.career')->with('success', 'Resume submitted successfully');
     }
-
 }

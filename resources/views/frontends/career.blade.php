@@ -41,10 +41,11 @@
                     <form class="row g-3" method="POST" action="{{ route('frontends.career') }}"
                         enctype="multipart/form-data" autocomplete="off">
                         @csrf
-                        <div class="col-lg-12">
+                        <div class="col-md-12">
                             <label for="floatingSelect">For Desired Position</label>
                             <div class="form-floating mb-3">
                                 <select class="form-select" id="floatingSelect" name="opening_id">
+                                    <option value="">Select</option>
                                     @foreach($openings as $opening)
                                         <option value="{{ $opening->id }}">
                                             {{ $opening->title }}-{{ $opening->sub_title }}</option>
@@ -54,17 +55,20 @@
                         </div>
                         <div class="col-md-12">
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="floatingName" name="name" placeholder="Your Name">
+                                <input type="text" class="form-control" id="floatingName" name="name"
+                                    placeholder="Your Name">
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="floatingEmail" name="email" placeholder="Your Email">
+                                <input type="email" class="form-control" id="floatingEmail" name="email"
+                                    placeholder="Your Email">
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="floatingContact" name="contact" placeholder="Your Contact">
+                                <input type="text" class="form-control" id="floatingContact" name="contact"
+                                    placeholder="Your Contact" maxlength="10">
                             </div>
                         </div>
                         <div class="col-md-12">
@@ -74,7 +78,6 @@
                                 <label for="fileInput">Upload Resume</label>
                             </div>
                         </div>
-
                         <div class="col-md-12">
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
@@ -82,7 +85,6 @@
                 </div>
             </div>
         </div>
-    </div>
     </div>
 </section>
 {{-- Content end --}}

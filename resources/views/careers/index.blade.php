@@ -13,19 +13,19 @@
 </div>
 <!-- End Page Title -->
 
-    {{-- display success message start --}}
-    @if(session('success'))
-        <div class="alert alert-success">
-            {{ session('success') }}
-        </div>
-    @endif
-    {{-- display success message end --}}
+{{-- display success message start --}}
+@if(session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endif
+{{-- display success message end --}}
 
 <div class="container">
     <div class="row">
         <div class="col-lg-6">
             <div class="card custom-card">
-                <a href="#">
+                <a href="{{ route('careers.application') }}">
                     <div class="card-body" style="display: flex; justify-content: center; align-items: center;">
                         <h1 class="card-title">Applications</h1>
                     </div>
