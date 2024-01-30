@@ -3,8 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\Career;
 use App\Models\Opening;
 use Illuminate\Http\Request;
+use App\Helpers\FileHelpers;
+
 
 class CareerController extends Controller
 {
@@ -16,66 +19,42 @@ class CareerController extends Controller
         return view('careers.index');
     }
 
-    public function opening()
+    public function getResume()
     {
-        $openings = Opening::all();
+        // Fetch positions with active status from the database
+        $openings = Opening::where('status', 1)->get();
 
-        return view('careers.opening', compact('openings'));
+        // Pass positions to the Blade view
+        return view('frontends.career', ['openings' => $openings]);
     }
 
-    /**
-     * Show the form for createOpening a new resource.
-    */
-    public function createOpening()
+    public function submitResume(Request $request)
     {
-        return view('careers.opening');
-    }
-
-    /**
-     * Store a newly created resource in storage.
-    */
-    public function storeOpening(Request $request)
-    {
+        // Validate the form data
         $validated = $request->validate([
-            'title' => ['required', 'string', 'max:255'],
-            'sub_title' => ['required', 'string', 'max:255'],
+            'opening_id' => 'required|exists:openings,id', // Validate that opening_id exists in the openings table
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255'],
+            'contact' => ['required', 'string'],
+            'file_path' => ['required', 'file', 'mimes:jpeg,png,jpg', 'max:2048']
         ]);
+        
+
+     // Handling file_path upload
+     if ($request->hasFile('file_path')) {
+        // Get the file path from the FileHelper
+        $file_path = FileHelpers::fileUpdate($request);
+        // Add the file path to the validated data
+        $validated['file_path'] = $file_path;
+    }
     
         // Create the user with validated data
-        Opening::create($validated);
-    
-        return redirect()->route('careers.index')->with('success', 'Opening created successfully');
+        try {
+            Career::create($validated);
+        } catch (\Exception $e) {
+            return redirect()->route('frontends.career')->with('error', 'Error submitting your resume: ' . $e->getMessage());
+        }
+        
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
-    {
-        //
-    }
 }

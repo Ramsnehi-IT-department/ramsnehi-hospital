@@ -89,28 +89,50 @@
     </div>
 
     <!-- Add a hidden input with the same name and value 0 to ensure the unchecked value is submitted -->
-    <input type="hidden" name="status" value="0">
+    {{-- <input type="hidden" name="status" value="0">
 
-    <button type="submit">
+    <button type="submit" onclick="showAlert()">
         {{ isset($user) ? 'Update' : 'Create' }}
     </button>
+
+    <a href="{{ route('users.index') }}">
+        <button type="button">
+            Back
+        </button>
+    </a> --}}
+
+
+     {{-- Add button --}}
+     <div class="row">
+        <div class="mt-3 col-lg-6">
+            <input type="hidden" name="status" value="0">
+          
+            <input type="submit" hidden id="add_btn" name="">
+            
+            <p onclick="add()" class="btn btn-sm btn-primary">{{ isset($user) ? 'Update' : 'Create' }}</p>
+            
+            <a href="{{ route('users.index') }}" class="btn btn-sm btn-warning mb-3">Back</a>
+        </div>
+    </div>
+
+
 </form>
 
 <script>
     // create action
     function add() {
-        if (confirm("Are you wants to add User!")) {
+        if (confirm("Are you wants to add user!")) {
             document.getElementById("add_btn").click();
         }
     }
     // reset
     function cancel() {
-        if (confirm("Are you wants to reset User data!")) {
+        if (confirm("Are you wants to reset user data!")) {
             location.reload();
         }
     }
-
 </script>
+
 <script>
     function previewImage() {
         var input = document.getElementById('file_path');

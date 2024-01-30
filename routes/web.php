@@ -229,8 +229,8 @@ Route::get('/digitalMedia', function () {
 });
 // =========== Media End ===========
 
-Route::get('/career', [HomeWebController::class, 'getResume'])->name('frontends.career');
-Route::post('/career', [HomeWebController::class, 'submitResume'])->name('frontends.career');
+Route::get('/career', [CareerController::class, 'getResume'])->name('frontends.career');
+Route::post('/career', [CareerController::class, 'submitResume'])->name('frontends.career');
 
 // Contact page
 Route::get('/contact', function () {

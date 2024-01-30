@@ -39,6 +39,31 @@
                 data-placement="top" title="Create New Admin"><i class="fas fa-plus"></i></a>
         @endif
     </div>
+    @if (session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endif
+</div>
+
+<div class="container">
+    <!-- Modal -->
+<div class="modal fade" id="userModal" tabindex="-1" role="dialog" aria-labelledby="userModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="userModalLabel">User Information</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="userModalBody">
+                <!-- User information will be displayed here -->
+            </div>
+        </div>
+    </div>
+</div>
+
 </div>
 
 <div class="container">

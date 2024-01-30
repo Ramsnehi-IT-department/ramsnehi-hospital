@@ -118,7 +118,7 @@ class UserController extends Controller
             'email' => ['required', 'string', 'email', 'max:255', Rule::unique('users')->ignore($user->id)],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'role' => ['required', 'in:admin,quality,hr,user'],
-            'file_path' => ['required', 'file', 'mimes:jpeg,png,jpg', 'max:2048']
+            'file_path' => ['required', 'file_path', 'mimes:jpeg,png,jpg', 'max:2048']
         ]);
     
         // Update user fields

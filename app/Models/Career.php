@@ -10,10 +10,10 @@ class Career extends Model
     use HasFactory;
 
     protected $fillable = [
+        'opening_id',
         'name',
         'email',
         'contact',
         'file_path',
-        'opening_id',
     ];
 }
