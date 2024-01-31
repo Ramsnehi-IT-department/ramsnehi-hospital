@@ -158,7 +158,7 @@ return [
 
     // Footer Start
     'footer_intro' => 'Ramsnehi Hospital, which was inaugurated on 25 April 2000 by the present Peethadhishwar
-    Jagadguru Anant Sri Vibhushit Acharya Swamiji Sri 1008 Sri Ram Dayal Ji Maharaj of the
+    Jagadguru Anant Shree Vibhushit Acharya Swamiji Shree 1008 Shree Ram Dayal Ji Maharaj of the
     International Ramsnehi Sampradaya by his own staff.',
     'footer_links' => 'Useful Links',
     'footer_supports' => 'Support',

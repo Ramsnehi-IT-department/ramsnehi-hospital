@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\CareerController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\HomeWebController;
 use App\Http\Controllers\OpeningController;
@@ -234,10 +235,11 @@ Route::get('/career', [CareerController::class, 'getResume'])->name('frontends.c
 Route::post('/career', [CareerController::class, 'submitResume'])->name('frontends.career');
 // =========== Career End ===========
 
-// Contact page
-Route::get('/contact', function () {
-    return view('frontends.contact');
-});
+// =========== Contact Start ===========
+Route::get('/contact', [ContactController::class, 'getContact'])->name('frontends.contact');
+Route::post('/contact', [ContactController::class, 'submitContact'])->name('frontends.Contact');
+// =========== Contact End ===========
+
 // ================================= Frontend End =================================
 
 // ================================= Admin Panel Start =================================

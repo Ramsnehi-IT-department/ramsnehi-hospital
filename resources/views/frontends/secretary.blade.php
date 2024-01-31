@@ -8,12 +8,7 @@
       <div class="row">
           <div class="col-md-12">
               <div class="block">
-                  <ul class="list-inline">
-                      <li class="list-inline-item"><a href="/" class="text-white">{{ __('secretary.home') }}</a></li>
-                      <li class="list-inline-item"><span class="text-white">/</span></li>
-                      <li class="list-inline-item"><a href="/ramsnehi" class="text-white-50">{{ __('secretary.ramsnehi') }}</a></li>
-                  </ul>
-                  <h1 class="text-capitalize mb-5 text-lg">{{ __('secretary.secretary') }}</h1>
+                <h1 class="text-capitalize text-lg">{{ __('secretary.secretary') }}</h1>
               </div>
           </div>
       </div>

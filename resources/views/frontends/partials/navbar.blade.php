@@ -70,6 +70,12 @@
                             href="/ophthalmology">{{ __('homepage.department_opthalmology') }}</a>
                     </li>
                     <li><a class="dropdown-item"
+                            href="/pharmacy">{{ __('homepage.department_pharmacy') }}</a></li>
+                </div>
+                <div class="col-md-6">
+                    <li><a class="dropdown-item"
+                            href="/radiology">{{ __('homepage.department_radiology') }}</a></li>
+                    <li><a class="dropdown-item"
                             href="/gynecology">{{ __('homepage.department_obstetricsGynaecology') }}</a>
                     </li>
                     <li><a class="dropdown-item"
@@ -84,12 +90,6 @@
                     <li><a class="dropdown-item"
                             href="/emergency">{{ __('homepage.department_emergencyDepartment') }}</a>
                     </li>
-                    <li><a class="dropdown-item"
-                            href="/pharmacy">{{ __('homepage.department_pharmacy') }}</a></li>
-                </div>
-                <div class="col-md-6">
-                    <li><a class="dropdown-item"
-                            href="/radiology">{{ __('homepage.department_radiology') }}</a></li>
                 </div>
             </div>
         </ul>

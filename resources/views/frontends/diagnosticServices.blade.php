@@ -8,13 +8,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="block">
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="/" class="text-white">Home</a></li>
-                        <li class="list-inline-item"><span class="text-white">/</span></li>
-                        <li class="list-inline-item"><a href="/allDept" class="text-white-50">Departments</a></li>
-                        <li class="list-inline-item"><span class="text-white">/</span></li>
-                    </ul>
-                    <h1 class="text-capitalize mb-5 text-lg">Diagnostic Services</h1>
+                    <h1 class="text-capitalize text-lg">Diagnostic Services</h1>
                 </div>
             </div>
         </div>

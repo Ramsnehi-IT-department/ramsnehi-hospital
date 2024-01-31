@@ -8,14 +8,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="block">
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="/" class="text-white">Home</a></li>
-                        <li class="list-inline-item"><span class="text-white">/</span></li>
-                        <li class="list-inline-item"><a href="/allEvents" class="text-white-50">All Events</a></li>
-                        <li class="list-inline-item"><span class="text-white">/</span></li>
-                        <li class="list-inline-item"><a href="/hospitalEvents" class="text-white-50">Details</a></li>
-                    </ul>
-                    <h1 class="text-capitalize mb-5 text-lg">Hospital Events</h1>
+                    <h1 class="text-capitalize text-lg">Hospital Events</h1>
                 </div>
             </div>
         </div>

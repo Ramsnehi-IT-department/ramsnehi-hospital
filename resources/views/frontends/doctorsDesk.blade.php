@@ -8,14 +8,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="block">
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="/" class="text-white">Home</a></li>
-                        <li class="list-inline-item"><span class="text-white">/</span></li>
-                        <li class="list-inline-item"><a href="/allMediaCoverage" class="text-white-50">Media Coverage</a></li>
-                        <li class="list-inline-item"><span class="text-white">/</span></li>
-                        <li class="list-inline-item"><a href="/doctorsDesk" class="text-white-50">Details</a></li>
-                    </ul>
-                    <h1 class="text-capitalize mb-5 text-lg">Doctor's Desk</h1>
+                    <h1 class="text-capitalize text-lg">Doctor's Desk</h1>
                 </div>
             </div>
         </div>

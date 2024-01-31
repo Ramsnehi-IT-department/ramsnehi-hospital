@@ -8,7 +8,7 @@
     </li><!-- End Dashboard Nav -->
 
     <!-- Start Quality - Visible for 'quality' role and 'admin' -->
-    @if (auth()->user()->role == 'quality' || auth()->user()->role == 'admin')
+    @if (auth()->user()->role == 'Quality' || auth()->user()->role == 'Admin')
         <li class="nav-item">
             <a class="nav-link collapsed" data-bs-target="#components-Quality" href="#">
                 <i class="bi bi-menu-button-wide"></i><span>Quality Department</span>
@@ -43,6 +43,16 @@
         </a>
     </li>
     <!-- Events & Initiatives end -->
+
+    <!-- Start Contact - Visible for 'quality' role and 'admin' -->
+    @if (auth()->user()->role == 'Quality' || auth()->user()->role == 'Admin')
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#components-Contact" href="#">
+                <i class="bi bi-menu-button-wide"></i><span>Contact Us</span>
+            </a>
+        </li>
+    @endif
+    <!-- End Contact -->
 
     <!-- User Manager and Log links only for 'admin' -->
     @if (auth()->user()->role == 'Admin')

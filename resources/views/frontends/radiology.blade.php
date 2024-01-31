@@ -8,15 +8,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="block">
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="/" class="text-white">Home</a></li>
-                        <li class="list-inline-item"><span class="text-white">/</span></li>
-                        <li class="list-inline-item"><a href="/allDept" class="text-white-50">Departments</a></li>
-                        <li class="list-inline-item"><span class="text-white">/</span></li>
-                        <li class="list-inline-item"><a href="/clinicalServices" class="text-white-50">Clinical Services</a></li>
-                        <li class="list-inline-item"><span class="text-white">/</span></li>
-                    </ul>
-                    <h1 class="text-capitalize mb-5 text-lg">Obstetrics & Gynaecology (Including High Risk Pregnancy)</h1>
+                    <h1 class="text-capitalize text-lg">Radiology</h1>
                 </div>
             </div>
         </div>
@@ -29,86 +21,10 @@
         <div class="row">
             <div class="col-lg-12">
                 <h3 class="title-color">Introduction</h3>
-                <p>The service of 3 full-time gynecologists is always available in the hospital which-
-                    <ul>
-                        <li>
-                            Normal Delivery
-                        </li>
-                        <li>
-                            Caesarean delivery
-                        </li>
-                        <li>
-                            Cervical operations
-                        </li>
-                        <li>
-                            Leucorrhoea
-                        </li>
-                        <li>
-                            Irregularity
-                        </li>
-                    </ul>
-                    <p>
-                        Apart from this, investigation of all types of diseases related to women is continuously
-                        available
-                        for diagnosis and treatment.
-                    </p>
-                    <p>
-                        This combined training prepares the practicing OB & GYN to be adapt at the care of female
-                        reproductive organs's health and at the management of obstetric complications even through
-                        surgery.
-                    </p>
-
-                    <h3 class="title-color">Available Services</h3>
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                    </ul>
-
-                    <h3 class="title-color">Patient Testimonial</h3>
-                    <div class="row align-items-center">
-                        <div class="col-lg-12 testimonial-wrap-2">
-                            <div class="testimonial-block style-2  gray-bg">
-                                <div class="carousel-item active">
-                                    <div class="embed-responsive embed-responsive-16by9">
-                                        <iframe class="embed-responsive-item"
-                                            src="https://www.youtube.com/embed/f1BvyKbEY3k"></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="testimonial-block style-2  gray-bg">
-                                <div class="carousel-item active">
-                                    <div class="embed-responsive embed-responsive-16by9">
-                                        <iframe class="embed-responsive-item"
-                                            src="https://www.youtube.com/embed/3uRXNSLrixg"></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="testimonial-block style-2  gray-bg">
-                                <div class="carousel-item active">
-                                    <div class="embed-responsive embed-responsive-16by9">
-                                        <iframe class="embed-responsive-item"
-                                            src="https://www.youtube.com/embed/CY_K0fDLEAY"></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="testimonial-block style-2  gray-bg">
-                                <div class="carousel-item active">
-                                    <div class="embed-responsive embed-responsive-16by9">
-                                        <iframe class="embed-responsive-item"
-                                            src="https://www.youtube.com/embed/1zHT8t4wE9o"></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 text-center">
-                            <a class="btn btn-sm btn-primary mt-3">View More</a>
-                        </div>
-                    </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, maiores doloremque voluptatibus sunt dolorum nostrum molestias ratione perspiciatis dolorem laborum laudantium ipsam? Vitae optio ducimus sed aut quod esse voluptatem!</p>
             </div>
         </div>
+    </div>
     </div>
 </section>
 {{-- neuro End --}}

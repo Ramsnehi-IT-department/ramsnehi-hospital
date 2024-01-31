@@ -17,13 +17,6 @@
                     <div class="divider mb-4"></div>
                     <ul class="list-unstyled footer-menu lh-35">
                         <li><a href="/overview">{{ __('homepage.AboutUs_overview') }} </a></li>
-                        <li><a href="/patientCare">{{ __('homepage.careCenter_facilities') }} </a></li>
-                        <li><a href="/allDept">{{ __('homepage.department_menu') }} </a>
-                        </li>
-                        <li><a href="/allEvents">{{ __('homepage.events_allEvents') }} </a>
-                        </li>
-                        <li><a href="/allMediaCoverage">{{ __('homepage.media_menu_allMediaCoverage') }} </a>
-                        </li>
                         <li><a href="/career">{{ __('homepage.career_menu') }}
                             </a></li>
                         <li><a href="/contact">{{ __('homepage.contact_menu') }} </a></li>
