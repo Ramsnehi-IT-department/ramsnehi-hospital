@@ -7,10 +7,10 @@
         </a>
     </li><!-- End Dashboard Nav -->
 
-    <!-- Start Quality - Visible for 'quality' role and 'admin' -->
+    <!-- Start Quality - Visible for 'Quality' and 'Admin' -->
     @if (auth()->user()->role == 'Quality' || auth()->user()->role == 'Admin')
         <li class="nav-item">
-            <a class="nav-link collapsed" data-bs-target="#components-Quality" href="#">
+            <a class="nav-link collapsed" data-bs-target="#components-Quality" href="{{ route('qualities.index') }}">
                 <i class="bi bi-menu-button-wide"></i><span>Quality Department</span>
             </a>
         </li>
@@ -27,28 +27,11 @@
     @endif
     <!-- End HR -->
 
-    <!-- Patient Success stories start -->
-    <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#components-patient" href="#">
-            <i class="bi bi-menu-button-wide"></i><span>Patient Success Stories</span>
-        </a>
-    </li>
-    <!-- Patient Success stories end -->
-
-
-    <!-- Events & Initiatives start -->
-    <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#components-events" href="#">
-            <i class="bi bi-menu-button-wide"></i><span>Events & Initiatives</span>
-        </a>
-    </li>
-    <!-- Events & Initiatives end -->
-
     <!-- Start Contact - Visible for 'quality' role and 'admin' -->
     @if (auth()->user()->role == 'Quality' || auth()->user()->role == 'Admin')
         <li class="nav-item">
-            <a class="nav-link collapsed" data-bs-target="#components-Contact" href="#">
-                <i class="bi bi-menu-button-wide"></i><span>Contact Us</span>
+            <a class="nav-link collapsed" data-bs-target="#components-Contact" href="{{ route('contacts.index') }}">
+                <i class="bi bi-menu-button-wide"></i><span>Admin Department</span>
             </a>
         </li>
     @endif
@@ -63,7 +46,7 @@
         </li>
         <li class="nav-item">
             <a class="nav-link collapsed" data-bs-target="#components-log" href="#">
-                <i class="bi bi-menu-button-wide"></i><span>Log</span>
+                <i class="bi bi-menu-button-wide"></i><span>User Log</span>
             </a>
         </li>
     @endif

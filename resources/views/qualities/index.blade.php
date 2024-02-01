@@ -21,69 +21,56 @@
 @section('content')
     <!-- Start Page Title -->
     <div class="pagetitle">
-        <h1>Applicants</h1>
         <nav>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="/admin">Home</a></li>
-                <li class="breadcrumb-item active">List</li>
             </ol>
+            <h1>Quality Department</h1>
         </nav>
     </div>
     <!-- End Page Title -->
 
-    <div class="container mx-end my-1">
-        <div class="mb-2">
-            @if (auth()->user()->role == 'quality' || auth()->user()->role == 'admin')
-                <a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top"
-                    title="Create New Testimonial"><i class="fas fa-plus"></i></a>
-            @endif
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card custom-card">
+                    <a href="#">
+                        <div class="card-body" style="display: flex; justify-content: center; align-items: center;">
+                            <h1 class="card-title">Patient Success Stories</h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card custom-card">
+                    <a href="#">
+                        <div class="card-body" style="display: flex; justify-content: center; align-items: center;">
+                            <h1 class="card-title">Awards & Achievements</h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card custom-card">
+                    <a href="#">
+                        <div class="card-body" style="display: flex; justify-content: center; align-items: center;">
+                            <h1 class="card-title">Media</h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card custom-card">
+                    <a href="#">
+                        <div class="card-body" style="display: flex; justify-content: center; align-items: center;">
+                            <h1 class="card-title">Gallery</h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
-
-    <div class="container">
-        <table class="table table-striped table-bordered" id="myTable">
-            <thead class="table-dark">
-                <tr>
-                    <th scope="col">Id</th>
-                    <th scope="col">Patient Name</th>
-                    <th scope="col">Contact</th>
-                    <th scope="col">Photo</th>
-                    <th scope="col">Text</th>
-                    <th scope="col">Video File</th>
-                    @if (auth()->user()->role == 'admin')
-                        <th colspan="2">Action</th>
-                    @endif
-                </tr>
-            </thead>
-            <tbody>
-                {{-- @foreach ($users as $key => $user)
-                    <tr>
-                        <td>{{ $loop->iteration }}</td>
-                        <td>{{ $user->role }}</td>
-                        <td>{{ $user->name }}</a></td>
-                        <td>{{ $user->email }}</td>
-                        @if (auth()->user()->role == 'super-admin')
-                            <td>
-                                <a type="button" href="#"
-                                    class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top"
-                                    title="View"><i class="fas fa-pencil-alt"></i></a>
-                                <a type="button" href="#"
-                                    class="btn btn-primary btn-sm" onclick="return confirmDelete()" data-toggle="tooltip"
-                                    data-placement="top" title="Delete Quarter"><i class="fa fa-trash"
-                                        aria-hidden="true"></i></a>
-                            </td>
-                        @endif
-                    </tr>
-                @endforeach --}}
-            </tbody>
-        </table>
-    </div>
-    <script>
-        function confirmDelete() {
-            return confirm("Are you sure you want to delete this document?");
-        }
-        $(function() {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
+    
 @endsection

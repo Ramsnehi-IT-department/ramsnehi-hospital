@@ -8,6 +8,13 @@ use Illuminate\Http\Request;
 
 class ContactController extends Controller
 {
+    public function index()
+    {
+        $contacts = Contact::all();
+
+        return view('contacts.index', compact('contacts'));
+    }
+
     public function getContact()
     {
         // Pass positions to the Blade view

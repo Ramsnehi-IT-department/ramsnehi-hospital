@@ -11,8 +11,8 @@ class Contact extends Model
     protected $fillable = [
         'name',
         'email',
-        'query',
         'contact',
+        'query',
         'message',
     ];
 }

@@ -27,7 +27,6 @@ class CareerController extends Controller
         return view('careers.application', compact('careers'));
     }
 
-
     public function getResume()
     {
         // Fetch positions with active status from the database

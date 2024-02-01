@@ -284,6 +284,12 @@ Route::prefix('openings')->controller(OpeningController::class)->group(function 
 });
 // =========== Opening admin End ===========
 
+// =========== Administration department Start ===========
+Route::prefix('contact')->controller(ContactController::class)->group(function () {
+    Route::get('/index', 'index')->name('contacts.index');
+});
+// =========== Administration department End ===========
+
 // =========== User Manager Start ===========
 Route::prefix('users')->controller(UserController::class)->middleware('auth')->group(function () {
     Route::get('/index', 'index')->name('users.index');
