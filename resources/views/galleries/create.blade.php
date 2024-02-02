@@ -34,56 +34,51 @@
     @endif
     {{-- Display error message end --}}
 
-    <form class="row" action="{{ route('galleries.store') }}" method="post"
-        enctype="multipart/form-data" autocomplete="off">
+    <form class="row" action="{{ route('galleries.store') }}" method="post" enctype="multipart/form-data" autocomplete="off">
         @csrf
-
-        {{-- Title --}}
         <div class="row mb-3">
-            <div class="col-lg-3">
-                <label for="title" class="col-form-label">Title</label>
-            </div>
-            <div class="col-lg-9">
-                <input type="text" name="title" id="title" value="{{ old('title') }}"
-                    class="form-control" autocomplete="off">
-                @error('title')
-                    <div class="alert alert-danger">{{ $message }}</div>
-                @enderror
-            </div>
-        </div>
-
-                {{-- Title --}}
-                <div class="row mb-3">
-                    <div class="col-lg-3">
-                        <label for="page_url" class="col-form-label">Page</label>
-                    </div>
-                    <div class="col-lg-9">
-                        <input type="text" name="page_url" id="page_url" value="{{ old('page_url') }}"
-                            class="form-control" autocomplete="off">
-                        @error('page_url')
-                            <div class="alert alert-danger">{{ $message }}</div>
-                        @enderror
-                    </div>
+            <div class="col">
+                <div class="col-lg-3">
+                    <label for="page_url" class="col-form-label">Page</label>
                 </div>
-
-        {{-- Image --}}
-        <div class="row mb-3">
-            <div class="col-lg-3">
-                <label for="file" class="col-sm-3 col-form-label">Image</label>
                 <div class="col-lg-9">
-                    <input type="file" name="file" id="file" class="form-control" onchange="previewImage()" />
-                    <img id="preview" width="100" height="100" style="display: none;" />
-                    @error('file')
+                    <input type="text" name="page_url" id="page_url" value="{{ old('page_url') }}"
+                        class="form-control" autocomplete="off">
+                    @error('page_url')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
+                </div>
+            </div>
+            <div class="col">
+                <div class="col-lg-3">
+                    <label for="title" class="col-form-label">Title</label>
+                </div>
+                <div class="col-lg-9">
+                    <input type="text" name="title" id="title" value="{{ old('title') }}"
+                        class="form-control" autocomplete="off">
+                    @error('title')
                         <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
                 </div>
             </div>
         </div>
+
         <div class="row">
-            <label for="sub_title" class="col-lg-3 col-form-label">Description</label>
+            <div class="col">
+                <label for="dateInput">Start Date</label>
+                <input type="date" id="start_date" name="start_date">
+            </div>
+            <div class="col">
+                <label for="dateInput">End Date:</label>
+                <input type="date" id="end_date" name="end_date">
+            </div>
+        </div>
+
+        <div class="row">
+            <label for="sub_title" class="col-lg-3 col-form-label">Content</label>
             <div class="col-lg-9">
-                <textarea class="form-control" name="description" id="editor1"
-                    style="width:100%">{{ old('description') }}</textarea>
+                <textarea class="form-control" name="file" id="editor1"
+                    style="width:100%">{{ old('file') }}</textarea>
             </div>
         </div>
 
@@ -103,7 +98,7 @@
 <script src="https://cdn.ckeditor.com/4.17.1/standard/ckeditor.js"></script>
 <script>
     if (!CKEDITOR.instances['editor1']) {
-        CKEDITOR.replace('editor1');
+        CKEDITOR.replace('file');
     }
 
 </script>

@@ -40,12 +40,6 @@
                 <i class="fas fa-plus"></i>
             </a>
         @endif
-        @if(auth()->user())
-            <a href="{{ route('galleries.create') }}" class="btn btn-sm btn-primary"
-                data-toggle="tooltip" data-placement="top" title="Add New Page">
-                <i class="fas fa-plus"></i>
-            </a>
-        @endif
     </div>
 </div>
 
@@ -54,10 +48,11 @@
         <thead class="table-dark">
             <tr>
                 <th scope="col">Id</th>
-                <th scope="col">Department/Page</th>
-                <th scope="col">Photo</th>
-                <th scope="col">Description</th>
-                @if(auth()->user()->role == 'admin')
+                <th scope="col">Page</th>
+                <th scope="col">Start Date</th>
+                <th scope="col">End Date</th>
+                <th scope="col">File</th>
+                @if(auth()->user()->role == 'Admin')
                     <th colspan="2">Action</th>
                 @endif
             </tr>

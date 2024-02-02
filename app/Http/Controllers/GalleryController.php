@@ -31,37 +31,25 @@ class GalleryController extends Controller
     */
    // Assuming your Gallery model has the 'id' field as the primary key and it's auto-incremented.
 
-   public function store(Request $request)
-   {
-       $validated = $request->validate([
-           'title' => ['required', 'string', 'max:255'],
-           'description' => ['nullable', 'string'],
-           'page_url' => ['nullable'], // Ensure page_url is unique
-           'file' => ['nullable', 'file', 'mimes:jpeg,png,jpg', 'max:2048']
-       ]);
-   
-       // Handling file upload
-       if ($request->hasFile('file')) {
-           $file = $request->file('file');
-           $fileName = time() . '_' . $file->getClientOriginalName();
-   
-           // Store the file in the public/uploads directory
-           $file->storeAs('uploads', $fileName, 'public');
-   
-           // Add the file path to the validated data
-           $validated['file'] = 'uploads/' . $fileName;
-       }
-   
-       // Create the Gallery instance with validated data
-       $gallery = new Gallery($validated);
-   
-       // Save CKEditor content to the 'description' field
-       $gallery->description = $request->input('description');
-   
-       // Save the Gallery instance to the database
-       $gallery->save();
-   
-       return redirect()->route('galleries.index')->with('success', 'Gallery created successfully');
-   }
+    public function store(Request $request)
+        {
+            $this->validate($request, [
+                'page_url' => 'required|string',
+                'title' => 'required|string',
+                'start_date' => 'required|date',
+                'end_date' => 'nullable|date|after_or_equal:start_date',
+                'file' => 'required|string', // Assuming file is stored as a string, adjust accordingly
+            ]);
 
-}
+            $galleries = new Gallery();
+            $galleries->page_url = $request->input('page_url');
+            $galleries->title = $request->input('title');
+            $galleries->start_date = new \DateTime($request->input('start_date'));
+            $galleries->end_date = $request->input('end_date') ? new \DateTime($request->input('end_date')) : null;
+            $galleries->file = $request->input('file'); // Adjust accordingly
+
+            $galleries->save();
+
+            return redirect()->route('galleries.index')->with('success', 'File entry has been added successfully.');
+        }
+    }

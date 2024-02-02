@@ -34,7 +34,7 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="card custom-card">
-                    <a href="#">
+                    <a href="{{ route('galleries.index') }}">
                         <div class="card-body" style="display: flex; justify-content: center; align-items: center;">
                             <h1 class="card-title">Patient Success Stories</h1>
                         </div>

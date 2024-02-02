@@ -10,9 +10,10 @@ class Gallery extends Model
     use HasFactory;
 
     protected $fillable = [
-        'title',
-        'description',
         'page_url',
+        'title',
+        'start_date',
+        'end_date',
         'file',
     ];
 }
