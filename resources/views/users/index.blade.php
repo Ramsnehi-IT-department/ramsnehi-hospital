@@ -16,6 +16,12 @@
     td {
         vertical-align: middle;
     }
+
+    .receipt {
+    font-family: Arial, sans-serif;
+    /* Add styles for the receipt layout */
+}
+
 </style>
 
 @section('content')
@@ -45,7 +51,7 @@
     @endif
 </div>
 
-<div class="container">
+<div class="container" id="printTable">
     <table class="table table-striped table-bordered" id="myTable">
         <thead class="table-dark">
             <tr>
@@ -101,10 +107,17 @@
         </tbody>
     </table>
 </div>
+
+<div class="container">
+    <!-- Button to trigger printing of receipts to two separate printers -->
+    <button onclick="printReceipts()" class="btn btn-sm btn-primary">Print Receipts</button>
+</div>
+
 <script>
     function confirmDelete() {
         return confirm("Are you sure you want to remove this user?");
     }
+
 </script>
 
 <!-- Include jQuery -->
@@ -128,6 +141,37 @@
             });
         });
     });
+
+</script>
+
+
+<script>
+    function printReceipts() {
+        // Get the HTML content of the table
+        var printContents = document.getElementById('printTable').innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        // Replace the current page content with the table content
+        document.body.innerHTML = printContents;
+
+        // Print the receipt to the first printer
+        window.print();
+
+        // Restore the original page content
+        document.body.innerHTML = originalContents;
+
+        // Prompt the user to select the second printer
+        setTimeout(function () {
+            // Get the HTML content of the table (again)
+            var printContents = document.getElementById('printTable').innerHTML;
+
+            // Replace the current page content with the table content (again)
+            document.body.innerHTML = printContents;
+
+            // Print the receipt to the second printer
+            window.print();
+        }, 1000); // Delay to allow the first print job to finish
+    }
 </script>
 
 @endsection

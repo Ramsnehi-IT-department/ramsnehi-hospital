@@ -45,8 +45,8 @@
             </tr>
         </thead>
         <tbody>
-            @foreach($careers as $key => $career)
-                <tr>
+            @foreach($careers as $career)
+            <tr>
                     <td>{{ $loop->iteration }}</td>
                     <td>{{ $career->opening->title }} - {{ $career->opening->sub_title }}</td>
                     <td>{{ $career->name }}</td>

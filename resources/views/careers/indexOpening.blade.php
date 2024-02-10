@@ -34,13 +34,13 @@
 
 <div class="container mx-end my-1">
     <div class="mb-2">
-        <a href="{{ route('openings.create') }}" class="btn btn-sm btn-primary" data-toggle="tooltip"
+        <a href="{{ route('careers.create') }}" class="btn btn-sm btn-primary" data-toggle="tooltip"
             data-placement="top" title="Create New Admin"><i class="fas fa-plus"></i></a>
     </div>
 </div>
 
 <div class="container">
-    <table class="table table-striped table-bordered" id="myTable">
+    <table class="table table-striped table-bordered" id="myTable2">
         <thead class="table-dark">
             <tr>
                 <th scope="col">Id</th>

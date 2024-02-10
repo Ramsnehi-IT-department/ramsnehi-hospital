@@ -13,7 +13,7 @@ class OpeningController extends Controller
     {
         $openings = Opening::all();
 
-        return view('openings.index', compact('openings'));
+        return view('careers.indexOpening', compact('openings'));
     }
 
     public function create()

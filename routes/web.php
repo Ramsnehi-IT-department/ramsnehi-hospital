@@ -253,8 +253,6 @@ Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 // =========== Quality admin Start ===========
 Route::prefix('quality')->controller(QualityController::class)->group(function () {
     Route::get('/index', 'index')->name('qualities.index');
-    // Route::get('/addOpening', 'createOpening')->name('careers.addOpening');
-    // Route::post('/storeOpening', 'storeOpening')->name('careers.storeOpening');
 });
 // =========== Quality admin End ===========
 
@@ -268,19 +266,20 @@ Route::prefix('gallery')->controller(GalleryController::class)->group(function (
 
 // =========== Career admin Start ===========
 Route::prefix('career')->controller(CareerController::class)->group(function () {
+    // Route::get('/index', 'showMainPage')->name('careers.index');
     Route::get('/index', 'index')->name('careers.index');
-    Route::get('/application', 'view')->name('careers.application');
+    Route::get('/application', 'view')->name('careers.indexApplication');
 });
 // =========== Career admin End ===========
 
 // =========== Opening admin Start ===========
 Route::prefix('openings')->controller(OpeningController::class)->group(function () {
-    Route::get('/index', 'index')->name('openings.index');
-    Route::get('/create', 'create')->name('openings.create');
-    Route::post('/store', 'store')->name('openings.store');
-    Route::get('/edit/{id}', 'edit')->name('openings.edit');
-    Route::put('/update/{opening}', 'update')->name('openings.update');
-    Route::post('/changeStatus', 'changeStatus')->name('openings.changeStatus');
+    Route::get('/index', 'index')->name('careers.indexOpening');
+    Route::get('/create', 'create')->name('careers.create');
+    Route::post('/store', 'store')->name('careers.store');
+    Route::get('/edit/{id}', 'edit')->name('careers.edit');
+    Route::put('/update/{opening}', 'update')->name('careers.update');
+    Route::post('/changeStatus', 'changeStatus')->name('careers.changeStatus');
 });
 // =========== Opening admin End ===========
 
