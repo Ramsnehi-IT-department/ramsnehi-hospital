@@ -3,6 +3,102 @@
 @section('title', 'User Manager List')
 
 <style>
+    /* The Modal (background) */
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 50px;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.9);
+        /* Black w/ opacity */
+    }
+
+    /* Modal Content (image) */
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 50%;
+        max-width: 500px;
+    }
+
+    /* Caption of Modal Image */
+    .modal-content,
+    #caption {
+        margin: auto;
+        display: block;
+        width: 50%;
+        max-width: 500px;
+    }
+
+    /* Add Animation */
+    .modal-content,
+    #caption {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+    @-webkit-keyframes zoom {
+        from {
+            -webkit-transform: scale(0)
+        }
+
+        to {
+            -webkit-transform: scale(1)
+        }
+    }
+
+    @keyframes zoom {
+        from {
+            transform: scale(0);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+
+
+    /* The Close Button */
+    .close {
+        position: absolute;
+        top: 30px;
+        right: 50px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* 100% Image Width on Smaller Screens */
+    @media only screen and (max-width: 700px) {
+        .modal-content {
+            width: 100%;
+        }
+    }
+
     .round-image {
         border-radius: 50%;
         margin-right: 10px;
@@ -18,13 +114,22 @@
     }
 
     .receipt {
-    font-family: Arial, sans-serif;
-    /* Add styles for the receipt layout */
-}
+        font-family: Arial, sans-serif;
+        /* Add styles for the receipt layout */
+    }
 
 </style>
 
 @section('content')
+
+<div id="toaster-container"></div>
+@if(session()->has('success'))
+    <script>
+        toastr.success('{{ session('success') }}');
+    </script>
+@endif
+
+
 <!-- Start Page Title -->
 <div class="pagetitle">
     <h1>User Manager</h1>
@@ -44,11 +149,6 @@
                 data-placement="top" title="Create New Admin"><i class="fas fa-plus"></i></a>
         @endif
     </div>
-    @if(session('success'))
-        <div class="alert alert-success">
-            {{ session('success') }}
-        </div>
-    @endif
 </div>
 
 <div class="container" id="printTable">
@@ -72,9 +172,9 @@
                     <td>{{ $loop->iteration }}</td>
                     <td>
                         @if($user->file_path)
-                            <a title="Profile"
-                                href="{{ asset('storage/' . $user->file_path) }}">
-                                <img src="{{ asset('storage/' . $user->file_path) }}"
+                            <a title="Profile" href="#" class="open-modal" data-modal-id="myModal{{ $loop->index }}">
+                                <img class="myImg"
+                                    src="{{ asset('storage/' . $user->file_path) }}"
                                     alt="{{ $user->file_path }}" style="width: 100px">
                             </a>
                         @else
@@ -108,10 +208,13 @@
     </table>
 </div>
 
-<div class="container">
-    <!-- Button to trigger printing of receipts to two separate printers -->
-    <button onclick="printReceipts()" class="btn btn-sm btn-primary">Print Receipts</button>
-</div>
+<!-- The Modals -->
+@foreach($users as $key => $user)
+    <div id="myModal{{ $loop->index }}" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img{{ $loop->index }}">
+    </div>
+@endforeach
 
 <script>
     function confirmDelete() {
@@ -144,34 +247,33 @@
 
 </script>
 
+<script>
+    $(document).ready(function() {
+        $('.open-modal').click(function(e) {
+            e.preventDefault();
+            var modalId = $(this).data('modal-id');
+            var imgSrc = $(this).find('img').attr('src');
+            $('#' + modalId + ' .modal-content').attr('src', imgSrc);
+            $('#' + modalId).css('display', 'block');
+        });
+
+        $('.close').click(function() {
+            $(this).closest('.modal').css('display', 'none');
+        });
+    });
+</script>
 
 <script>
-    function printReceipts() {
-        // Get the HTML content of the table
-        var printContents = document.getElementById('printTable').innerHTML;
-        var originalContents = document.body.innerHTML;
+    // Initialize Toastr
+    toastr.options = {
+        timeOut: 3000, // Set default timeout to 3 seconds
+        closeButton: true,
+        progressBar: true,
+        positionClass: 'toast-top-right'
+    };
 
-        // Replace the current page content with the table content
-        document.body.innerHTML = printContents;
-
-        // Print the receipt to the first printer
-        window.print();
-
-        // Restore the original page content
-        document.body.innerHTML = originalContents;
-
-        // Prompt the user to select the second printer
-        setTimeout(function () {
-            // Get the HTML content of the table (again)
-            var printContents = document.getElementById('printTable').innerHTML;
-
-            // Replace the current page content with the table content (again)
-            document.body.innerHTML = printContents;
-
-            // Print the receipt to the second printer
-            window.print();
-        }, 1000); // Delay to allow the first print job to finish
-    }
+    // Trigger a success notification
+    toastr.success('Your success message here');
 </script>
 
 @endsection

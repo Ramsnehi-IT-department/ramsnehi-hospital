@@ -26,7 +26,6 @@
     <!-- For Tooltip library -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-
     <!-- Vendor CSS Files -->
     <link href="{{ asset('admin-assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('admin-assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
@@ -39,6 +38,8 @@
     <!-- Template Main CSS File -->
     <link href="{{ asset('admin-assets/css/style.css') }}" rel="stylesheet">
 
+    <!-- Toastr CSS File -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -78,6 +79,9 @@
 
     <!-- Template Main JS File -->
     <script src="{{ asset('admin-assets/js/main.js') }}"></script>
+
+    <!-- Toastr JS File -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
 </body>
 

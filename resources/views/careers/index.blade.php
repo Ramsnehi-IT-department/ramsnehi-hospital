@@ -43,26 +43,73 @@
     </div>
 </div>
 
+<!-- Define the URLs in data attributes -->
+<button onclick="printBoth(
+    '{{ route('careers.indexApplication') }}',
+    '{{ route('careers.indexOpening') }}',
+    'Printer Name 1', // Specify the first printer name here
+    'Printer Name 2'  // Specify the second printer name here
+)" class="btn btn-primary">Print Both</button>
 
-
-<button onclick="printTables()" class="btn btn-primary">Print Tables</button>
+{{-- <div id="previewContainer" style="display: none;"></div> --}}
 
 <script>
-    function printTables() {
-        // Open a new window for printing
-        var printWindow = window.open('', '_blank');
+    function printBoth(applicationRoute, openingRoute, Receipt, printerName2) {
+        console.log("Button clicked!"); // Check if the function is accessible
 
-        // Get the content of the print area
-        var printContent = document.getElementById('printArea').innerHTML;
+        // Fetch content of the applications table
+        fetch(applicationRoute)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(applicationData => {
+                // Fetch content of the openings table
+                fetch(openingRoute)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        return response.text();
+                    })
+                    .then(openingData => {
+                        // Display the fetched content in the preview container
+                        document.getElementById('previewContainer').innerHTML = applicationData + openingData;
+                        document.getElementById('previewContainer').style.display = 'block';
+                        
+                        // Print the content of each table to the corresponding printer
+                        printJS({
+                            printable: applicationData,
+                            type: 'html',
+                            targetStyles: ['*'],
+                            documentTitle: 'Applications', // Optional: specify document title
+                            header: 'Applications', // Optional: specify header
+                            footer: 'Printed from my website', // Optional: specify footer
+                            printerName: Receipt // Specify the first printer name
+                        });
 
-        // Write the content to the print window
-        printWindow.document.write('<html><head><title>Print Tables</title></head><body>' + printContent + '</body></html>');
-
-        // Print the window
-        printWindow.print();
+                        printJS({
+                            printable: openingData,
+                            type: 'html',
+                            targetStyles: ['*'],
+                            documentTitle: 'Openings', // Optional: specify document title
+                            header: 'Openings', // Optional: specify header
+                            footer: 'Printed from my website', // Optional: specify footer
+                            printerName: printerName2 // Specify the second printer name
+                        });
+                    })
+                    .catch(error => {
+                        console.error('Error fetching openings data:', error);
+                        alert('Error fetching openings data. Please try again later.');
+                    });
+            })
+            .catch(error => {
+                console.error('Error fetching application data:', error);
+                alert('Error fetching application data. Please try again later.');
+            });
     }
 </script>
-
-
 
 @endsection

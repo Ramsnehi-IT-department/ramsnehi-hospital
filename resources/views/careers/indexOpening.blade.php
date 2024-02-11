@@ -26,7 +26,7 @@
     <nav>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/admin">Home</a></li>
-            <li class="breadcrumb-item active">List</li>
+            <li class="breadcrumb-item active"><a href="/career/index">Career</a></li>
         </ol>
     </nav>
 </div>
@@ -107,6 +107,7 @@
             });
         });
     });
+
 </script>
 
 @endsection

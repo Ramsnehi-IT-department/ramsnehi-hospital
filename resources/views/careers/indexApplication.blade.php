@@ -26,6 +26,7 @@
     <nav>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/admin">Home</a></li>
+            <li class="breadcrumb-item active"><a href="/career/index">Career</a></li>
         </ol>
     </nav>
 </div>
@@ -46,13 +47,14 @@
         </thead>
         <tbody>
             @foreach($careers as $career)
-            <tr>
+                <tr>
                     <td>{{ $loop->iteration }}</td>
                     <td>{{ $career->opening->title }} - {{ $career->opening->sub_title }}</td>
                     <td>{{ $career->name }}</td>
                     <td>{{ $career->email }}</td>
                     <td>{{ $career->contact }}</td>
-                    <td><a href="{{ asset('storage/' . $career->file_path) }}" target="_blank">View File</a></td>
+                    <td><a href="{{ asset('storage/' . $career->file_path) }}"
+                            target="_blank">View File</a></td>
                     <td>{{ $career->created_at->format('d-m-Y') }}</td>
                 </tr>
             @endforeach
