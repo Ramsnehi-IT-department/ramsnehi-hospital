@@ -12,7 +12,6 @@ use App\Http\Controllers\HomeWebController;
 use App\Http\Controllers\OpeningController;
 use App\Http\Controllers\QualityController;
 
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -80,11 +79,6 @@ Route::get('/awardsAchievements', function () {
     return view('frontends.awardsAchievements');
 });
 
-// Ramsnehi Optics
-Route::get('/ramsnehiOptics', function () {
-    return view('frontends.ramsnehiOptics');
-});
-
 // Patient Attenders
 Route::get('/patientAttenders', function () {
     return view('frontends.patientAttenders');
@@ -97,11 +91,6 @@ Route::get('/cardiologyDepartment', function () {
     return view('frontends.cardiologyDepartment');
 });
 
-// Dental
-Route::get('/dental', function () {
-    return view('frontends.dental');
-});
-
 // General Medicine
 Route::get('/generalMedicine', function () {
     return view('frontends.generalMedicine');
@@ -110,6 +99,11 @@ Route::get('/generalMedicine', function () {
 // General Surgery
 Route::get('/generalSurgery', function () {
     return view('frontends.generalSurgery');
+});
+
+// Dental
+Route::get('/dental', function () {
+    return view('frontends.dental');
 });
 
 // Ophthalmology
@@ -195,7 +189,6 @@ Route::get('/professionsAlliedToMedicine', function () {
 });
 // =========== Services start ===========
 
-
 // =========== Events Start ===========
 // Hospital Events
 Route::get('/hospitalEvents', function () {
@@ -239,11 +232,9 @@ Route::post('/career', [CareerController::class, 'submitResume'])->name('fronten
 Route::get('/contact', [ContactController::class, 'getContact'])->name('frontends.contact');
 Route::post('/contact', [ContactController::class, 'submitContact'])->name('frontends.Contact');
 // =========== Contact End ===========
-
 // ================================= Frontend End =================================
 
 // ================================= Admin Panel Start =================================
-
 // =========== User Login Start ===========
 Auth::routes();
 Route::get('/admin', [HomeController::class, 'index'])->name('home');
@@ -301,6 +292,5 @@ Route::prefix('users')->controller(UserController::class)->middleware('auth')->g
 // Log User
     Route::get('/log', 'userLog')->name('users.log');
 });
-
 // =========== User Manager End ===========
 // ================================= Admin Panel End =================================
