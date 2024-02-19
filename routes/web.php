@@ -257,7 +257,6 @@ Route::prefix('gallery')->controller(GalleryController::class)->group(function (
 
 // =========== Career admin Start ===========
 Route::prefix('career')->controller(CareerController::class)->group(function () {
-    // Route::get('/index', 'showMainPage')->name('careers.index');
     Route::get('/index', 'index')->name('careers.index');
     Route::get('/application', 'view')->name('careers.indexApplication');
 });

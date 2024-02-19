@@ -20,18 +20,6 @@ class CareerController extends Controller
         return view('careers.index');
     }
 
-    public function showMainPage()
-    {
-        // Fetch data for table 1 from the model
-        $careers = Career::all();
-
-        // Fetch data for table 2 from the model
-        $openings = Opening::all();
-
-        // Return the view with data
-        return view('careers.index', compact('careers', 'openings'));
-    }
-
     public function view()
     {
         $careers = Career::all();
@@ -70,8 +58,8 @@ class CareerController extends Controller
     // Create the user with validated data
     Career::create($validated);
 
-      // Fetch careers data for the view
-      $careers = Career::all();
+    // Fetch careers data for the view
+    $careers = Career::all();
 
     // return redirect()->route('frontends.career')->with('success', 'Your Resume submitted successfully');
     return view('frontends.career', ['careers' => $careers])->with('success', 'Your Resume submitted successfully');
