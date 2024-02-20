@@ -11,9 +11,7 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="asset('admin-assets/img/favicon.ico')" rel="icon">
     <link href="{{ asset('admin-assets/img/favicon.ico') }}" rel="icon">
-    <link href="asset('admin-assets/img/apple-touch-icon.png')" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.gstatic.com" rel="preconnect">

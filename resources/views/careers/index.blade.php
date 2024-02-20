@@ -44,72 +44,102 @@
     </div>
 </div>
 
-<!-- Include printJS library -->
-<script src="https://printjs-4de6.kxcdn.com/print.min.js"></script>
+
+{{-- for print --}}
+
+<!-- Include jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Include printThis library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/printThis/1.15.0/printThis.min.js"></script>
 
 <!-- Your HTML content goes here -->
-{{-- <button onclick="printBoth('{{ route('careers.indexApplication') }}', '{{ route('careers.indexOpening') }}', 'Receipt1', 'Receipt2')" class="btn btn-primary">Print Both</button> --}}
-<button onclick="printBoth('career/application', 'openings/index', 'Receipt1', 'Receipt2')" class="btn btn-primary">Print Both</button>
-
-<div id="previewContainer" style="display: none;"></div>
+<button onclick="printBoth()" class="btn btn-primary">Print Both</button>
+<div id="applicationDataContainer"></div>
+<div id="openingDataContainer"></div>
 
 <script>
-function printBoth(applicationRoute, openingRoute, Receipt1, Receipt2) {
-    // Generate URLs for the routes using Laravel's route() function
-    const applicationUrl = '{{ route('careers.indexApplication') }}';
-    const openingUrl = '{{ route('careers.indexOpening') }}';
+    function printBoth() {
+        // Function to print application data
+        function printApplicationData(applicationData) {
+            $('#applicationDataContainer').html(applicationData);
+            $('#applicationDataContainer').printThis({
+                importCSS: true,
+                header: "<h1>Application Document Header</h1>",
+                footer: "<footer>Printed from my website</footer>",
+                pageTitle: "Application Document",
+                beforePrintEvent: function () {
+                    // Set printer name for application data
+                    var PrintSettings = {
+                        printContainer: true,
+                        printerName: 'Order' // Specify the printer name for application data
+                    };
+                    return PrintSettings;
+                },
+                afterPrint: function () {
+                    console.log('Application data printed successfully.');
+                    // After printing application data, print opening data with the second printer
+                    printOpeningData(openingData);
+                },
+                onError: function () {
+                    console.error('Error printing application data.');
+                    alert('Error printing application data. Please try again later.');
+                }
+            });
+        }
 
-    // Fetch content of the applications table
-    fetch(applicationUrl)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
+        // Function to print opening data
+        function printOpeningData(openingData) {
+            $('#openingDataContainer').html(openingData);
+            $('#openingDataContainer').printThis({
+                importCSS: true,
+                header: "<h1>Opening Document Header</h1>",
+                footer: "<footer>Printed from my website</footer>",
+                pageTitle: "Opening Document",
+                beforePrintEvent: function () {
+                    // Set printer name for opening data
+                    var PrintSettings = {
+                        printContainer: true,
+                        printerName: 'Invoice' // Specify the printer name for opening data
+                    };
+                    return PrintSettings;
+                },
+                afterPrint: function () {
+                    console.log('Opening data printed successfully.');
+                },
+                onError: function () {
+                    console.error('Error printing opening data.');
+                    alert('Error printing opening data. Please try again later.');
+                }
+            });
+        }
+
+        // Fetch content of the applications table
+        $.ajax({
+            url: '{{ route('careers.indexApplication') }}',
+            method: 'GET',
+            success: function (applicationData) {
+                printApplicationData(applicationData);
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.error('Error fetching application data:', errorThrown);
+                alert('Error fetching application data. Please try again later.');
             }
-            return response.text();
-        })
-        .then(applicationData => {
-            // Fetch content of the openings table
-            fetch(openingUrl)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.text();
-                })
-                .then(openingData => {
-                    // Combine the fetched content into the preview container
-                    const combinedData = applicationData + openingData;
-                    document.getElementById('previewContainer').innerHTML = combinedData;
-
-    
-                    // Print the combined content to the specified printers
-                    printJS({
-                        printable: 'previewContainer',
-                        type: 'html',
-                        targetStyles: ['*'],
-                        documentTitle: 'Combined Document',
-                        header: 'Combined Document Header',
-                        footer: 'Printed from my website',
-                        printerName: [Receipt1, Receipt2] // Specify multiple printer names as an array
-                    });
-                    
-
-                })
-                .catch(error => {
-                    console.error('Error fetching openings data:', error);
-                    alert('Error fetching openings data. Please try again later.');
-                });
-        })
-        .catch(error => {
-            console.error('Error fetching application data:', error);
-            alert('Error fetching application data. Please try again later.');
         });
-}
 
-
+        // Fetch content of the openings table
+        $.ajax({
+            url: '{{ route('careers.indexOpening') }}',
+            method: 'GET',
+            success: function (openingData) {
+                // Store opening data to pass to the printOpeningData function after printing application data
+                openingDataGlobal = openingData;
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.error('Error fetching opening data:', errorThrown);
+                alert('Error fetching opening data. Please try again later.');
+            }
+        });
+    }
 </script>
-
-
-
 
 @endsection
