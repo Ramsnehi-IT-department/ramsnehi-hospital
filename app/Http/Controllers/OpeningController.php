@@ -11,14 +11,22 @@ class OpeningController extends Controller
 
     public function index()
     {
-        // Define the application printer variable
-        $openingPrinter = 'Invoice'; // Set it to the desired printer name
+
+       // Define the application printer dynamically based on certain conditions
+       $openingPrinter = $this->getOpeningPrinter();
 
         // Fetch careers data
         $openings = Opening::all();
 
         // Pass the application printer variable and careers data to the Blade view
         return view('careers.indexOpening', compact('openingPrinter', 'openings'));
+    }
+
+    private function getOpeningPrinter()
+    {
+        // Your logic to determine the application printer dynamically
+        // For example, you can retrieve it from the database, or based on user settings
+        return 'Invoice'; // Example value, replace this with your actual logic
     }
 
 

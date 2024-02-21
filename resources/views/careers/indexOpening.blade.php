@@ -78,6 +78,9 @@
     </table>
 </div>
 
+<p>Opening Printer: {{ $openingPrinter }}</p>
+
+
 <script>
     var openingPrinter = '{{ $openingPrinter }}';
 </script>

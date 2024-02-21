@@ -72,7 +72,7 @@
                 beforePrintEvent: function () {
                     var PrintSettings = {
                         printContainer: true,
-                        printerName: 'Order'
+                        printerName: 'Order' // Use the variable for printer name
                     };
                     return PrintSettings;
                 },
@@ -99,7 +99,7 @@
                 beforePrintEvent: function () {
                     var PrintSettings = {
                         printContainer: true,
-                        printerName: 'Invoice'
+                        printerName: 'Invoice' // Use the variable for printer name
                     };
                     return PrintSettings;
                 },
@@ -141,5 +141,7 @@
         });
     }
 </script>
+
+
 
 @endsection
