@@ -8,13 +8,19 @@ use Illuminate\Http\Request;
 
 class OpeningController extends Controller
 {
-    // Display the form for creating a new opening
+
     public function index()
     {
+        // Define the application printer variable
+        $openingPrinter = 'Invoice'; // Set it to the desired printer name
+
+        // Fetch careers data
         $openings = Opening::all();
 
-        return view('careers.indexOpening', compact('openings'));
+        // Pass the application printer variable and careers data to the Blade view
+        return view('careers.indexOpening', compact('openingPrinter', 'openings'));
     }
+
 
     public function create()
     {

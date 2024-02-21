@@ -58,6 +58,8 @@
 <div id="openingDataContainer"></div>
 
 <script>
+    var openingDataGlobal; // Define openingDataGlobal in the outer scope
+
     function printBoth() {
         // Function to print application data
         function printApplicationData(applicationData) {
@@ -68,17 +70,16 @@
                 footer: "<footer>Printed from my website</footer>",
                 pageTitle: "Application Document",
                 beforePrintEvent: function () {
-                    // Set printer name for application data
                     var PrintSettings = {
                         printContainer: true,
-                        printerName: 'Order' // Specify the printer name for application data
+                        printerName: 'Order'
                     };
                     return PrintSettings;
                 },
                 afterPrint: function () {
                     console.log('Application data printed successfully.');
                     // After printing application data, print opening data with the second printer
-                    printOpeningData(openingData);
+                    printOpeningData(openingDataGlobal); // Pass openingDataGlobal here
                 },
                 onError: function () {
                     console.error('Error printing application data.');
@@ -96,10 +97,9 @@
                 footer: "<footer>Printed from my website</footer>",
                 pageTitle: "Opening Document",
                 beforePrintEvent: function () {
-                    // Set printer name for opening data
                     var PrintSettings = {
                         printContainer: true,
-                        printerName: 'Invoice' // Specify the printer name for opening data
+                        printerName: 'Invoice'
                     };
                     return PrintSettings;
                 },

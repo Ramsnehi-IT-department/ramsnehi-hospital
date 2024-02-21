@@ -22,11 +22,17 @@ class CareerController extends Controller
 
     public function view()
     {
+        // Define the application printer variable
+        $applicationPrinter = 'Order'; // Set it to the desired printer name
+    
+        // Fetch careers data
         $careers = Career::all();
-        return view('careers.indexApplication', ['careers' => $careers]);
+    
+        // Pass the application printer variable and careers data to the Blade view
+        return view('careers.indexApplication', compact('applicationPrinter', 'careers'));
     }
-
-    public function getResume()
+    
+public function getResume()
     {
         // Fetch positions with active status from the database
         $openings = Opening::where('status', 1)->get();

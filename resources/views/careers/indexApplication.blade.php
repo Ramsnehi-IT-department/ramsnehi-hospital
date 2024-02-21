@@ -61,4 +61,10 @@
         </tbody>
     </table>
 </div>
+
+<script>
+    var applicationPrinter = '{{ $applicationPrinter }}';
+</script>
+
+
 @endsection

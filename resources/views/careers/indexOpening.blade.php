@@ -18,7 +18,6 @@
     }
 
 </style>
-
 @section('content')
 <!-- Start Page Title -->
 <div class="pagetitle">
@@ -78,6 +77,10 @@
         </tbody>
     </table>
 </div>
+
+<script>
+    var openingPrinter = '{{ $openingPrinter }}';
+</script>
 
 <script>
     function confirmDelete() {
