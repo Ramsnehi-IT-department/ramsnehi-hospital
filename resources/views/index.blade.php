@@ -12,7 +12,8 @@
                     <div class="block text-dark">
                         <h1 class="animated-text" style="color: white"></h1>
                         <h3 class="animated-text" style="color: white"></h3>
-                        <h1 class="animated-text" style="color: white">{{ __('homepage.slider_text_top') }}</h1>
+                        <h1 class="animated-text" style="color: white">
+                            {{ __('homepage.slider_text_top') }}</h1>
                     </div>
                 </div>
             </div>
@@ -20,9 +21,12 @@
                 <img src="images/bg/night_slide.jpeg" class="slider-image d-block w-100" alt="Image 2">
                 <div class="carousel-caption d-none d-md-block">
                     <div class="block text-dark">
-                        <h1 class="animated-text" style="color: white">{{ __('homepage.slider_text_top') }}</h1>
-                        <h3 class="animated-text" style="color: white">{{ __('homepage.slider_text_middle') }}</h3>
-                        <h5 class="animated-text" style="color: white">{{ __('homepage.slider_text_bottom') }}</h5>
+                        <h1 class="animated-text" style="color: white">
+                            {{ __('homepage.slider_text_top') }}</h1>
+                        <h3 class="animated-text" style="color: white">
+                            {{ __('homepage.slider_text_middle') }}</h3>
+                        <h5 class="animated-text" style="color: white">
+                            {{ __('homepage.slider_text_bottom') }}</h5>
                     </div>
                 </div>
             </div>
