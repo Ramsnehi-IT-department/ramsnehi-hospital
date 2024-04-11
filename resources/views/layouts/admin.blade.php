@@ -38,7 +38,7 @@
     <link href="{{ asset('admin-assets/css/style.css') }}" rel="stylesheet">
 
     <!-- Toastr CSS File -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 </head>
 
 <body>
@@ -81,6 +81,18 @@
 
     <!-- Toastr JS File -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    {{-- <script>
+        // Set toastr options
+        toastr.options = {
+            timeOut: 4000, // Set default timeout to 3 seconds
+            closeButton: true,
+            progressBar: true,
+            positionClass: 'toast-top-center'
+        };
+    
+        // Trigger a success notification
+        toastr.success('Your success message here');
+    </script> --}}
 
 </body>
 

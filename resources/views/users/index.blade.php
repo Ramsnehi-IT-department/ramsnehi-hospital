@@ -263,17 +263,19 @@
     });
 </script>
 
-<script>
-    // Initialize Toastr
-    toastr.options = {
-        timeOut: 3000, // Set default timeout to 3 seconds
-        closeButton: true,
-        progressBar: true,
-        positionClass: 'toast-top-right'
-    };
-
-    // Trigger a success notification
-    toastr.success('Your success message here');
-</script>
+    <!-- Toastr JS File -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script>
+        // Set toastr options
+        toastr.options = {
+            timeOut: 4000, // Set default timeout to 3 seconds
+            closeButton: true,
+            progressBar: true,
+            positionClass: 'toast-top-center'
+        };
+    
+        // Trigger a success notification
+        toastr.success('Your success message here');
+    </script>
 
 @endsection

@@ -82,7 +82,7 @@ class UserController extends Controller
     
         // Create the user with validated data
         User::create($validated);
-        session()->flash('success', 'Your success message here');
+        session()->flash('success', 'User Created Succesfully');
     
         return redirect()->route('users.index');
     }
