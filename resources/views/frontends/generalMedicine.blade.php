@@ -27,7 +27,7 @@
                     <li>Medical ICU Convenience of.</li>
                     <li>Dialysis facility.</li>
                     <li>Gestroscopy facility.</li>
-                    <li>ECG, Eco and TMT Convenience of.</li>
+                    <li>ECG, ECHO and TMT Convenience of.</li>
                 </ul>
                 
                 <h3 class="title-color">Available Services</h3>

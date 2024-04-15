@@ -14,7 +14,7 @@ return [
     //
     'home' => 'Home',
     'Ramsnehi'=> 'Ramsnehi:',
-    'ramsnehiHospital'=> 'Ramsnehi Hospital:',
+    'ramsnehiHospital'=> 'Ramsnehi Hospital',
     //
 
     // Content Start
