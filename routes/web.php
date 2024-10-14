@@ -293,3 +293,8 @@ Route::prefix('users')->controller(UserController::class)->middleware('auth')->g
 });
 // =========== User Manager End ===========
 // ================================= Admin Panel End =================================
+
+
+Route::get('/custom', function(){
+    return "hello";
+});
